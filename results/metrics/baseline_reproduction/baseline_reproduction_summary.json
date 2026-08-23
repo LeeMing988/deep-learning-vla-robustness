@@ -1,0 +1,22 @@
+{
+  "model_repo_id": "lerobot/smolvla_libero",
+  "model_revision": "31d453f7edd78c839a8bbc39744a292686daf0de",
+  "model_snapshot_dir": "/home/leeming/.cache/huggingface/hub/models--lerobot--smolvla_libero/snapshots/31d453f7edd78c839a8bbc39744a292686daf0de",
+  "dataset_repo_id": "lerobot/libero",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "libero_suite": "libero_spatial",
+  "smoke_task_id": 0,
+  "seed": 42,
+  "device": "cuda",
+  "torch_version": "2.11.0+cu128",
+  "lerobot_version": "0.6.1",
+  "project_git_sha": "153a3b639fadc6f19bd77edb3e4a44cfe2aab3fb",
+  "lerobot_git_sha": "7e241bd630a3719a56157a497ce5d08f244784f1",
+  "model_total_parameters": 450046176,
+  "model_trainable_parameters_current_config": 392904096,
+  "offline_action_dimension": 7,
+  "offline_first_action_inference_seconds": 0.728918488995987,
+  "model_generated_simulator_step": "PASS",
+  "complete_closed_loop_enabled": true,
+  "g0_pass": true
+}

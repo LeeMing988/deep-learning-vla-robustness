@@ -1,0 +1,8 @@
+{
+  "total_parameters": 450046176,
+  "trainable_parameters_current_config": 392904096,
+  "parameter_size_millions": 450.046176,
+  "model_load_seconds": 11.828710071000387,
+  "cuda_allocated_mb": 892.62353515625,
+  "cuda_reserved_mb": 906.0
+}

@@ -1,0 +1,15 @@
+{
+  "g0_pass": true,
+  "checks": {
+    "cuda_available": true,
+    "model_checkpoint_pinned": true,
+    "model_loaded": true,
+    "policy_preprocessor_loaded": true,
+    "policy_postprocessor_loaded": true,
+    "offline_model_action_finite": true,
+    "offline_model_action_7d": true,
+    "libero_environment_created": true,
+    "model_generated_simulator_step": true,
+    "complete_closed_loop_episode": true
+  }
+}

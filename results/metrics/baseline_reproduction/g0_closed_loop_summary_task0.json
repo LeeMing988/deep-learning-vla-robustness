@@ -1,0 +1,12 @@
+{
+  "task_id": 0,
+  "seed": 42,
+  "steps_executed": 80,
+  "max_steps": 280,
+  "success": true,
+  "episode_completed": true,
+  "wall_seconds": 5.305291555996519,
+  "mean_select_action_seconds": 0.004770877675309748,
+  "median_select_action_seconds": 0.001107829997636145,
+  "max_select_action_seconds": 0.1645336479996331
+}

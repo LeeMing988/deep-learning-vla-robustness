@@ -1,0 +1,10 @@
+{
+  "task_id": 0,
+  "action_shape": "(1, 7)",
+  "finite_action": true,
+  "reward": 0.0,
+  "terminated": false,
+  "truncated": false,
+  "policy_latency_seconds": 0.1221595349998097,
+  "model_generated_simulator_step": "PASS"
+}
