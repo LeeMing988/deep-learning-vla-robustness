@@ -1,0 +1,14 @@
+{
+  "torch_version": "2.11.0+cu128",
+  "cuda_runtime": "12.8",
+  "cuda_available": true,
+  "device_count": 1,
+  "gpu_name": "NVIDIA GeForce RTX 5090",
+  "compute_capability": "12.0",
+  "total_vram_gb": 31.84,
+  "matmul_shape": [
+    1024,
+    1024
+  ],
+  "cuda_compute_test": "PASS"
+}

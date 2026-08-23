@@ -1,0 +1,11 @@
+suite_task_id,dataset_task_index,benchmark_instruction,word_count,unique_word_count
+0,34,pick up the black bowl between the plate and the ramekin and place it on the plate,17,12
+1,37,pick up the black bowl next to the ramekin and place it on the plate,15,13
+2,38,pick up the black bowl from table center and place it on the plate,14,13
+3,35,pick up the black bowl on the cookie box and place it on the plate,15,12
+4,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,19,16
+5,32,pick up the black bowl on the ramekin and place it on the plate,14,11
+6,30,pick up the black bowl next to the cookie box and place it on the plate,16,14
+7,33,pick up the black bowl on the stove and place it on the plate,14,11
+8,36,pick up the black bowl next to the plate and place it on the plate,15,12
+9,39,pick up the black bowl on the wooden cabinet and place it on the plate,15,12

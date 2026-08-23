@@ -1,0 +1,10 @@
+feature,dtype,shape,names
+observation.images.image,video,"(256, 256, 3)","['height', 'width', 'channel']"
+observation.images.image2,video,"(256, 256, 3)","['height', 'width', 'channel']"
+observation.state,float32,"(8,)",['state']
+action,float32,"(7,)",['actions']
+timestamp,float32,"(1,)",
+frame_index,int64,"(1,)",
+episode_index,int64,"(1,)",
+index,int64,"(1,)",
+task_index,int64,"(1,)",

@@ -1,0 +1,17 @@
+{
+  "repo_id": "lerobot/libero",
+  "revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "total_episodes": 1693,
+  "total_frames": 273465,
+  "total_tasks": 40,
+  "fps": 10.0,
+  "robot_type": "panda",
+  "camera_keys": [
+    "observation.images.image",
+    "observation.images.image2"
+  ],
+  "video_keys": [
+    "observation.images.image",
+    "observation.images.image2"
+  ]
+}

@@ -1,0 +1,11 @@
+task_index,task_instruction,n_episodes,n_frames,mean_episode_frames,median_episode_frames,min_episode_frames,max_episode_frames
+30,pick up the black bowl next to the cookie box and place it on the plate,46,5775,125.54347826086956,124.0,106,157
+31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,42,6257,148.97619047619048,149.0,127,182
+32,pick up the black bowl on the ramekin and place it on the plate,39,4472,114.66666666666667,112.0,86,154
+33,pick up the black bowl on the stove and place it on the plate,35,4747,135.62857142857143,135.0,120,167
+34,pick up the black bowl between the plate and the ramekin and place it on the plate,45,4487,99.71111111111111,93.0,75,168
+35,pick up the black bowl on the cookie box and place it on the plate,43,4287,99.69767441860465,98.0,86,129
+36,pick up the black bowl next to the plate and place it on the plate,47,5570,118.51063829787235,115.0,95,173
+37,pick up the black bowl next to the ramekin and place it on the plate,45,5940,132.0,131.0,109,189
+38,pick up the black bowl from table center and place it on the plate,46,5343,116.15217391304348,115.0,93,143
+39,pick up the black bowl on the wooden cabinet and place it on the plate,44,6092,138.45454545454547,136.0,117,193

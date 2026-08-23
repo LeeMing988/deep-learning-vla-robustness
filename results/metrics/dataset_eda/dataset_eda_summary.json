@@ -1,0 +1,40 @@
+{
+  "notebook": "00_environment_and_dataset_eda.ipynb",
+  "seed": 42,
+  "dataset_repo_id": "lerobot/libero",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "suite": "libero_spatial",
+  "n_spatial_tasks": 10,
+  "spatial_dataset_task_indices": [
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "n_spatial_episodes": 432,
+  "n_spatial_frames": 52970,
+  "mean_episode_frames": 122.61574074074075,
+  "median_episode_frames": 123.0,
+  "min_episode_frames": 75,
+  "max_episode_frames": 193,
+  "action_dimension": 7,
+  "state_dimension": 8,
+  "camera_keys": [
+    "observation.images.image",
+    "observation.images.image2"
+  ],
+  "dataset_audit_pass": true,
+  "candidate_split_seed": 42,
+  "candidate_validation_fraction": 0.2,
+  "n_train_episodes": 346,
+  "n_validation_episodes": 86,
+  "candidate_split_path": "configs/splits/libero_spatial_split_candidate_seed42.csv",
+  "project_git_sha": "9e78a8b9d48d7207eea89d89b397ea5921cab742",
+  "lerobot_git_sha": "7e241bd630a3719a56157a497ce5d08f244784f1"
+}

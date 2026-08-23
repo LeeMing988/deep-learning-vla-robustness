@@ -1,0 +1,433 @@
+episode_index,task_index,task_instruction,n_frames,split,split_seed,validation_fraction_target,dataset_repo_id,dataset_revision
+1261,30,pick up the black bowl next to the cookie box and place it on the plate,110,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1274,30,pick up the black bowl next to the cookie box and place it on the plate,113,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1277,30,pick up the black bowl next to the cookie box and place it on the plate,111,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1291,30,pick up the black bowl next to the cookie box and place it on the plate,125,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1292,30,pick up the black bowl next to the cookie box and place it on the plate,157,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1301,30,pick up the black bowl next to the cookie box and place it on the plate,141,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1304,30,pick up the black bowl next to the cookie box and place it on the plate,113,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1309,30,pick up the black bowl next to the cookie box and place it on the plate,115,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1314,30,pick up the black bowl next to the cookie box and place it on the plate,117,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1329,30,pick up the black bowl next to the cookie box and place it on the plate,124,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1333,30,pick up the black bowl next to the cookie box and place it on the plate,141,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1336,30,pick up the black bowl next to the cookie box and place it on the plate,135,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1337,30,pick up the black bowl next to the cookie box and place it on the plate,133,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1338,30,pick up the black bowl next to the cookie box and place it on the plate,125,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1340,30,pick up the black bowl next to the cookie box and place it on the plate,122,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1371,30,pick up the black bowl next to the cookie box and place it on the plate,122,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1374,30,pick up the black bowl next to the cookie box and place it on the plate,124,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1415,30,pick up the black bowl next to the cookie box and place it on the plate,133,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1416,30,pick up the black bowl next to the cookie box and place it on the plate,133,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1418,30,pick up the black bowl next to the cookie box and place it on the plate,152,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1421,30,pick up the black bowl next to the cookie box and place it on the plate,118,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1429,30,pick up the black bowl next to the cookie box and place it on the plate,123,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1446,30,pick up the black bowl next to the cookie box and place it on the plate,106,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1448,30,pick up the black bowl next to the cookie box and place it on the plate,119,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1456,30,pick up the black bowl next to the cookie box and place it on the plate,129,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1472,30,pick up the black bowl next to the cookie box and place it on the plate,122,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1473,30,pick up the black bowl next to the cookie box and place it on the plate,124,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1485,30,pick up the black bowl next to the cookie box and place it on the plate,123,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1502,30,pick up the black bowl next to the cookie box and place it on the plate,146,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1526,30,pick up the black bowl next to the cookie box and place it on the plate,130,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1534,30,pick up the black bowl next to the cookie box and place it on the plate,127,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1539,30,pick up the black bowl next to the cookie box and place it on the plate,122,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1544,30,pick up the black bowl next to the cookie box and place it on the plate,121,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1564,30,pick up the black bowl next to the cookie box and place it on the plate,114,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1575,30,pick up the black bowl next to the cookie box and place it on the plate,133,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1604,30,pick up the black bowl next to the cookie box and place it on the plate,120,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1606,30,pick up the black bowl next to the cookie box and place it on the plate,113,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1607,30,pick up the black bowl next to the cookie box and place it on the plate,137,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1611,30,pick up the black bowl next to the cookie box and place it on the plate,123,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1612,30,pick up the black bowl next to the cookie box and place it on the plate,124,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1613,30,pick up the black bowl next to the cookie box and place it on the plate,108,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1624,30,pick up the black bowl next to the cookie box and place it on the plate,108,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1645,30,pick up the black bowl next to the cookie box and place it on the plate,155,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1655,30,pick up the black bowl next to the cookie box and place it on the plate,124,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1661,30,pick up the black bowl next to the cookie box and place it on the plate,130,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1666,30,pick up the black bowl next to the cookie box and place it on the plate,130,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1262,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,138,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1263,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,127,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1268,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,129,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1276,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,140,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1284,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,149,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1298,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,131,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1302,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,156,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1334,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,147,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1339,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,165,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1349,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,153,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1359,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,137,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1360,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,134,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1365,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,147,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1373,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,156,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1394,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,163,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1420,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,156,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1430,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,169,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1434,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,134,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1441,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,153,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1453,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,158,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1461,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,167,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1470,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,159,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1474,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,158,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1494,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,142,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1505,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,150,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1537,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,132,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1543,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,145,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1551,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,151,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1576,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,158,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1581,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,132,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1582,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,137,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1586,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,131,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1591,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,170,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1595,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,139,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1619,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,156,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1620,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,162,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1625,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,149,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1640,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,172,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1651,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,182,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1663,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,138,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1677,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,142,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1687,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,143,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1264,32,pick up the black bowl on the ramekin and place it on the plate,100,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1265,32,pick up the black bowl on the ramekin and place it on the plate,116,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1266,32,pick up the black bowl on the ramekin and place it on the plate,107,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1271,32,pick up the black bowl on the ramekin and place it on the plate,101,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1288,32,pick up the black bowl on the ramekin and place it on the plate,86,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1313,32,pick up the black bowl on the ramekin and place it on the plate,113,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1341,32,pick up the black bowl on the ramekin and place it on the plate,154,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1343,32,pick up the black bowl on the ramekin and place it on the plate,108,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1388,32,pick up the black bowl on the ramekin and place it on the plate,106,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1396,32,pick up the black bowl on the ramekin and place it on the plate,110,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1404,32,pick up the black bowl on the ramekin and place it on the plate,91,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1433,32,pick up the black bowl on the ramekin and place it on the plate,142,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1443,32,pick up the black bowl on the ramekin and place it on the plate,128,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1462,32,pick up the black bowl on the ramekin and place it on the plate,129,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1465,32,pick up the black bowl on the ramekin and place it on the plate,111,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1469,32,pick up the black bowl on the ramekin and place it on the plate,137,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1481,32,pick up the black bowl on the ramekin and place it on the plate,118,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1482,32,pick up the black bowl on the ramekin and place it on the plate,98,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1496,32,pick up the black bowl on the ramekin and place it on the plate,100,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1498,32,pick up the black bowl on the ramekin and place it on the plate,131,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1519,32,pick up the black bowl on the ramekin and place it on the plate,121,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1521,32,pick up the black bowl on the ramekin and place it on the plate,128,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1524,32,pick up the black bowl on the ramekin and place it on the plate,123,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1525,32,pick up the black bowl on the ramekin and place it on the plate,119,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1561,32,pick up the black bowl on the ramekin and place it on the plate,121,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1562,32,pick up the black bowl on the ramekin and place it on the plate,117,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1577,32,pick up the black bowl on the ramekin and place it on the plate,111,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1594,32,pick up the black bowl on the ramekin and place it on the plate,110,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1598,32,pick up the black bowl on the ramekin and place it on the plate,129,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1605,32,pick up the black bowl on the ramekin and place it on the plate,119,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1626,32,pick up the black bowl on the ramekin and place it on the plate,112,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1635,32,pick up the black bowl on the ramekin and place it on the plate,109,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1646,32,pick up the black bowl on the ramekin and place it on the plate,98,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1647,32,pick up the black bowl on the ramekin and place it on the plate,120,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1680,32,pick up the black bowl on the ramekin and place it on the plate,98,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1684,32,pick up the black bowl on the ramekin and place it on the plate,102,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1685,32,pick up the black bowl on the ramekin and place it on the plate,138,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1689,32,pick up the black bowl on the ramekin and place it on the plate,102,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1692,32,pick up the black bowl on the ramekin and place it on the plate,109,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1267,33,pick up the black bowl on the stove and place it on the plate,124,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1269,33,pick up the black bowl on the stove and place it on the plate,139,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1270,33,pick up the black bowl on the stove and place it on the plate,148,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1308,33,pick up the black bowl on the stove and place it on the plate,142,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1311,33,pick up the black bowl on the stove and place it on the plate,140,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1325,33,pick up the black bowl on the stove and place it on the plate,135,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1362,33,pick up the black bowl on the stove and place it on the plate,144,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1364,33,pick up the black bowl on the stove and place it on the plate,167,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1369,33,pick up the black bowl on the stove and place it on the plate,133,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1381,33,pick up the black bowl on the stove and place it on the plate,128,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1384,33,pick up the black bowl on the stove and place it on the plate,126,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1389,33,pick up the black bowl on the stove and place it on the plate,136,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1398,33,pick up the black bowl on the stove and place it on the plate,142,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1407,33,pick up the black bowl on the stove and place it on the plate,130,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1422,33,pick up the black bowl on the stove and place it on the plate,129,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1423,33,pick up the black bowl on the stove and place it on the plate,137,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1424,33,pick up the black bowl on the stove and place it on the plate,129,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1492,33,pick up the black bowl on the stove and place it on the plate,137,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1516,33,pick up the black bowl on the stove and place it on the plate,136,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1538,33,pick up the black bowl on the stove and place it on the plate,145,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1553,33,pick up the black bowl on the stove and place it on the plate,133,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1571,33,pick up the black bowl on the stove and place it on the plate,133,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1585,33,pick up the black bowl on the stove and place it on the plate,128,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1590,33,pick up the black bowl on the stove and place it on the plate,164,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1593,33,pick up the black bowl on the stove and place it on the plate,124,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1616,33,pick up the black bowl on the stove and place it on the plate,124,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1631,33,pick up the black bowl on the stove and place it on the plate,120,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1634,33,pick up the black bowl on the stove and place it on the plate,125,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1636,33,pick up the black bowl on the stove and place it on the plate,140,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1637,33,pick up the black bowl on the stove and place it on the plate,141,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1654,33,pick up the black bowl on the stove and place it on the plate,128,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1667,33,pick up the black bowl on the stove and place it on the plate,132,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1673,33,pick up the black bowl on the stove and place it on the plate,130,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1675,33,pick up the black bowl on the stove and place it on the plate,138,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1691,33,pick up the black bowl on the stove and place it on the plate,140,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1272,34,pick up the black bowl between the plate and the ramekin and place it on the plate,84,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1273,34,pick up the black bowl between the plate and the ramekin and place it on the plate,85,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1275,34,pick up the black bowl between the plate and the ramekin and place it on the plate,128,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1282,34,pick up the black bowl between the plate and the ramekin and place it on the plate,84,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1300,34,pick up the black bowl between the plate and the ramekin and place it on the plate,102,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1327,34,pick up the black bowl between the plate and the ramekin and place it on the plate,124,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1330,34,pick up the black bowl between the plate and the ramekin and place it on the plate,168,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1344,34,pick up the black bowl between the plate and the ramekin and place it on the plate,112,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1347,34,pick up the black bowl between the plate and the ramekin and place it on the plate,92,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1352,34,pick up the black bowl between the plate and the ramekin and place it on the plate,96,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1368,34,pick up the black bowl between the plate and the ramekin and place it on the plate,88,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1379,34,pick up the black bowl between the plate and the ramekin and place it on the plate,75,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1382,34,pick up the black bowl between the plate and the ramekin and place it on the plate,121,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1395,34,pick up the black bowl between the plate and the ramekin and place it on the plate,87,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1397,34,pick up the black bowl between the plate and the ramekin and place it on the plate,95,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1401,34,pick up the black bowl between the plate and the ramekin and place it on the plate,89,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1410,34,pick up the black bowl between the plate and the ramekin and place it on the plate,89,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1425,34,pick up the black bowl between the plate and the ramekin and place it on the plate,86,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1449,34,pick up the black bowl between the plate and the ramekin and place it on the plate,93,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1450,34,pick up the black bowl between the plate and the ramekin and place it on the plate,92,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1491,34,pick up the black bowl between the plate and the ramekin and place it on the plate,100,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1493,34,pick up the black bowl between the plate and the ramekin and place it on the plate,84,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1500,34,pick up the black bowl between the plate and the ramekin and place it on the plate,91,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1504,34,pick up the black bowl between the plate and the ramekin and place it on the plate,89,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1506,34,pick up the black bowl between the plate and the ramekin and place it on the plate,79,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1517,34,pick up the black bowl between the plate and the ramekin and place it on the plate,127,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1527,34,pick up the black bowl between the plate and the ramekin and place it on the plate,134,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1532,34,pick up the black bowl between the plate and the ramekin and place it on the plate,96,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1560,34,pick up the black bowl between the plate and the ramekin and place it on the plate,105,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1563,34,pick up the black bowl between the plate and the ramekin and place it on the plate,151,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1567,34,pick up the black bowl between the plate and the ramekin and place it on the plate,92,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1568,34,pick up the black bowl between the plate and the ramekin and place it on the plate,92,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1574,34,pick up the black bowl between the plate and the ramekin and place it on the plate,105,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1579,34,pick up the black bowl between the plate and the ramekin and place it on the plate,108,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1583,34,pick up the black bowl between the plate and the ramekin and place it on the plate,97,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1589,34,pick up the black bowl between the plate and the ramekin and place it on the plate,93,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1597,34,pick up the black bowl between the plate and the ramekin and place it on the plate,96,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1602,34,pick up the black bowl between the plate and the ramekin and place it on the plate,95,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1615,34,pick up the black bowl between the plate and the ramekin and place it on the plate,90,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1617,34,pick up the black bowl between the plate and the ramekin and place it on the plate,92,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1642,34,pick up the black bowl between the plate and the ramekin and place it on the plate,90,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1660,34,pick up the black bowl between the plate and the ramekin and place it on the plate,92,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1669,34,pick up the black bowl between the plate and the ramekin and place it on the plate,98,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1672,34,pick up the black bowl between the plate and the ramekin and place it on the plate,113,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1679,34,pick up the black bowl between the plate and the ramekin and place it on the plate,88,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1278,35,pick up the black bowl on the cookie box and place it on the plate,101,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1279,35,pick up the black bowl on the cookie box and place it on the plate,96,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1303,35,pick up the black bowl on the cookie box and place it on the plate,119,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1319,35,pick up the black bowl on the cookie box and place it on the plate,102,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1321,35,pick up the black bowl on the cookie box and place it on the plate,111,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1324,35,pick up the black bowl on the cookie box and place it on the plate,99,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1328,35,pick up the black bowl on the cookie box and place it on the plate,111,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1357,35,pick up the black bowl on the cookie box and place it on the plate,95,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1366,35,pick up the black bowl on the cookie box and place it on the plate,94,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1367,35,pick up the black bowl on the cookie box and place it on the plate,89,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1378,35,pick up the black bowl on the cookie box and place it on the plate,115,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1386,35,pick up the black bowl on the cookie box and place it on the plate,97,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1391,35,pick up the black bowl on the cookie box and place it on the plate,96,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1405,35,pick up the black bowl on the cookie box and place it on the plate,92,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1437,35,pick up the black bowl on the cookie box and place it on the plate,100,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1452,35,pick up the black bowl on the cookie box and place it on the plate,96,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1457,35,pick up the black bowl on the cookie box and place it on the plate,96,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1463,35,pick up the black bowl on the cookie box and place it on the plate,97,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1468,35,pick up the black bowl on the cookie box and place it on the plate,95,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1475,35,pick up the black bowl on the cookie box and place it on the plate,111,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1487,35,pick up the black bowl on the cookie box and place it on the plate,103,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1489,35,pick up the black bowl on the cookie box and place it on the plate,86,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1522,35,pick up the black bowl on the cookie box and place it on the plate,97,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1528,35,pick up the black bowl on the cookie box and place it on the plate,113,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1535,35,pick up the black bowl on the cookie box and place it on the plate,92,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1548,35,pick up the black bowl on the cookie box and place it on the plate,96,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1554,35,pick up the black bowl on the cookie box and place it on the plate,101,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1569,35,pick up the black bowl on the cookie box and place it on the plate,103,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1570,35,pick up the black bowl on the cookie box and place it on the plate,106,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1578,35,pick up the black bowl on the cookie box and place it on the plate,99,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1580,35,pick up the black bowl on the cookie box and place it on the plate,100,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1592,35,pick up the black bowl on the cookie box and place it on the plate,95,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1600,35,pick up the black bowl on the cookie box and place it on the plate,97,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1608,35,pick up the black bowl on the cookie box and place it on the plate,89,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1610,35,pick up the black bowl on the cookie box and place it on the plate,92,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1618,35,pick up the black bowl on the cookie box and place it on the plate,90,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1629,35,pick up the black bowl on the cookie box and place it on the plate,100,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1638,35,pick up the black bowl on the cookie box and place it on the plate,99,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1650,35,pick up the black bowl on the cookie box and place it on the plate,129,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1658,35,pick up the black bowl on the cookie box and place it on the plate,101,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1659,35,pick up the black bowl on the cookie box and place it on the plate,98,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1662,35,pick up the black bowl on the cookie box and place it on the plate,99,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1670,35,pick up the black bowl on the cookie box and place it on the plate,90,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1280,36,pick up the black bowl next to the plate and place it on the plate,107,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1285,36,pick up the black bowl next to the plate and place it on the plate,125,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1293,36,pick up the black bowl next to the plate and place it on the plate,121,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1307,36,pick up the black bowl next to the plate and place it on the plate,138,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1332,36,pick up the black bowl next to the plate and place it on the plate,125,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1342,36,pick up the black bowl next to the plate and place it on the plate,126,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1346,36,pick up the black bowl next to the plate and place it on the plate,123,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1348,36,pick up the black bowl next to the plate and place it on the plate,114,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1363,36,pick up the black bowl next to the plate and place it on the plate,164,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1372,36,pick up the black bowl next to the plate and place it on the plate,115,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1387,36,pick up the black bowl next to the plate and place it on the plate,138,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1392,36,pick up the black bowl next to the plate and place it on the plate,122,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1393,36,pick up the black bowl next to the plate and place it on the plate,109,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1403,36,pick up the black bowl next to the plate and place it on the plate,137,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1409,36,pick up the black bowl next to the plate and place it on the plate,110,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1413,36,pick up the black bowl next to the plate and place it on the plate,97,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1417,36,pick up the black bowl next to the plate and place it on the plate,96,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1438,36,pick up the black bowl next to the plate and place it on the plate,106,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1451,36,pick up the black bowl next to the plate and place it on the plate,111,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1459,36,pick up the black bowl next to the plate and place it on the plate,100,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1464,36,pick up the black bowl next to the plate and place it on the plate,113,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1467,36,pick up the black bowl next to the plate and place it on the plate,109,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1471,36,pick up the black bowl next to the plate and place it on the plate,95,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1488,36,pick up the black bowl next to the plate and place it on the plate,133,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1503,36,pick up the black bowl next to the plate and place it on the plate,105,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1507,36,pick up the black bowl next to the plate and place it on the plate,107,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1513,36,pick up the black bowl next to the plate and place it on the plate,111,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1515,36,pick up the black bowl next to the plate and place it on the plate,114,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1533,36,pick up the black bowl next to the plate and place it on the plate,165,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1536,36,pick up the black bowl next to the plate and place it on the plate,121,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1540,36,pick up the black bowl next to the plate and place it on the plate,104,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1542,36,pick up the black bowl next to the plate and place it on the plate,117,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1546,36,pick up the black bowl next to the plate and place it on the plate,173,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1547,36,pick up the black bowl next to the plate and place it on the plate,104,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1552,36,pick up the black bowl next to the plate and place it on the plate,110,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1565,36,pick up the black bowl next to the plate and place it on the plate,110,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1572,36,pick up the black bowl next to the plate and place it on the plate,116,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1584,36,pick up the black bowl next to the plate and place it on the plate,115,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1599,36,pick up the black bowl next to the plate and place it on the plate,116,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1609,36,pick up the black bowl next to the plate and place it on the plate,99,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1621,36,pick up the black bowl next to the plate and place it on the plate,150,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1623,36,pick up the black bowl next to the plate and place it on the plate,127,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1630,36,pick up the black bowl next to the plate and place it on the plate,99,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1639,36,pick up the black bowl next to the plate and place it on the plate,116,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1648,36,pick up the black bowl next to the plate and place it on the plate,140,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1671,36,pick up the black bowl next to the plate and place it on the plate,120,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1678,36,pick up the black bowl next to the plate and place it on the plate,97,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1281,37,pick up the black bowl next to the ramekin and place it on the plate,112,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1286,37,pick up the black bowl next to the ramekin and place it on the plate,132,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1294,37,pick up the black bowl next to the ramekin and place it on the plate,120,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1297,37,pick up the black bowl next to the ramekin and place it on the plate,116,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1305,37,pick up the black bowl next to the ramekin and place it on the plate,143,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1318,37,pick up the black bowl next to the ramekin and place it on the plate,135,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1322,37,pick up the black bowl next to the ramekin and place it on the plate,120,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1323,37,pick up the black bowl next to the ramekin and place it on the plate,125,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1331,37,pick up the black bowl next to the ramekin and place it on the plate,137,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1350,37,pick up the black bowl next to the ramekin and place it on the plate,127,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1361,37,pick up the black bowl next to the ramekin and place it on the plate,133,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1370,37,pick up the black bowl next to the ramekin and place it on the plate,152,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1375,37,pick up the black bowl next to the ramekin and place it on the plate,125,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1376,37,pick up the black bowl next to the ramekin and place it on the plate,126,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1399,37,pick up the black bowl next to the ramekin and place it on the plate,145,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1406,37,pick up the black bowl next to the ramekin and place it on the plate,126,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1414,37,pick up the black bowl next to the ramekin and place it on the plate,155,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1427,37,pick up the black bowl next to the ramekin and place it on the plate,150,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1431,37,pick up the black bowl next to the ramekin and place it on the plate,134,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1436,37,pick up the black bowl next to the ramekin and place it on the plate,109,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1480,37,pick up the black bowl next to the ramekin and place it on the plate,127,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1486,37,pick up the black bowl next to the ramekin and place it on the plate,124,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1490,37,pick up the black bowl next to the ramekin and place it on the plate,127,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1495,37,pick up the black bowl next to the ramekin and place it on the plate,135,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1499,37,pick up the black bowl next to the ramekin and place it on the plate,117,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1501,37,pick up the black bowl next to the ramekin and place it on the plate,154,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1508,37,pick up the black bowl next to the ramekin and place it on the plate,113,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1529,37,pick up the black bowl next to the ramekin and place it on the plate,111,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1541,37,pick up the black bowl next to the ramekin and place it on the plate,143,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1550,37,pick up the black bowl next to the ramekin and place it on the plate,120,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1555,37,pick up the black bowl next to the ramekin and place it on the plate,131,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1558,37,pick up the black bowl next to the ramekin and place it on the plate,117,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1559,37,pick up the black bowl next to the ramekin and place it on the plate,112,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1587,37,pick up the black bowl next to the ramekin and place it on the plate,137,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1588,37,pick up the black bowl next to the ramekin and place it on the plate,189,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1596,37,pick up the black bowl next to the ramekin and place it on the plate,141,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1601,37,pick up the black bowl next to the ramekin and place it on the plate,134,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1614,37,pick up the black bowl next to the ramekin and place it on the plate,133,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1632,37,pick up the black bowl next to the ramekin and place it on the plate,123,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1649,37,pick up the black bowl next to the ramekin and place it on the plate,114,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1656,37,pick up the black bowl next to the ramekin and place it on the plate,129,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1664,37,pick up the black bowl next to the ramekin and place it on the plate,150,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1676,37,pick up the black bowl next to the ramekin and place it on the plate,140,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1681,37,pick up the black bowl next to the ramekin and place it on the plate,152,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1688,37,pick up the black bowl next to the ramekin and place it on the plate,145,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1283,38,pick up the black bowl from table center and place it on the plate,135,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1287,38,pick up the black bowl from table center and place it on the plate,100,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1289,38,pick up the black bowl from table center and place it on the plate,120,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1299,38,pick up the black bowl from table center and place it on the plate,121,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1310,38,pick up the black bowl from table center and place it on the plate,111,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1315,38,pick up the black bowl from table center and place it on the plate,106,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1316,38,pick up the black bowl from table center and place it on the plate,103,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1317,38,pick up the black bowl from table center and place it on the plate,114,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1320,38,pick up the black bowl from table center and place it on the plate,123,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1345,38,pick up the black bowl from table center and place it on the plate,109,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1353,38,pick up the black bowl from table center and place it on the plate,107,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1354,38,pick up the black bowl from table center and place it on the plate,138,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1358,38,pick up the black bowl from table center and place it on the plate,105,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1377,38,pick up the black bowl from table center and place it on the plate,134,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1380,38,pick up the black bowl from table center and place it on the plate,110,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1383,38,pick up the black bowl from table center and place it on the plate,114,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1385,38,pick up the black bowl from table center and place it on the plate,108,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1426,38,pick up the black bowl from table center and place it on the plate,115,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1428,38,pick up the black bowl from table center and place it on the plate,111,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1432,38,pick up the black bowl from table center and place it on the plate,131,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1440,38,pick up the black bowl from table center and place it on the plate,129,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1442,38,pick up the black bowl from table center and place it on the plate,124,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1445,38,pick up the black bowl from table center and place it on the plate,109,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1455,38,pick up the black bowl from table center and place it on the plate,143,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1460,38,pick up the black bowl from table center and place it on the plate,109,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1466,38,pick up the black bowl from table center and place it on the plate,125,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1478,38,pick up the black bowl from table center and place it on the plate,122,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1479,38,pick up the black bowl from table center and place it on the plate,115,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1483,38,pick up the black bowl from table center and place it on the plate,101,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1509,38,pick up the black bowl from table center and place it on the plate,123,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1510,38,pick up the black bowl from table center and place it on the plate,114,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1514,38,pick up the black bowl from table center and place it on the plate,119,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1545,38,pick up the black bowl from table center and place it on the plate,106,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1549,38,pick up the black bowl from table center and place it on the plate,125,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1556,38,pick up the black bowl from table center and place it on the plate,110,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1557,38,pick up the black bowl from table center and place it on the plate,98,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1573,38,pick up the black bowl from table center and place it on the plate,117,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1603,38,pick up the black bowl from table center and place it on the plate,122,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1622,38,pick up the black bowl from table center and place it on the plate,131,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1641,38,pick up the black bowl from table center and place it on the plate,93,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1652,38,pick up the black bowl from table center and place it on the plate,120,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1657,38,pick up the black bowl from table center and place it on the plate,126,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1665,38,pick up the black bowl from table center and place it on the plate,117,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1668,38,pick up the black bowl from table center and place it on the plate,102,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1682,38,pick up the black bowl from table center and place it on the plate,111,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1686,38,pick up the black bowl from table center and place it on the plate,117,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1290,39,pick up the black bowl on the wooden cabinet and place it on the plate,164,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1295,39,pick up the black bowl on the wooden cabinet and place it on the plate,137,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1296,39,pick up the black bowl on the wooden cabinet and place it on the plate,135,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1306,39,pick up the black bowl on the wooden cabinet and place it on the plate,132,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1312,39,pick up the black bowl on the wooden cabinet and place it on the plate,145,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1326,39,pick up the black bowl on the wooden cabinet and place it on the plate,144,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1335,39,pick up the black bowl on the wooden cabinet and place it on the plate,117,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1351,39,pick up the black bowl on the wooden cabinet and place it on the plate,125,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1355,39,pick up the black bowl on the wooden cabinet and place it on the plate,138,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1356,39,pick up the black bowl on the wooden cabinet and place it on the plate,137,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1390,39,pick up the black bowl on the wooden cabinet and place it on the plate,130,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1400,39,pick up the black bowl on the wooden cabinet and place it on the plate,140,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1402,39,pick up the black bowl on the wooden cabinet and place it on the plate,173,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1408,39,pick up the black bowl on the wooden cabinet and place it on the plate,136,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1411,39,pick up the black bowl on the wooden cabinet and place it on the plate,139,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1412,39,pick up the black bowl on the wooden cabinet and place it on the plate,145,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1419,39,pick up the black bowl on the wooden cabinet and place it on the plate,135,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1435,39,pick up the black bowl on the wooden cabinet and place it on the plate,142,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1439,39,pick up the black bowl on the wooden cabinet and place it on the plate,139,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1444,39,pick up the black bowl on the wooden cabinet and place it on the plate,136,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1447,39,pick up the black bowl on the wooden cabinet and place it on the plate,131,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1454,39,pick up the black bowl on the wooden cabinet and place it on the plate,145,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1458,39,pick up the black bowl on the wooden cabinet and place it on the plate,130,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1476,39,pick up the black bowl on the wooden cabinet and place it on the plate,125,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1477,39,pick up the black bowl on the wooden cabinet and place it on the plate,131,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1484,39,pick up the black bowl on the wooden cabinet and place it on the plate,182,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1497,39,pick up the black bowl on the wooden cabinet and place it on the plate,140,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1511,39,pick up the black bowl on the wooden cabinet and place it on the plate,124,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1512,39,pick up the black bowl on the wooden cabinet and place it on the plate,138,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1518,39,pick up the black bowl on the wooden cabinet and place it on the plate,133,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1520,39,pick up the black bowl on the wooden cabinet and place it on the plate,134,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1523,39,pick up the black bowl on the wooden cabinet and place it on the plate,130,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1530,39,pick up the black bowl on the wooden cabinet and place it on the plate,126,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1531,39,pick up the black bowl on the wooden cabinet and place it on the plate,142,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1566,39,pick up the black bowl on the wooden cabinet and place it on the plate,143,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1627,39,pick up the black bowl on the wooden cabinet and place it on the plate,136,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1628,39,pick up the black bowl on the wooden cabinet and place it on the plate,139,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1633,39,pick up the black bowl on the wooden cabinet and place it on the plate,193,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1643,39,pick up the black bowl on the wooden cabinet and place it on the plate,128,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1644,39,pick up the black bowl on the wooden cabinet and place it on the plate,136,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1653,39,pick up the black bowl on the wooden cabinet and place it on the plate,141,validation,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1674,39,pick up the black bowl on the wooden cabinet and place it on the plate,119,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1683,39,pick up the black bowl on the wooden cabinet and place it on the plate,124,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+1690,39,pick up the black bowl on the wooden cabinet and place it on the plate,133,train,42,0.2,lerobot/libero,a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4

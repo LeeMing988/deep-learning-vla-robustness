@@ -1,0 +1,12 @@
+check,pass
+dataset_revision_resolved,True
+spatial_tasks_expected_10,True
+spatial_episodes_positive,True
+all_episodes_single_task,True
+all_frame_indices_contiguous,True
+all_timestamps_monotonic,True
+actions_shape_7,True
+actions_all_finite,True
+states_all_finite,True
+no_zero_length_episodes,True
+all_tasks_have_episodes,True

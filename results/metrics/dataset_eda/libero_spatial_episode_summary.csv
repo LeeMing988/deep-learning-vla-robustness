@@ -1,0 +1,433 @@
+episode_index,task_index,n_frames,duration_s,frame_index_contiguous,timestamp_monotonic,n_unique_task_indices,task_instruction
+1261,30,110,10.899999618530273,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1262,31,138,13.699999809265137,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1263,31,127,12.600000381469727,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1264,32,100,9.899999618530273,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1265,32,116,11.5,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1266,32,107,10.600000381469727,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1267,33,124,12.300000190734863,True,True,1,pick up the black bowl on the stove and place it on the plate
+1268,31,129,12.800000190734863,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1269,33,139,13.800000190734863,True,True,1,pick up the black bowl on the stove and place it on the plate
+1270,33,148,14.699999809265137,True,True,1,pick up the black bowl on the stove and place it on the plate
+1271,32,101,10.0,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1272,34,84,8.300000190734863,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1273,34,85,8.399999618530273,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1274,30,113,11.199999809265137,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1275,34,128,12.699999809265137,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1276,31,140,13.899999618530273,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1277,30,111,11.0,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1278,35,101,10.0,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1279,35,96,9.5,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1280,36,107,10.600000381469727,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1281,37,112,11.100000381469727,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1282,34,84,8.300000190734863,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1283,38,135,13.399999618530273,True,True,1,pick up the black bowl from table center and place it on the plate
+1284,31,149,14.800000190734863,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1285,36,125,12.399999618530273,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1286,37,132,13.100000381469727,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1287,38,100,9.899999618530273,True,True,1,pick up the black bowl from table center and place it on the plate
+1288,32,86,8.5,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1289,38,120,11.899999618530273,True,True,1,pick up the black bowl from table center and place it on the plate
+1290,39,164,16.299999237060547,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1291,30,125,12.399999618530273,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1292,30,157,15.600000381469727,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1293,36,121,12.0,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1294,37,120,11.899999618530273,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1295,39,137,13.600000381469727,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1296,39,135,13.399999618530273,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1297,37,116,11.5,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1298,31,131,13.0,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1299,38,121,12.0,True,True,1,pick up the black bowl from table center and place it on the plate
+1300,34,102,10.100000381469727,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1301,30,141,14.0,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1302,31,156,15.5,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1303,35,119,11.800000190734863,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1304,30,113,11.199999809265137,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1305,37,143,14.199999809265137,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1306,39,132,13.100000381469727,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1307,36,138,13.699999809265137,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1308,33,142,14.100000381469727,True,True,1,pick up the black bowl on the stove and place it on the plate
+1309,30,115,11.399999618530273,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1310,38,111,11.0,True,True,1,pick up the black bowl from table center and place it on the plate
+1311,33,140,13.899999618530273,True,True,1,pick up the black bowl on the stove and place it on the plate
+1312,39,145,14.399999618530273,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1313,32,113,11.199999809265137,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1314,30,117,11.600000381469727,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1315,38,106,10.5,True,True,1,pick up the black bowl from table center and place it on the plate
+1316,38,103,10.199999809265137,True,True,1,pick up the black bowl from table center and place it on the plate
+1317,38,114,11.300000190734863,True,True,1,pick up the black bowl from table center and place it on the plate
+1318,37,135,13.399999618530273,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1319,35,102,10.100000381469727,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1320,38,123,12.199999809265137,True,True,1,pick up the black bowl from table center and place it on the plate
+1321,35,111,11.0,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1322,37,120,11.899999618530273,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1323,37,125,12.399999618530273,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1324,35,99,9.800000190734863,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1325,33,135,13.399999618530273,True,True,1,pick up the black bowl on the stove and place it on the plate
+1326,39,144,14.300000190734863,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1327,34,124,12.300000190734863,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1328,35,111,11.0,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1329,30,124,12.300000190734863,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1330,34,168,16.700000762939453,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1331,37,137,13.600000381469727,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1332,36,125,12.399999618530273,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1333,30,141,14.0,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1334,31,147,14.600000381469727,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1335,39,117,11.600000381469727,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1336,30,135,13.399999618530273,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1337,30,133,13.199999809265137,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1338,30,125,12.399999618530273,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1339,31,165,16.399999618530273,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1340,30,122,12.100000381469727,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1341,32,154,15.300000190734863,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1342,36,126,12.5,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1343,32,108,10.699999809265137,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1344,34,112,11.100000381469727,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1345,38,109,10.800000190734863,True,True,1,pick up the black bowl from table center and place it on the plate
+1346,36,123,12.199999809265137,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1347,34,92,9.100000381469727,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1348,36,114,11.300000190734863,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1349,31,153,15.199999809265137,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1350,37,127,12.600000381469727,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1351,39,125,12.399999618530273,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1352,34,96,9.5,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1353,38,107,10.600000381469727,True,True,1,pick up the black bowl from table center and place it on the plate
+1354,38,138,13.699999809265137,True,True,1,pick up the black bowl from table center and place it on the plate
+1355,39,138,13.699999809265137,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1356,39,137,13.600000381469727,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1357,35,95,9.399999618530273,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1358,38,105,10.399999618530273,True,True,1,pick up the black bowl from table center and place it on the plate
+1359,31,137,13.600000381469727,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1360,31,134,13.300000190734863,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1361,37,133,13.199999809265137,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1362,33,144,14.300000190734863,True,True,1,pick up the black bowl on the stove and place it on the plate
+1363,36,164,16.299999237060547,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1364,33,167,16.600000381469727,True,True,1,pick up the black bowl on the stove and place it on the plate
+1365,31,147,14.600000381469727,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1366,35,94,9.300000190734863,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1367,35,89,8.800000190734863,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1368,34,88,8.699999809265137,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1369,33,133,13.199999809265137,True,True,1,pick up the black bowl on the stove and place it on the plate
+1370,37,152,15.100000381469727,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1371,30,122,12.100000381469727,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1372,36,115,11.399999618530273,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1373,31,156,15.5,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1374,30,124,12.300000190734863,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1375,37,125,12.399999618530273,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1376,37,126,12.5,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1377,38,134,13.300000190734863,True,True,1,pick up the black bowl from table center and place it on the plate
+1378,35,115,11.399999618530273,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1379,34,75,7.400000095367432,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1380,38,110,10.899999618530273,True,True,1,pick up the black bowl from table center and place it on the plate
+1381,33,128,12.699999809265137,True,True,1,pick up the black bowl on the stove and place it on the plate
+1382,34,121,12.0,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1383,38,114,11.300000190734863,True,True,1,pick up the black bowl from table center and place it on the plate
+1384,33,126,12.5,True,True,1,pick up the black bowl on the stove and place it on the plate
+1385,38,108,10.699999809265137,True,True,1,pick up the black bowl from table center and place it on the plate
+1386,35,97,9.600000381469727,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1387,36,138,13.699999809265137,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1388,32,106,10.5,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1389,33,136,13.5,True,True,1,pick up the black bowl on the stove and place it on the plate
+1390,39,130,12.899999618530273,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1391,35,96,9.5,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1392,36,122,12.100000381469727,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1393,36,109,10.800000190734863,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1394,31,163,16.200000762939453,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1395,34,87,8.600000381469727,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1396,32,110,10.899999618530273,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1397,34,95,9.399999618530273,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1398,33,142,14.100000381469727,True,True,1,pick up the black bowl on the stove and place it on the plate
+1399,37,145,14.399999618530273,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1400,39,140,13.899999618530273,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1401,34,89,8.800000190734863,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1402,39,173,17.200000762939453,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1403,36,137,13.600000381469727,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1404,32,91,9.0,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1405,35,92,9.100000381469727,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1406,37,126,12.5,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1407,33,130,12.899999618530273,True,True,1,pick up the black bowl on the stove and place it on the plate
+1408,39,136,13.5,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1409,36,110,10.899999618530273,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1410,34,89,8.800000190734863,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1411,39,139,13.800000190734863,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1412,39,145,14.399999618530273,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1413,36,97,9.600000381469727,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1414,37,155,15.399999618530273,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1415,30,133,13.199999809265137,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1416,30,133,13.199999809265137,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1417,36,96,9.5,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1418,30,152,15.100000381469727,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1419,39,135,13.399999618530273,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1420,31,156,15.5,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1421,30,118,11.699999809265137,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1422,33,129,12.800000190734863,True,True,1,pick up the black bowl on the stove and place it on the plate
+1423,33,137,13.600000381469727,True,True,1,pick up the black bowl on the stove and place it on the plate
+1424,33,129,12.800000190734863,True,True,1,pick up the black bowl on the stove and place it on the plate
+1425,34,86,8.5,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1426,38,115,11.399999618530273,True,True,1,pick up the black bowl from table center and place it on the plate
+1427,37,150,14.899999618530273,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1428,38,111,11.0,True,True,1,pick up the black bowl from table center and place it on the plate
+1429,30,123,12.199999809265137,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1430,31,169,16.799999237060547,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1431,37,134,13.300000190734863,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1432,38,131,13.0,True,True,1,pick up the black bowl from table center and place it on the plate
+1433,32,142,14.100000381469727,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1434,31,134,13.300000190734863,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1435,39,142,14.100000381469727,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1436,37,109,10.800000190734863,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1437,35,100,9.899999618530273,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1438,36,106,10.5,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1439,39,139,13.800000190734863,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1440,38,129,12.800000190734863,True,True,1,pick up the black bowl from table center and place it on the plate
+1441,31,153,15.199999809265137,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1442,38,124,12.300000190734863,True,True,1,pick up the black bowl from table center and place it on the plate
+1443,32,128,12.699999809265137,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1444,39,136,13.5,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1445,38,109,10.800000190734863,True,True,1,pick up the black bowl from table center and place it on the plate
+1446,30,106,10.5,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1447,39,131,13.0,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1448,30,119,11.800000190734863,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1449,34,93,9.199999809265137,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1450,34,92,9.100000381469727,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1451,36,111,11.0,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1452,35,96,9.5,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1453,31,158,15.699999809265137,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1454,39,145,14.399999618530273,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1455,38,143,14.199999809265137,True,True,1,pick up the black bowl from table center and place it on the plate
+1456,30,129,12.800000190734863,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1457,35,96,9.5,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1458,39,130,12.899999618530273,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1459,36,100,9.899999618530273,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1460,38,109,10.800000190734863,True,True,1,pick up the black bowl from table center and place it on the plate
+1461,31,167,16.600000381469727,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1462,32,129,12.800000190734863,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1463,35,97,9.600000381469727,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1464,36,113,11.199999809265137,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1465,32,111,11.0,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1466,38,125,12.399999618530273,True,True,1,pick up the black bowl from table center and place it on the plate
+1467,36,109,10.800000190734863,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1468,35,95,9.399999618530273,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1469,32,137,13.600000381469727,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1470,31,159,15.800000190734863,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1471,36,95,9.399999618530273,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1472,30,122,12.100000381469727,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1473,30,124,12.300000190734863,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1474,31,158,15.699999809265137,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1475,35,111,11.0,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1476,39,125,12.399999618530273,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1477,39,131,13.0,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1478,38,122,12.100000381469727,True,True,1,pick up the black bowl from table center and place it on the plate
+1479,38,115,11.399999618530273,True,True,1,pick up the black bowl from table center and place it on the plate
+1480,37,127,12.600000381469727,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1481,32,118,11.699999809265137,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1482,32,98,9.699999809265137,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1483,38,101,10.0,True,True,1,pick up the black bowl from table center and place it on the plate
+1484,39,182,18.100000381469727,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1485,30,123,12.199999809265137,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1486,37,124,12.300000190734863,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1487,35,103,10.199999809265137,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1488,36,133,13.199999809265137,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1489,35,86,8.5,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1490,37,127,12.600000381469727,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1491,34,100,9.899999618530273,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1492,33,137,13.600000381469727,True,True,1,pick up the black bowl on the stove and place it on the plate
+1493,34,84,8.300000190734863,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1494,31,142,14.100000381469727,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1495,37,135,13.399999618530273,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1496,32,100,9.899999618530273,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1497,39,140,13.899999618530273,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1498,32,131,13.0,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1499,37,117,11.600000381469727,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1500,34,91,9.0,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1501,37,154,15.300000190734863,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1502,30,146,14.5,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1503,36,105,10.399999618530273,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1504,34,89,8.800000190734863,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1505,31,150,14.899999618530273,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1506,34,79,7.800000190734863,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1507,36,107,10.600000381469727,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1508,37,113,11.199999809265137,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1509,38,123,12.199999809265137,True,True,1,pick up the black bowl from table center and place it on the plate
+1510,38,114,11.300000190734863,True,True,1,pick up the black bowl from table center and place it on the plate
+1511,39,124,12.300000190734863,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1512,39,138,13.699999809265137,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1513,36,111,11.0,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1514,38,119,11.800000190734863,True,True,1,pick up the black bowl from table center and place it on the plate
+1515,36,114,11.300000190734863,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1516,33,136,13.5,True,True,1,pick up the black bowl on the stove and place it on the plate
+1517,34,127,12.600000381469727,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1518,39,133,13.199999809265137,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1519,32,121,12.0,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1520,39,134,13.300000190734863,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1521,32,128,12.699999809265137,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1522,35,97,9.600000381469727,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1523,39,130,12.899999618530273,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1524,32,123,12.199999809265137,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1525,32,119,11.800000190734863,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1526,30,130,12.899999618530273,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1527,34,134,13.300000190734863,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1528,35,113,11.199999809265137,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1529,37,111,11.0,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1530,39,126,12.5,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1531,39,142,14.100000381469727,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1532,34,96,9.5,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1533,36,165,16.399999618530273,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1534,30,127,12.600000381469727,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1535,35,92,9.100000381469727,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1536,36,121,12.0,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1537,31,132,13.100000381469727,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1538,33,145,14.399999618530273,True,True,1,pick up the black bowl on the stove and place it on the plate
+1539,30,122,12.100000381469727,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1540,36,104,10.300000190734863,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1541,37,143,14.199999809265137,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1542,36,117,11.600000381469727,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1543,31,145,14.399999618530273,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1544,30,121,12.0,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1545,38,106,10.5,True,True,1,pick up the black bowl from table center and place it on the plate
+1546,36,173,17.200000762939453,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1547,36,104,10.300000190734863,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1548,35,96,9.5,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1549,38,125,12.399999618530273,True,True,1,pick up the black bowl from table center and place it on the plate
+1550,37,120,11.899999618530273,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1551,31,151,15.0,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1552,36,110,10.899999618530273,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1553,33,133,13.199999809265137,True,True,1,pick up the black bowl on the stove and place it on the plate
+1554,35,101,10.0,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1555,37,131,13.0,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1556,38,110,10.899999618530273,True,True,1,pick up the black bowl from table center and place it on the plate
+1557,38,98,9.699999809265137,True,True,1,pick up the black bowl from table center and place it on the plate
+1558,37,117,11.600000381469727,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1559,37,112,11.100000381469727,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1560,34,105,10.399999618530273,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1561,32,121,12.0,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1562,32,117,11.600000381469727,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1563,34,151,15.0,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1564,30,114,11.300000190734863,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1565,36,110,10.899999618530273,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1566,39,143,14.199999809265137,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1567,34,92,9.100000381469727,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1568,34,92,9.100000381469727,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1569,35,103,10.199999809265137,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1570,35,106,10.5,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1571,33,133,13.199999809265137,True,True,1,pick up the black bowl on the stove and place it on the plate
+1572,36,116,11.5,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1573,38,117,11.600000381469727,True,True,1,pick up the black bowl from table center and place it on the plate
+1574,34,105,10.399999618530273,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1575,30,133,13.199999809265137,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1576,31,158,15.699999809265137,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1577,32,111,11.0,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1578,35,99,9.800000190734863,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1579,34,108,10.699999809265137,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1580,35,100,9.899999618530273,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1581,31,132,13.100000381469727,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1582,31,137,13.600000381469727,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1583,34,97,9.600000381469727,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1584,36,115,11.399999618530273,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1585,33,128,12.699999809265137,True,True,1,pick up the black bowl on the stove and place it on the plate
+1586,31,131,13.0,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1587,37,137,13.600000381469727,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1588,37,189,18.799999237060547,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1589,34,93,9.199999809265137,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1590,33,164,16.299999237060547,True,True,1,pick up the black bowl on the stove and place it on the plate
+1591,31,170,16.899999618530273,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1592,35,95,9.399999618530273,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1593,33,124,12.300000190734863,True,True,1,pick up the black bowl on the stove and place it on the plate
+1594,32,110,10.899999618530273,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1595,31,139,13.800000190734863,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1596,37,141,14.0,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1597,34,96,9.5,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1598,32,129,12.800000190734863,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1599,36,116,11.5,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1600,35,97,9.600000381469727,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1601,37,134,13.300000190734863,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1602,34,95,9.399999618530273,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1603,38,122,12.100000381469727,True,True,1,pick up the black bowl from table center and place it on the plate
+1604,30,120,11.899999618530273,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1605,32,119,11.800000190734863,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1606,30,113,11.199999809265137,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1607,30,137,13.600000381469727,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1608,35,89,8.800000190734863,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1609,36,99,9.800000190734863,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1610,35,92,9.100000381469727,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1611,30,123,12.199999809265137,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1612,30,124,12.300000190734863,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1613,30,108,10.699999809265137,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1614,37,133,13.199999809265137,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1615,34,90,8.899999618530273,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1616,33,124,12.300000190734863,True,True,1,pick up the black bowl on the stove and place it on the plate
+1617,34,92,9.100000381469727,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1618,35,90,8.899999618530273,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1619,31,156,15.5,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1620,31,162,16.100000381469727,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1621,36,150,14.899999618530273,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1622,38,131,13.0,True,True,1,pick up the black bowl from table center and place it on the plate
+1623,36,127,12.600000381469727,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1624,30,108,10.699999809265137,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1625,31,149,14.800000190734863,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1626,32,112,11.100000381469727,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1627,39,136,13.5,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1628,39,139,13.800000190734863,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1629,35,100,9.899999618530273,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1630,36,99,9.800000190734863,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1631,33,120,11.899999618530273,True,True,1,pick up the black bowl on the stove and place it on the plate
+1632,37,123,12.199999809265137,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1633,39,193,19.200000762939453,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1634,33,125,12.399999618530273,True,True,1,pick up the black bowl on the stove and place it on the plate
+1635,32,109,10.800000190734863,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1636,33,140,13.899999618530273,True,True,1,pick up the black bowl on the stove and place it on the plate
+1637,33,141,14.0,True,True,1,pick up the black bowl on the stove and place it on the plate
+1638,35,99,9.800000190734863,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1639,36,116,11.5,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1640,31,172,17.100000381469727,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1641,38,93,9.199999809265137,True,True,1,pick up the black bowl from table center and place it on the plate
+1642,34,90,8.899999618530273,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1643,39,128,12.699999809265137,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1644,39,136,13.5,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1645,30,155,15.399999618530273,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1646,32,98,9.699999809265137,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1647,32,120,11.899999618530273,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1648,36,140,13.899999618530273,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1649,37,114,11.300000190734863,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1650,35,129,12.800000190734863,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1651,31,182,18.100000381469727,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1652,38,120,11.899999618530273,True,True,1,pick up the black bowl from table center and place it on the plate
+1653,39,141,14.0,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1654,33,128,12.699999809265137,True,True,1,pick up the black bowl on the stove and place it on the plate
+1655,30,124,12.300000190734863,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1656,37,129,12.800000190734863,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1657,38,126,12.5,True,True,1,pick up the black bowl from table center and place it on the plate
+1658,35,101,10.0,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1659,35,98,9.699999809265137,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1660,34,92,9.100000381469727,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1661,30,130,12.899999618530273,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1662,35,99,9.800000190734863,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1663,31,138,13.699999809265137,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1664,37,150,14.899999618530273,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1665,38,117,11.600000381469727,True,True,1,pick up the black bowl from table center and place it on the plate
+1666,30,130,12.899999618530273,True,True,1,pick up the black bowl next to the cookie box and place it on the plate
+1667,33,132,13.100000381469727,True,True,1,pick up the black bowl on the stove and place it on the plate
+1668,38,102,10.100000381469727,True,True,1,pick up the black bowl from table center and place it on the plate
+1669,34,98,9.699999809265137,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1670,35,90,8.899999618530273,True,True,1,pick up the black bowl on the cookie box and place it on the plate
+1671,36,120,11.899999618530273,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1672,34,113,11.199999809265137,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1673,33,130,12.899999618530273,True,True,1,pick up the black bowl on the stove and place it on the plate
+1674,39,119,11.800000190734863,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1675,33,138,13.699999809265137,True,True,1,pick up the black bowl on the stove and place it on the plate
+1676,37,140,13.899999618530273,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1677,31,142,14.100000381469727,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1678,36,97,9.600000381469727,True,True,1,pick up the black bowl next to the plate and place it on the plate
+1679,34,88,8.699999809265137,True,True,1,pick up the black bowl between the plate and the ramekin and place it on the plate
+1680,32,98,9.699999809265137,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1681,37,152,15.100000381469727,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1682,38,111,11.0,True,True,1,pick up the black bowl from table center and place it on the plate
+1683,39,124,12.300000190734863,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1684,32,102,10.100000381469727,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1685,32,138,13.699999809265137,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1686,38,117,11.600000381469727,True,True,1,pick up the black bowl from table center and place it on the plate
+1687,31,143,14.199999809265137,True,True,1,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+1688,37,145,14.399999618530273,True,True,1,pick up the black bowl next to the ramekin and place it on the plate
+1689,32,102,10.100000381469727,True,True,1,pick up the black bowl on the ramekin and place it on the plate
+1690,39,133,13.199999809265137,True,True,1,pick up the black bowl on the wooden cabinet and place it on the plate
+1691,33,140,13.899999618530273,True,True,1,pick up the black bowl on the stove and place it on the plate
+1692,32,109,10.800000190734863,True,True,1,pick up the black bowl on the ramekin and place it on the plate
