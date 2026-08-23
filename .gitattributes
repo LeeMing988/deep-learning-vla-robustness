@@ -1,0 +1,14 @@
+# Normalize text files to Unix LF line endings
+* text=auto eol=lf
+
+# Binary files - do not modify
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.pt binary
+*.pth binary
+*.ckpt binary
+*.safetensors binary

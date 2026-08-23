@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+
+# Model checkpoints / weights
+models/
+checkpoints/
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+
+# ML caches
+.cache/
+hf_cache/
+huggingface_cache/
+libero_cache/
+
+# Experiment trackers
+wandb/
+runs/
+
+# Large generated outputs
+results/videos/
+results/checkpoints/
+results/raw/
+
+# OS / temp
+.DS_Store
+Thumbs.db
+*.tmp
+*.log

@@ -1,0 +1,64 @@
+=== DATE ===
+2026-08-23T14:23:08+08:00
+
+=== OS ===
+PRETTY_NAME="Ubuntu 24.04.3 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.3 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+
+=== KERNEL ===
+Linux LeeMing 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+=== PYTHON ===
+Python 3.12.14
+/home/leeming/miniforge3/envs/vla-libero/bin/python
+
+=== CONDA ===
+conda 26.5.3
+Environment: vla-libero
+
+=== GPU ===
+Sun Aug 23 14:23:08 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 610.57.01              KMD Version: 610.88        CUDA UMD Version: 13.3     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5090        On  |   00000000:01:00.0  On |                  N/A |
+| 30%   38C    P0             64W /  575W |    2039MiB /  32607MiB |      1%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+=== PYTORCH / CUDA ===
+PyTorch: 2.11.0+cu128
+CUDA runtime: 12.8
+CUDA available: True
+GPU: NVIDIA GeForce RTX 5090
+Compute capability: (12, 0)
+
+=== LEROBOT ===
+v0.6.1
+7e241bd630a3719a56157a497ce5d08f244784f1
+
+=== MUJOCO ===
+MuJoCo: 3.8.1

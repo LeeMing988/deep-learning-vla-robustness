@@ -1,0 +1,13 @@
+name: vla-libero
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.12
+  - pip
+  - evdev=1.9.3
+  - ffmpeg=9.0.1
+  - ninja=1.13.2
+  - pip:
+      - cmake==4.1.3
