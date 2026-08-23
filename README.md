@@ -1,245 +1,221 @@
-# Robustness-Enhanced Vision-Language-Action Learning
+# deep-learning-vla-robustness
 
-## Generalizable Robotic Manipulation under Linguistic and Environmental Distribution Shifts
-
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.11.0-orange)
-![CUDA](https://img.shields.io/badge/CUDA-12.8-green)
+![Python](https://img.shields.io/badge/python-3.12.14-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.11.0%2Bcu128-ee4c2c)
+![CUDA](https://img.shields.io/badge/CUDA-12.8-76B900)
 ![LeRobot](https://img.shields.io/badge/LeRobot-0.6.1-yellow)
 ![MuJoCo](https://img.shields.io/badge/MuJoCo-3.8.1-red)
-![LIBERO](https://img.shields.io/badge/LIBERO-Spatial-purple)
-![Status](https://img.shields.io/badge/Research-In%20Progress-blueviolet)
+![Benchmark](https://img.shields.io/badge/benchmark-LIBERO--Spatial-purple)
+![Study](https://img.shields.io/badge/study-VLA%20robustness-blueviolet)
+![License](https://img.shields.io/badge/license-Academic-orange)
+![Status](https://img.shields.io/badge/status-In%20Progress-blue)
 
-> Deep Learning research project investigating robustness and out-of-distribution generalization in Vision-Language-Action policies for robotic manipulation.
+A Deep Learning study of **robustness-enhanced Vision-Language-Action (VLA) learning** for generalizable robotic manipulation under **linguistic and environmental distribution shifts**.
 
----
-
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [Research Motivation](#research-motivation)
-- [Research Aim](#research-aim)
-- [Research Questions](#research-questions)
-- [Research Hypotheses](#research-hypotheses)
-- [Research Framework](#research-framework)
-- [Model Design](#model-design)
-- [Benchmark and Dataset](#benchmark-and-dataset)
-- [Perturbation Framework](#perturbation-framework)
-- [Evaluation Strategy](#evaluation-strategy)
-- [Primary Metrics](#primary-metrics)
-- [Failure Analysis](#failure-analysis)
-- [Experimental Environment](#experimental-environment)
-- [Validated GPU Pipeline](#validated-gpu-pipeline)
-- [LIBERO Simulation Validation](#libero-simulation-validation)
-- [Technical Compatibility Gate](#technical-compatibility-gate)
-- [Repository Structure](#repository-structure)
-- [Notebook Plan](#notebook-plan)
-- [Reproducibility](#reproducibility)
-- [Experiment Tracking](#experiment-tracking)
-- [Project Roadmap](#project-roadmap)
-- [Current Status](#current-status)
-- [Disclaimer](#disclaimer)
+| Field | Details |
+|---|---|
+| **Author** | YEOH LEE MING |
+| **Course** | Deep Learning — Master in Artificial Intelligence |
+| **Module Code** | `CT100-3-M-DL` |
+| **Institution** | Asia Pacific University of Technology & Innovation (APU) |
+| **Assessment Structure** | Assignment 1 — 40% · Assignment 2 — 60% |
+| **Project Type** | Single continuous Deep Learning research project |
+| **Primary Model** | SmolVLA |
+| **Primary Benchmark** | LIBERO-Spatial |
+| **Robustness Benchmark** | LIBERO-Plus — subject to methodology gate |
+| **Framework** | Hugging Face LeRobot |
+| **Simulation** | MuJoCo |
+| **Year** | 2026 |
 
 ---
 
-# Project Overview
+## Project overview
 
-Vision-Language-Action (VLA) models combine:
+Vision-Language-Action (VLA) models combine **visual perception, natural-language understanding and robotic control** within a unified policy that predicts robot actions from multimodal observations.
 
-- visual perception,
-- natural-language understanding, and
-- robotic control
+Recent VLA models demonstrate strong performance on standard robotic manipulation benchmarks. However, strong in-distribution benchmark performance does not necessarily imply that a policy remains reliable when its deployment conditions differ from those observed during training.
 
-within a unified policy capable of generating robot actions from multimodal observations.
+A robotic manipulation policy may encounter changes such as:
 
-Recent VLA systems demonstrate strong performance on standard robotic manipulation benchmarks. However, high benchmark performance does not necessarily imply robustness when the deployment environment differs from the model's training distribution.
+- semantically equivalent but differently worded instructions,
+- altered object layouts,
+- changed camera viewpoints,
+- different robot initial states,
+- lighting variation,
+- background changes,
+- sensor noise.
 
-Changes in:
+This project investigates whether **controlled robustness-oriented fine-tuning** can improve the ability of an efficient VLA policy to generalize across these distribution shifts while maintaining its standard manipulation performance.
 
-- natural-language instructions,
-- object arrangement,
-- camera viewpoint,
-- lighting,
-- background appearance,
-- robot initial state,
-- sensor observations,
+The primary model is **SmolVLA**, an efficient VLA architecture integrated through Hugging Face **LeRobot**. The primary experimental benchmark is **LIBERO-Spatial**, with **LIBERO-Plus** being evaluated as a standardized source of robustness perturbations.
 
-may substantially reduce manipulation performance.
+### Central research problem
 
-This project investigates whether **controlled robustness-oriented fine-tuning** can improve the generalization of an efficient VLA policy under linguistic and environmental distribution shifts while preserving standard in-distribution performance.
-
-The primary VLA architecture used in this research is **SmolVLA**, integrated through the **LeRobot** framework and evaluated using the **LIBERO robotic manipulation benchmark**.
+> **Can robustness-oriented fine-tuning improve VLA robotic manipulation performance under linguistic and environmental distribution shifts without substantially degrading standard in-distribution performance?**
 
 ---
 
-# Research Motivation
+## Assessment alignment
 
-A robot deployed outside a controlled benchmark environment cannot assume that every observation will match its training data.
+This repository supports both components of the Deep Learning module as one continuous research project.
 
-For example, a robot may receive:
+| Component | Weight | Repository focus |
+|---|---:|---|
+| **Assignment 1** | **40%** | Domain background, VLA literature, deep-learning architectures, research problem, methodology, benchmark selection and experimental design |
+| **Assignment 2 — Model Implementation, Tuning & Validation** | **42%** | SmolVLA implementation, baseline reproduction, fine-tuning, hyperparameter tuning, validation and final model building |
+| **Assignment 2 — Visualization & Critical Analysis** | **18%** | Performance visualization, robustness analysis, ablation studies, failure analysis and critical interpretation |
 
-```text
-Pick up the black bowl and place it on the plate.
-```
-
-but later encounter a semantically equivalent instruction such as:
-
-```text
-Move the black bowl onto the plate.
-```
-
-Similarly, the task may remain unchanged while:
-
-- the object appears at a different location,
-- the camera is moved,
-- lighting changes,
-- the background changes,
-- sensor observations become noisy.
-
-A policy that succeeds only under the original benchmark configuration may therefore have limited practical robustness.
-
-The central research problem is:
-
-> **Can robustness-oriented fine-tuning improve VLA manipulation performance under controlled distribution shifts without significantly degrading standard benchmark performance?**
+The final academic deliverable is a **single consolidated Deep Learning report** supported by reproducible Python notebooks and experimental outputs.
 
 ---
 
-# Research Aim
+## Research aim
 
 To investigate whether robustness-oriented fine-tuning improves the generalization of efficient Vision-Language-Action policies for robotic manipulation under controlled linguistic and environmental distribution shifts.
 
 ---
 
-# Research Questions
+## Research objectives
 
-## RQ1 — Overall Robustness
-
-To what extent does robustness-oriented fine-tuning improve both seen-perturbation robustness and generalization to unseen perturbation categories in VLA robotic manipulation?
-
-## RQ2 — Linguistic Robustness
-
-At what level of linguistic variation does SmolVLA manipulation performance begin to degrade, and can language-aware fine-tuning reduce this degradation?
-
-## RQ3 — Environmental Sensitivity
-
-Which environmental perturbation dimensions most strongly reduce VLA manipulation performance?
-
-## RQ4 — Held-Out Generalization
-
-Does robustness training on selected perturbation categories transfer to perturbation categories absent during training?
-
-## RQ5 — Robustness–Performance Trade-Off
-
-Does improved out-of-distribution robustness reduce standard in-distribution manipulation performance?
+1. Establish a reproducible SmolVLA + LeRobot + LIBERO experimental environment.
+2. Reproduce and audit the performance of an existing LIBERO-fine-tuned SmolVLA checkpoint.
+3. Establish a standard SmolVLA fine-tuning baseline.
+4. Measure performance degradation under controlled linguistic and environmental perturbations.
+5. Develop language-aware and environment-aware robustness fine-tuning strategies.
+6. Evaluate whether robustness learned from selected perturbations transfers to unseen perturbation categories.
+7. Quantify the trade-off between in-distribution performance and out-of-distribution robustness.
+8. Analyse failures, uncertainty and limitations of the resulting models.
 
 ---
 
-# Research Hypotheses
+## Research questions
 
-### H1 — Linguistic Robustness
+- **RQ1.** To what extent does robustness-oriented fine-tuning improve both seen-perturbation robustness and generalization to unseen perturbation categories in VLA robotic manipulation?
 
-Language-augmented fine-tuning will reduce performance degradation under unseen but semantically equivalent task instructions.
+- **RQ2.** At what level of linguistic variation does SmolVLA manipulation performance begin to degrade, and can language-aware fine-tuning reduce this degradation?
 
-A null result may indicate that the pretrained language/vision representation already provides substantial linguistic invariance.
+- **RQ3.** Which environmental perturbation dimensions most strongly reduce VLA manipulation performance?
 
-### H2 — Seen Perturbation Robustness
+- **RQ4.** Does robustness training on selected perturbation categories transfer to categories absent during training?
 
-Robustness-oriented training will improve manipulation success under perturbation categories observed during training.
-
-### H3 — Held-Out Generalization
-
-Robustness training will transfer to at least some environmental perturbation categories absent during training.
-
-### H4 — Generalization Gap
-
-The combined robustness model will exhibit a smaller in-distribution to out-of-distribution generalization gap than the standard fine-tuning baseline.
-
-### H5 — In-Distribution Trade-Off
-
-Robustness improvements may preserve or slightly reduce standard benchmark performance in exchange for improved OOD generalization.
+- **RQ5.** Does improved out-of-distribution robustness reduce standard in-distribution performance?
 
 ---
 
-# Research Framework
+## Research hypotheses
 
-The research follows the general experimental structure below:
-
-```text
-                     ┌─────────────────────┐
-                     │     SmolVLA VLA     │
-                     └──────────┬──────────┘
-                                │
-                                ▼
-                     ┌─────────────────────┐
-                     │    LIBERO-Spatial   │
-                     │  Manipulation Tasks │
-                     └──────────┬──────────┘
-                                │
-               ┌────────────────┴────────────────┐
-               │                                 │
-               ▼                                 ▼
-      Standard Fine-Tuning              Robustness Fine-Tuning
-              M1                         M2-L / M2-E / M2-LE
-               │                                 │
-               └────────────────┬────────────────┘
-                                │
-                                ▼
-                    Controlled Evaluation
-                                │
-              ┌─────────────────┼─────────────────┐
-              │                 │                 │
-              ▼                 ▼                 ▼
-             E0                E1               E2/E3
-       In-Distribution     Linguistic         Environmental
-                            Shift               Shift
-                                │
-                                ▼
-                   Success / Robustness Analysis
-```
-
----
-
-# Model Design
-
-The study separates checkpoint reproducibility, standard fine-tuning, and robustness-oriented fine-tuning.
-
-| Model | Description |
+| Hypothesis | Description |
 |---|---|
-| **M0** | Released LIBERO-fine-tuned SmolVLA checkpoint used for reproducibility and evaluation auditing |
-| **M1** | Standard SmolVLA fine-tuning baseline |
-| **M2-L** | SmolVLA with linguistic robustness-oriented fine-tuning |
-| **M2-E** | SmolVLA with environmental robustness-oriented fine-tuning |
-| **M2-LE** | Combined linguistic + environmental robustness model |
+| **H1** | Language-aware fine-tuning will reduce degradation under unseen but semantically equivalent task instructions. |
+| **H2** | Robustness-oriented training will improve performance under environmental perturbations represented during training. |
+| **H3** | Robustness training will transfer to at least some perturbation categories absent during training. |
+| **H4** | The combined robustness model will produce a smaller in-distribution → out-of-distribution generalization gap than standard fine-tuning. |
+| **H5** | Robustness improvements may preserve or slightly reduce standard performance in exchange for improved OOD generalization. |
 
-The primary final comparison is planned as:
+A null linguistic result will also be considered meaningful if the pretrained VLA representation already provides substantial linguistic invariance.
+
+---
+
+## Experimental design
+
+The project separates **checkpoint reproducibility**, **standard fine-tuning**, and **robustness-oriented fine-tuning**.
+
+| Model | Role |
+|---|---|
+| **M0** | Released LIBERO-fine-tuned SmolVLA checkpoint — reproducibility / evaluation audit |
+| **M1** | Standard SmolVLA fine-tuning baseline |
+| **M2-L** | Linguistic robustness fine-tuning |
+| **M2-E** | Environmental robustness fine-tuning |
+| **M2-LE** | Combined linguistic + environmental robustness fine-tuning |
+
+The main final comparison is planned as:
 
 ```text
-M1
-Standard Fine-Tuning
-        VS
-M2-LE
-Combined Robustness Fine-Tuning
+M1 — Standard Fine-Tuning
+          vs
+M2-LE — Combined Robustness Fine-Tuning
 ```
 
-Supporting ablation analysis will compare:
+with the following supporting ablation:
 
 ```text
-M1
-│
-├── M2-L
-├── M2-E
-└── M2-LE
+                 M1
+                  │
+        ┌─────────┼─────────┐
+        │         │         │
+      M2-L      M2-E      M2-LE
+    Language  Environment  Combined
 ```
 
 ---
 
-# Benchmark and Dataset
+## Experimental framework
 
-## LIBERO
+```text
+                         SmolVLA
+                            │
+                            ▼
+                     LIBERO-Spatial
+                            │
+              ┌─────────────┴─────────────┐
+              │                           │
+              ▼                           ▼
+      Standard Fine-Tuning       Robustness Fine-Tuning
+              M1              M2-L / M2-E / M2-LE
+              │                           │
+              └─────────────┬─────────────┘
+                            │
+                            ▼
+                   Controlled Evaluation
+                            │
+        ┌───────────────────┼───────────────────┐
+        │                   │                   │
+        ▼                   ▼                   ▼
+       E0                  E1                E2 / E3
+ In-Distribution        Language           Environmental
+                         Shift                Shift
+                            │
+                            ▼
+             Success · Robustness · Failure Analysis
+```
 
-LIBERO is used as the primary robotic manipulation benchmark.
+---
 
-The validated installation currently exposes the following suites:
+## Benchmark
+
+### LIBERO-Spatial
+
+**LIBERO-Spatial** is the primary benchmark suite for the initial experiments.
+
+The validated installation exposes **10 manipulation tasks** involving closely related goals under different spatial configurations.
+
+Examples include:
+
+```text
+pick up the black bowl between the plate and the ramekin
+and place it on the plate
+```
+
+```text
+pick up the black bowl next to the ramekin
+and place it on the plate
+```
+
+```text
+pick up the black bowl from table center
+and place it on the plate
+```
+
+```text
+pick up the black bowl on the stove
+and place it on the plate
+```
+
+The suite therefore provides a controlled environment for investigating spatial sensitivity and manipulation generalization.
+
+### Validated benchmark suites
+
+The current LIBERO installation successfully discovers:
 
 ```text
 libero_10
@@ -252,99 +228,67 @@ libero_spatial
 
 ---
 
-## LIBERO-Spatial
+## LIBERO-Plus robustness benchmark
 
-**LIBERO-Spatial** is the primary benchmark suite selected for the initial study.
+LIBERO-Plus is being evaluated as the standardized benchmark for distribution-shift testing.
 
-The suite contains **10 manipulation tasks** focused on spatial relationships.
+Its perturbation dimensions are relevant to this research:
 
-The tasks maintain a closely related manipulation objective while varying the initial spatial location of the target object.
+| Perturbation dimension | Planned role |
+|---|---|
+| Language | Linguistic robustness |
+| Lighting | Seen environmental variation |
+| Background | Seen environmental variation |
+| Camera viewpoint | Held-out generalization |
+| Robot initial state | Held-out generalization |
+| Object layout | Held-out generalization |
+| Sensor noise | Held-out generalization |
 
-Examples include:
+The final adoption strategy will be frozen after a dedicated methodology and compatibility gate.
 
-```text
-Pick up the black bowl between the plate and the ramekin
-and place it on the plate.
-```
+Possible outcomes are:
 
-```text
-Pick up the black bowl next to the ramekin
-and place it on the plate.
-```
-
-```text
-Pick up the black bowl from table center
-and place it on the plate.
-```
-
-```text
-Pick up the black bowl on the stove
-and place it on the plate.
-```
-
-This makes LIBERO-Spatial particularly relevant for investigating robustness to spatial variation.
+1. full LIBERO-Plus training + evaluation,
+2. LIBERO-Plus evaluation with controlled training augmentations, or
+3. partial use where individual perturbations satisfy experimental validity requirements.
 
 ---
 
-## LIBERO-Plus
+## Seen robustness vs held-out generalization
 
-LIBERO-Plus is planned as a first-class robustness evaluation benchmark.
-
-Perturbation dimensions to be investigated include:
-
-- object layout,
-- camera viewpoint,
-- robot initial state,
-- language,
-- lighting,
-- background appearance,
-- sensor noise.
-
-A dedicated compatibility and methodology gate will determine whether LIBERO-Plus is used:
-
-1. fully for robustness training and evaluation,
-2. partially for evaluation only, or
-3. selectively alongside custom controlled perturbations.
-
-The final protocol will be frozen only after this audit.
-
----
-
-# Perturbation Framework
-
-The methodology explicitly separates:
+The experimental methodology explicitly distinguishes between:
 
 ```text
 Seen robustness
 ```
 
-from:
+and:
 
 ```text
 Held-out generalization
 ```
 
-This prevents evaluation from measuring only memorization of training augmentations.
+A model performing well on the same perturbation types used during training does **not** automatically demonstrate generalization.
 
-A provisional design is:
+The current provisional split is:
 
-| Category | Usage |
+| Category | Role |
 |---|---|
-| Language variation | Training / seen robustness |
-| Lighting | Training / seen robustness |
-| Background appearance | Training / seen robustness |
-| Camera viewpoint | Held-out evaluation |
-| Robot initial state | Held-out evaluation |
-| Object layout | Held-out evaluation |
-| Sensor noise | Held-out evaluation |
+| Language | Seen / training |
+| Lighting | Seen / training |
+| Background | Seen / training |
+| Camera viewpoint | Held-out |
+| Robot initial state | Held-out |
+| Object layout | Held-out |
+| Sensor noise | Held-out |
 
-The exact split will be frozen after the LIBERO-Plus methodology audit.
+This split remains provisional until the robustness methodology is frozen.
 
 ---
 
-# Linguistic Perturbation Levels
+## Linguistic perturbation levels
 
-Language variation is planned across four controlled difficulty levels.
+Language robustness will be evaluated using semantically equivalent instructions of increasing difficulty.
 
 | Level | Description |
 |---|---|
@@ -355,73 +299,48 @@ Language variation is planned across four controlled difficulty levels.
 
 Example:
 
-### L0
-
 ```text
-Pick up the black bowl and place it on the plate.
+L0: Pick up the black bowl and place it on the plate.
+
+L1: Grab the black bowl and put it on the plate.
+
+L2: Place the black bowl onto the plate after picking it up.
+
+L3: Move the black bowl from its current position so that
+    it ends up resting on the plate.
 ```
 
-### L1
-
-```text
-Grab the black bowl and place it on the plate.
-```
-
-### L2
-
-```text
-Place the black bowl onto the plate after picking it up.
-```
-
-### L3
-
-```text
-Move the black bowl from its current position so that it ends up on the plate.
-```
-
-All generated instruction variants must remain semantically equivalent to the original manipulation objective.
+All generated variants must preserve the semantics of the original manipulation task.
 
 ---
 
-# Evaluation Strategy
+## Evaluation conditions
 
-The planned evaluation framework separates standard benchmark performance from robustness and generalization.
-
-| Condition | Description |
+| Condition | Purpose |
 |---|---|
-| **E0** | Standard in-distribution LIBERO evaluation |
+| **E0** | Standard in-distribution LIBERO performance |
 | **E1** | Linguistic distribution shift |
-| **E2** | Seen environmental perturbation categories |
+| **E2** | Seen environmental perturbations |
 | **E3** | Held-out environmental perturbation categories |
-| **E4** | Combined perturbations if computational budget permits |
+| **E4** | Combined perturbations — optional depending on compute budget |
 
-The same task definitions, initial states, and perturbation conditions will be paired across models whenever possible.
+Where possible, competing models will be evaluated using the **same task, initial state and perturbation condition** to enable paired comparison.
 
 ---
 
-# Primary Metrics
+## Primary metrics
 
-## Task Success Rate
+### Task success rate
 
 The primary metric is:
 
 ```text
-Task Success Rate
+                  Successful Episodes
+Task Success = ─────────────────────────
+                    Total Episodes
 ```
 
-defined as:
-
-```text
-Successful Episodes
-────────────────────
- Total Episodes
-```
-
----
-
-## Generalization Gap
-
-The generalization gap is defined as:
+### Generalization gap
 
 ```text
 G = SR_ID - SR_OOD
@@ -432,13 +351,9 @@ where:
 - `SR_ID` = in-distribution success rate
 - `SR_OOD` = out-of-distribution success rate
 
-A smaller value indicates better robustness.
+A smaller generalization gap indicates stronger robustness.
 
----
-
-## Secondary Metrics
-
-Additional measurements may include:
+### Secondary measurements
 
 - per-task success rate,
 - per-perturbation success rate,
@@ -447,25 +362,25 @@ Additional measurements may include:
 - inference latency,
 - simulator latency,
 - GPU memory utilization,
-- validation loss,
 - training loss,
+- validation loss,
 - failure-category frequency.
 
 ---
 
-# Statistical Analysis
+## Statistical strategy
 
-Two sources of uncertainty will be treated separately.
+Two different sources of variability will be treated separately.
 
-## Evaluation Uncertainty
+### Evaluation uncertainty
 
-Evaluation uncertainty for an individual trained checkpoint may be estimated using bootstrap confidence intervals over evaluation episodes.
+Bootstrap confidence intervals may be computed across evaluation episodes for an individual trained checkpoint.
 
-## Training Uncertainty
+### Training uncertainty
 
-Training stochasticity will be measured using independent model-training seeds.
+Independent training seeds will quantify model-training stochasticity.
 
-Planned final seeds:
+Planned headline seeds:
 
 ```text
 42
@@ -473,291 +388,110 @@ Planned final seeds:
 2026
 ```
 
-Headline final results are intended to report:
+Where computationally feasible, final results will therefore report:
 
 ```text
-Mean ± Standard Deviation
+mean ± standard deviation
 ```
 
-across independently trained models where computationally feasible.
+across independently trained models.
 
-A bootstrap over episodes will not be presented as a substitute for independent training runs.
+Episode-level bootstrap uncertainty will **not** be presented as a substitute for independent training runs.
 
 ---
 
-# Failure Analysis
+## Failure taxonomy
 
-Failed manipulation episodes will be categorized using a structured failure taxonomy.
+Failed episodes will be categorized instead of analysing only aggregate success rate.
 
-| Code | Failure Category |
+| Code | Failure |
 |---|---|
 | **F01** | Object localization failure |
-| **F02** | Incorrect target selection |
+| **F02** | Wrong target selection |
 | **F03** | Failed grasp |
 | **F04** | Object slip |
 | **F05** | Incorrect placement |
 | **F06** | Language misunderstanding |
 | **F07** | Trajectory / control failure |
-| **F08** | Episode timeout |
-| **F09** | Collision / environmental interaction failure |
+| **F08** | Timeout |
+| **F09** | Collision / environmental interaction |
 | **F10** | Other |
 
-This enables analysis beyond aggregate success rate.
-
 ---
 
-# Experimental Environment
+## Current verified checkpoint
 
-## Validated Software Stack
+> The following are **technical validation results**, not final research-performance findings.
 
-Checkpoint 01 was validated using:
+### Checkpoint 01 — Environment + LIBERO
 
-| Component | Version / Configuration |
+| Component | Status |
 |---|---|
-| Host OS | Windows 11 |
-| Linux Environment | WSL2 Ubuntu 24.04 |
-| Python | 3.12.14 |
-| Conda Environment | `vla-libero` |
-| PyTorch | 2.11.0+cu128 |
-| CUDA Runtime | 12.8 |
-| GPU | NVIDIA GeForce RTX 5090 |
-| GPU Compute Capability | 12.0 |
-| LeRobot | 0.6.1 |
-| MuJoCo | 3.8.1 |
-| LIBERO | `hf_libero 0.1.4` |
-| EGL Helper | `hf_egl_probe 1.0.2` |
-| Rendering Backend | WSLg + Mesa D3D12 + GLFW |
+| WSL2 Ubuntu environment | **PASS** |
+| Conda environment | **PASS** |
+| PyTorch / CUDA | **PASS** |
+| NVIDIA RTX 5090 CUDA computation | **PASS** |
+| LeRobot installation | **PASS** |
+| MuJoCo installation | **PASS** |
+| GPU-accelerated OpenGL | **PASS** |
+| MuJoCo RGB rendering | **PASS** |
+| LIBERO configuration | **PASS** |
+| LIBERO-Spatial discovery | **PASS** |
+| Benchmark task loading | **PASS** |
+| Fixed initial-state loading | **PASS** |
+| Agent-view camera observation | **PASS** |
+| Eye-in-hand camera observation | **PASS** |
+| 7-D action interface | **PASS** |
+| SmolVLA policy integration | **NEXT** |
 
 ---
 
-## LeRobot Revision
+## LIBERO simulator validation
 
-The LeRobot dependency is pinned to:
+A real **LIBERO-Spatial Task 0** environment has been successfully instantiated.
 
-```text
-Tag:
-v0.6.1
-
-Commit:
-7e241bd630a3719a56157a497ce5d08f244784f1
-```
-
----
-
-## egl_probe Revision
-
-The compatibility-patched `egl_probe` dependency is based on:
+### Task
 
 ```text
-Version:
-1.0.1
-
-Git commit:
-3ddf90db69264de2c621af567bfc557849126cff
+pick up the black bowl between the plate and the ramekin
+and place it on the plate
 ```
 
-The patch and installation procedure are documented separately to ensure reproducibility with modern CMake versions.
-
----
-
-# Validated GPU Pipeline
-
-Two GPU-dependent execution paths have been validated.
-
-## Deep Learning Compute
+### Benchmark state
 
 ```text
-PyTorch
-    │
-    ▼
-CUDA 12.8
-    │
-    ▼
-NVIDIA GeForce RTX 5090
-    │
-    ▼
-GPU Tensor Computation
-    │
-    ▼
-PASS
+Available fixed initial states: 50
+Environment reset: PASS
+Fixed initial-state loading: PASS
 ```
 
-Validated output:
+### Agent-view camera
 
 ```text
-PyTorch: 2.11.0+cu128
-CUDA runtime: 12.8
-CUDA available: True
-GPU: NVIDIA GeForce RTX 5090
-Compute capability: (12, 0)
+Shape:           (128, 128, 3)
+Type:            uint8
+Minimum pixel:   6
+Maximum pixel:   238
+Mean pixel:      119.4102
+Non-zero pixels: 49152
+Status:          PASS
 ```
 
-A real CUDA matrix multiplication test completed successfully.
-
----
-
-## MuJoCo Rendering
-
-The validated WSL graphics path is:
+### Eye-in-hand camera
 
 ```text
-MuJoCo
-   │
-   ▼
-OpenGL / GLFW
-   │
-   ▼
-Mesa D3D12
-   │
-   ▼
-WSLg
-   │
-   ▼
-NVIDIA GeForce RTX 5090
-   │
-   ▼
-RGB Frame
-   │
-   ▼
-PASS
+Shape:           (128, 128, 3)
+Type:            uint8
+Minimum pixel:   3
+Maximum pixel:   231
+Mean pixel:      126.3576
+Non-zero pixels: 49152
+Status:          PASS
 ```
 
-Validated MuJoCo test output:
+### Action interface
 
-```text
-Image shape: (256, 256, 3)
-Image dtype: uint8
-Min pixel: 0
-Max pixel: 255
-Mean pixel: 33.8369
-Non-zero pixels: 110960
-
-MuJoCo RENDER TEST: PASS
-```
-
----
-
-# LIBERO Simulation Validation
-
-LIBERO-Spatial Task 0 has successfully completed the initial technical compatibility test.
-
-Validated functionality includes:
-
-- benchmark discovery,
-- task metadata loading,
-- BDDL task definition resolution,
-- fixed benchmark initial states,
-- MuJoCo environment creation,
-- environment reset,
-- fixed initial-state loading,
-- robot state observations,
-- RGB observations,
-- action interface,
-- simulator stepping,
-- clean environment shutdown.
-
----
-
-## Benchmark Initial States
-
-For LIBERO-Spatial Task 0:
-
-```text
-Initial state representation:
-numpy.ndarray
-
-Available benchmark initial states:
-50
-```
-
----
-
-## Camera Validation
-
-### Agent View
-
-```text
-Observation:
-agentview_image
-
-Shape:
-(128, 128, 3)
-
-Type:
-uint8
-
-Minimum pixel:
-6
-
-Maximum pixel:
-238
-
-Mean:
-119.4102
-
-Non-zero pixels:
-49152
-
-Status:
-PASS
-```
-
-### Robot Eye-in-Hand View
-
-```text
-Observation:
-robot0_eye_in_hand_image
-
-Shape:
-(128, 128, 3)
-
-Type:
-uint8
-
-Minimum pixel:
-3
-
-Maximum pixel:
-231
-
-Mean:
-126.3576
-
-Non-zero pixels:
-49152
-
-Status:
-PASS
-```
-
-Both camera observations were confirmed to contain valid non-black rendered images.
-
----
-
-## Robot State Observations
-
-Validated observations include:
-
-```text
-robot0_eef_pos
-robot0_eef_quat
-robot0_gripper_qpos
-robot0_gripper_qvel
-robot0_joint_pos
-robot0_joint_vel
-robot0_proprio-state
-object-state
-agentview_image
-robot0_eye_in_hand_image
-```
-
-Additional object-specific pose observations are also provided by LIBERO.
-
----
-
-## Action Interface
-
-The environment successfully accepted a seven-dimensional control action.
+A seven-dimensional control action was successfully accepted:
 
 ```text
 Action:
@@ -769,61 +503,123 @@ Reward:
 Done:
 False
 
-Environment step:
+Simulator step:
 PASS
 ```
 
-The zero action is used only as a technical interface validation and is not expected to solve the manipulation task.
+The zero action is used strictly as a technical compatibility test and is not expected to complete the manipulation task.
 
 ---
 
-# Technical Compatibility Gate
+## Experimental environment
 
-## G0 — Technical Compatibility
-
-Current status:
-
-| Test | Status |
+| Component | Validated configuration |
 |---|---|
-| WSL2 / Ubuntu | ✅ PASS |
-| Conda / Python | ✅ PASS |
-| RTX 5090 visible inside WSL | ✅ PASS |
-| PyTorch CUDA | ✅ PASS |
-| Blackwell GPU computation | ✅ PASS |
-| LeRobot import | ✅ PASS |
-| Dependency integrity | ✅ PASS |
-| MuJoCo import | ✅ PASS |
-| GPU OpenGL rendering | ✅ PASS |
-| MuJoCo RGB rendering | ✅ PASS |
-| LIBERO initialization | ✅ PASS |
-| LIBERO-Spatial discovery | ✅ PASS |
-| BDDL task loading | ✅ PASS |
-| Benchmark initial states | ✅ PASS |
-| Agent-view RGB observation | ✅ PASS |
-| Eye-in-hand RGB observation | ✅ PASS |
-| 7-D action step | ✅ PASS |
-| SmolVLA checkpoint loading | ⏳ NEXT |
-| SmolVLA preprocessing | ⏳ NEXT |
-| SmolVLA inference | ⏳ NEXT |
-| Model action → LIBERO | ⏳ NEXT |
-| Complete policy episode | ⏳ PENDING |
+| Host | Windows 11 |
+| Linux environment | WSL2 — Ubuntu 24.04 |
+| Python | 3.12.14 |
+| Conda environment | `vla-libero` |
+| PyTorch | `2.11.0+cu128` |
+| CUDA runtime | 12.8 |
+| GPU | NVIDIA GeForce RTX 5090 |
+| GPU compute capability | 12.0 |
+| LeRobot | 0.6.1 |
+| MuJoCo | 3.8.1 |
+| LIBERO | `hf_libero==0.1.4` |
+| EGL helper | `hf_egl_probe==1.0.2` |
+| Rendering | WSLg + Mesa D3D12 + GLFW |
+
+### LeRobot revision
+
+```text
+Tag:    v0.6.1
+Commit: 7e241bd630a3719a56157a497ce5d08f244784f1
+```
+
+### Patched `egl_probe` revision
+
+```text
+Version: 1.0.1
+Commit:  3ddf90db69264de2c621af567bfc557849126cff
+```
 
 ---
 
-# Repository Structure
+## GPU validation
+
+### Deep-learning computation
+
+```text
+PyTorch
+   ↓
+CUDA 12.8
+   ↓
+RTX 5090
+   ↓
+GPU Tensor Computation
+   ↓
+PASS
+```
+
+Validated output:
+
+```text
+PyTorch:            2.11.0+cu128
+CUDA runtime:       12.8
+CUDA available:     True
+GPU:                NVIDIA GeForce RTX 5090
+Compute capability: (12, 0)
+
+RTX 5090 CUDA TEST: PASS
+```
+
+### MuJoCo rendering
+
+```text
+MuJoCo
+   ↓
+OpenGL / GLFW
+   ↓
+Mesa D3D12
+   ↓
+WSLg
+   ↓
+RTX 5090
+   ↓
+RGB Frame
+   ↓
+PASS
+```
+
+Validated standalone rendering:
+
+```text
+Image shape:      (256, 256, 3)
+Image dtype:      uint8
+Minimum pixel:    0
+Maximum pixel:    255
+Mean pixel:       33.8369
+Non-zero pixels:  110960
+
+MuJoCo RENDER TEST: PASS
+```
+
+---
+
+## Repository structure
 
 ```text
 deep-learning-vla-robustness/
 │
 ├── configs/
-│   └── Experiment, training and evaluation configurations
+│   └── experiment / training / evaluation configurations
 │
 ├── docs/
 │   ├── SETUP.md
-│   └── Environment and research documentation
+│   └── environment_snapshot_2026-08-23.txt
 │
 ├── experiments/
-│   └── Experiment manifests and run metadata
+│   └── experiment manifests and run metadata
 │
 ├── notebooks/
 │   ├── 00_environment_and_dataset.ipynb
@@ -838,10 +634,10 @@ deep-learning-vla-robustness/
 │   └── tables/
 │
 ├── scripts/
-│   └── Environment and reproducibility utilities
+│   └── environment and reproducibility utilities
 │
 ├── src/
-│   └── Reusable experimental implementation
+│   └── reusable experiment implementation
 │
 ├── .gitignore
 ├── environment.yml
@@ -850,190 +646,287 @@ deep-learning-vla-robustness/
 └── README.md
 ```
 
-Some directories and notebooks represent the planned research structure and will be populated progressively as experiments are completed.
+> Some directories and notebooks above represent the planned final repository structure and will be populated progressively as experiments are completed.
 
 ---
 
-# Notebook Plan
+## Notebook workflow
 
-## 00 — Environment and Dataset
+The research implementation is intentionally organized into a small number of substantive notebooks.
 
-Purpose:
+### `00_environment_and_dataset.ipynb`
 
-- verify the computational environment,
-- inspect software versions,
-- verify CUDA,
-- discover LIBERO benchmark suites,
-- inspect LIBERO-Spatial tasks,
-- initialize simulator environments,
-- inspect observations,
-- visualize camera observations,
-- validate action interfaces.
+Environment and benchmark validation:
 
----
+- Python / package versions,
+- CUDA verification,
+- LIBERO benchmark discovery,
+- LIBERO-Spatial task inspection,
+- simulator initialization,
+- observation inspection,
+- camera visualization,
+- action-interface validation.
 
-## 01 — Baseline Reproduction
+### `01_baseline_reproduction.ipynb`
 
-Purpose:
+Baseline reproduction:
 
-- load the released LIBERO-fine-tuned SmolVLA checkpoint,
-- freeze checkpoint revision,
-- validate preprocessing,
-- perform policy inference,
-- reproduce baseline evaluation,
-- establish M0,
-- implement standard M1 baseline evaluation.
+- released LIBERO-fine-tuned SmolVLA checkpoint,
+- checkpoint revision audit,
+- observation preprocessing,
+- policy inference,
+- baseline episode evaluation,
+- M0 reproducibility analysis,
+- standard M1 baseline.
 
----
+### `02_robustness_training.ipynb`
 
-## 02 — Robustness Training
+Robustness implementation:
 
-Purpose:
+- standard fine-tuning,
+- linguistic robustness,
+- environmental robustness,
+- combined robustness,
+- M1 / M2-L / M2-E / M2-LE comparison.
 
-- implement standard fine-tuning,
-- implement linguistic augmentation,
-- implement environmental robustness augmentation,
-- implement combined robustness training,
-- compare M1 / M2-L / M2-E / M2-LE.
+### `03_tuning_and_final_training.ipynb`
 
----
+Model optimization:
 
-## 03 — Tuning and Final Training
+- learning-rate tuning,
+- weight-decay tuning,
+- augmentation-probability tuning,
+- validation,
+- final hyperparameter selection,
+- independent final training seeds.
 
-Purpose:
+### `04_evaluation_and_critical_analysis.ipynb`
 
-- controlled hyperparameter tuning,
-- learning-rate selection,
-- regularization analysis,
-- augmentation probability selection,
-- final independent training runs,
-- final checkpoint generation.
-
----
-
-## 04 — Evaluation and Critical Analysis
-
-Purpose:
+Final analysis:
 
 - E0 in-distribution evaluation,
-- E1 language robustness,
+- E1 linguistic robustness,
 - E2 seen environmental robustness,
 - E3 held-out generalization,
-- ablation studies,
-- statistical analysis,
+- ablations,
+- statistics,
 - visualization,
 - failure analysis,
-- critical interpretation of results.
+- critical interpretation.
 
 ---
 
-# Hyperparameter Strategy
+## Hyperparameter strategy
 
-The project will use staged tuning rather than an exhaustive Cartesian grid.
+The study uses **staged tuning** rather than an exhaustive Cartesian search.
 
-Candidate values include:
+Candidate ranges include:
 
-### Learning Rate
-
-```text
-1e-5
-3e-5
-1e-4
-```
-
-### Weight Decay
-
-```text
-0.01
-0.05
-0.10
-```
-
-### Language Augmentation Probability
-
-```text
-0.25
-0.50
-0.75
-```
-
-Approximately **8–12 meaningful experimental configurations** are targeted before final model training.
-
-Exploratory tuning may use one random seed.
-
-Headline final experiments are planned to use multiple independent seeds.
-
----
-
-# Reproducibility
-
-Reproducibility is treated as a first-class component of the research methodology.
-
-The environment is represented through multiple complementary artifacts.
-
-| File | Purpose |
+| Parameter | Candidate values |
 |---|---|
-| `environment.yml` | Human-readable Conda environment definition |
-| `conda-linux-64.lock.txt` | Exact Conda package/build snapshot |
-| `requirements-lock.txt` | Exact Python dependency snapshot |
-| `docs/SETUP.md` | Detailed environment setup instructions |
-| `docs/environment_snapshot_2026-08-23.txt` | Validated system environment snapshot |
+| Learning rate | `1e-5`, `3e-5`, `1e-4` |
+| Weight decay | `0.01`, `0.05`, `0.10` |
+| Language augmentation probability | `0.25`, `0.50`, `0.75` |
 
-Large datasets, pretrained model weights, experiment checkpoints, video recordings, and external caches are intentionally excluded from source control.
+Approximately **8–12 meaningful tuning runs** are planned before final model training.
+
+Exploratory tuning may use a single seed; headline models will use independent seeds where computationally feasible.
 
 ---
 
-# Environment Reproduction Strategy
+## Methodology highlights
 
-The project separates:
+### Controlled baseline
+
+Robustness gains will be measured against a standard SmolVLA fine-tuning baseline rather than against an unrelated architecture.
+
+### Same-condition evaluation
+
+Where possible, competing models will receive the same:
+
+- manipulation task,
+- benchmark initial state,
+- perturbation,
+- language instruction condition.
+
+### Held-out perturbations
+
+Not all robustness perturbation categories will be visible during training.
+
+This allows the study to distinguish:
 
 ```text
-Host prerequisites
+robustness to known perturbations
 ```
 
 from:
 
 ```text
-Research environment
+generalization to unseen perturbation categories
 ```
 
-and:
+### Action-label validity
 
-```text
-Experiment configuration
-```
+Physical states in recorded demonstrations will not be arbitrarily transformed while retaining actions that would become invalid for the modified state.
 
-This avoids embedding operating-system installation procedures directly inside research notebooks.
+### Repeated final training
 
-The intended structure is:
+Headline models are planned to use multiple independent training seeds rather than relying only on repeated evaluation of one checkpoint.
 
-```text
-Windows / WSL prerequisites
-            │
-            ▼
-       docs/SETUP.md
-            │
-            ▼
-      environment.yml
-            │
-            ▼
-   requirements-lock.txt
-            │
-            ▼
-      pinned LeRobot
-            │
-            ▼
-   environment checker
-            │
-            ▼
-   experiment notebooks
-```
+### Failure analysis
+
+Success rate will be complemented with structured episode-failure categories.
 
 ---
 
-# Experiment Tracking
+## Experimental gates
 
-Each formal experiment is planned to generate a structured run manifest containing:
+The project uses explicit technical and methodological gates before expensive training.
+
+### G0 — Technical compatibility
+
+Required pipeline:
+
+```text
+WSL/Linux
+   ↓
+PyTorch + CUDA
+   ↓
+LeRobot
+   ↓
+SmolVLA
+   ↓
+LIBERO
+   ↓
+MuJoCo
+   ↓
+Observation
+   ↓
+Policy inference
+   ↓
+Valid action
+   ↓
+Simulator step
+   ↓
+Episode termination
+```
+
+Current state:
+
+```text
+Environment → Observation → Manual Action
+PASS
+
+SmolVLA → Policy Action → Complete Episode
+NEXT
+```
+
+### G1 — Runtime benchmark
+
+After G0, a controlled warm-up and timing study will determine:
+
+- episode wall-clock time,
+- inference latency,
+- simulator latency,
+- GPU utilization,
+- peak VRAM,
+- practical final evaluation budget.
+
+### G2 — LIBERO-Plus methodology gate
+
+LIBERO-Plus will be audited before its perturbation protocol is frozen.
+
+---
+
+## Setup
+
+### Prerequisites
+
+The validated development environment uses:
+
+- Windows 11,
+- WSL2,
+- Ubuntu 24.04,
+- NVIDIA GPU with current WSL-compatible Windows driver,
+- Miniforge / Conda,
+- Git.
+
+The current reference machine uses an **NVIDIA GeForce RTX 5090**, but exact hardware equivalence is not required provided that the selected configuration supports the model and simulator.
+
+### Environment files
+
+The repository separates readable configuration from exact environment snapshots:
+
+```text
+environment.yml
+conda-linux-64.lock.txt
+requirements-lock.txt
+docs/SETUP.md
+```
+
+Detailed environment construction and compatibility instructions are documented in:
+
+```text
+docs/SETUP.md
+```
+
+### LIBERO external data
+
+LIBERO assets and model checkpoints are **not committed to Git**.
+
+The first LIBERO simulator run downloads the required assets through the benchmark tooling and stores them in the local LIBERO cache.
+
+---
+
+## How to run
+
+The planned notebook order is:
+
+```text
+00_environment_and_dataset
+          ↓
+01_baseline_reproduction
+          ↓
+02_robustness_training
+          ↓
+03_tuning_and_final_training
+          ↓
+04_evaluation_and_critical_analysis
+```
+
+The notebooks will contain the Python code, comments and representative generated outputs required to reproduce the research workflow.
+
+---
+
+## Reproduction tiers
+
+| Goal | Requirement | Expected cost |
+|---|---|---|
+| **Inspect methodology / results** | Repository + saved metrics/figures | Low |
+| **Reproduce evaluation** | Repository + pinned checkpoint + LIBERO assets | Moderate |
+| **Reproduce final training** | Full environment + datasets + model checkpoint + GPU | High |
+| **Rebuild complete study** | Environment + training + all model seeds + all evaluation conditions | Highest |
+
+As the study progresses, committed metrics and figures will allow final analysis to be reproduced without retraining every model.
+
+---
+
+## Reproducibility
+
+| Item | Location |
+|---|---|
+| Base environment | `environment.yml` |
+| Exact Conda build snapshot | `conda-linux-64.lock.txt` |
+| Python dependency snapshot | `requirements-lock.txt` |
+| Full setup procedure | `docs/SETUP.md` |
+| Environment snapshot | `docs/environment_snapshot_2026-08-23.txt` |
+| Experiment configs | `configs/` |
+| Experiment manifests | `experiments/` |
+| Metrics | `results/metrics/` |
+| Figures | `results/figures/` |
+| Tables | `results/tables/` |
+
+Each formal experiment is planned to record:
 
 ```text
 experiment_id
@@ -1041,7 +934,7 @@ git_commit
 model_checkpoint_revision
 dataset_revision
 benchmark_revision
-seed
+random_seed
 hyperparameters
 training_steps
 perturbation_configuration
@@ -1050,230 +943,97 @@ metrics
 checkpoint_path
 ```
 
-Example:
+---
 
-```json
-{
-  "experiment_id": "M2LE_seed42",
-  "model": "smolvla",
-  "seed": 42,
-  "training_mode": "linguistic_environmental_robustness",
-  "evaluation_conditions": [
-    "E0",
-    "E1",
-    "E2",
-    "E3"
-  ]
-}
-```
+## Current experimental scale
 
-This enables experiments to be mapped back to:
+### Verified
 
-- source-code revision,
-- environment,
-- training configuration,
-- evaluation configuration,
-- generated checkpoints,
-- reported results.
+| Component | Current verified value |
+|---|---:|
+| LIBERO-Spatial tasks discovered | 10 |
+| Task 0 fixed initial states | 50 |
+| Agent-view observation | `128 × 128 × 3` |
+| Eye-in-hand observation | `128 × 128 × 3` |
+| Robot action dimensionality | 7 |
+| CUDA GPU | RTX 5090 |
+| CUDA tensor computation | PASS |
+| MuJoCo RGB rendering | PASS |
+| LIBERO simulator step | PASS |
+
+### Planned formal evaluation
+
+Initial formal evaluation planning uses multiple tasks, fixed benchmark states and repeated episodes per model-condition.
+
+The exact final evaluation budget will be frozen after **G1 runtime benchmarking** rather than assumed in advance.
 
 ---
 
-# Project Roadmap
+## Project roadmap
 
-## Checkpoint 01 — Environment + LIBERO
-
-**Status: ✅ COMPLETE**
-
-Completed:
-
-- WSL2 setup
-- Conda environment
-- CUDA verification
-- RTX 5090 validation
-- LeRobot installation
-- MuJoCo installation
-- GPU rendering
-- LIBERO setup
-- LIBERO-Spatial task discovery
-- simulator initialization
-- RGB observation validation
-- action interface validation
+| Checkpoint | Milestone | Status |
+|---|---|---|
+| **01** | Environment + LIBERO simulator validation | ✅ Complete |
+| **02** | Notebook 00 + full G0 integration | 🔄 Next |
+| **03** | M0 baseline checkpoint reproduction | ⏳ Planned |
+| **04** | Standard M1 baseline fine-tuning | ⏳ Planned |
+| **05** | Robustness implementation | ⏳ Planned |
+| **06** | Hyperparameter tuning | ⏳ Planned |
+| **07** | Final independent training seeds | ⏳ Planned |
+| **08** | E0–E3 evaluation + ablation | ⏳ Planned |
+| **09** | Visualization + critical analysis | ⏳ Planned |
+| **10** | Final consolidated report | ⏳ Planned |
 
 ---
 
-## Checkpoint 02 — Notebook 00 + G0 Completion
-
-**Status: ⏳ NEXT**
-
-Planned:
-
-- create `00_environment_and_dataset.ipynb`,
-- reproduce environment validation inside notebook,
-- visualize robot camera observations,
-- load official SmolVLA checkpoint,
-- verify preprocessing,
-- execute one model inference,
-- execute predicted action in LIBERO,
-- complete a policy-controlled episode.
-
----
-
-## Checkpoint 03 — Baseline Reproduction
-
-Planned:
-
-- reproduce official SmolVLA LIBERO performance,
-- establish M0 evaluation protocol,
-- establish M1 standard fine-tuning baseline,
-- freeze Evaluation Protocol v1.0.
-
----
-
-## Checkpoint 04 — Robustness Implementation
-
-Planned:
-
-- linguistic robustness pipeline,
-- environmental robustness pipeline,
-- combined training strategy,
-- augmentation validity checks.
-
----
-
-## Checkpoint 05 — Hyperparameter Tuning
-
-Planned:
-
-- controlled tuning runs,
-- validation analysis,
-- final hyperparameter selection.
-
----
-
-## Checkpoint 06 — Final Training
-
-Planned:
-
-- independent final seeds,
-- final M1 baseline checkpoints,
-- final robustness model checkpoints.
-
----
-
-## Checkpoint 07 — Final Evaluation
-
-Planned:
-
-- E0 evaluation,
-- E1 evaluation,
-- E2 evaluation,
-- E3 held-out evaluation,
-- ablation study,
-- failure analysis,
-- uncertainty analysis.
-
----
-
-## Checkpoint 08 — Final Analysis
-
-Planned:
-
-- visualization,
-- statistical interpretation,
-- robustness trade-off analysis,
-- critical discussion,
-- final research conclusions.
-
----
-
-# Current Status
+## Current progress
 
 ```text
-Environment Setup                  ██████████ 100%
-CUDA / RTX 5090 Validation         ██████████ 100%
-LeRobot Integration                ██████████ 100%
-MuJoCo Integration                 ██████████ 100%
-LIBERO Integration                 ██████████ 100%
-LIBERO Simulator Validation        ██████████ 100%
+Environment Setup                 ██████████ 100%
+CUDA / RTX 5090 Validation        ██████████ 100%
+LeRobot Integration               ██████████ 100%
+MuJoCo Integration                ██████████ 100%
+LIBERO Integration                ██████████ 100%
+LIBERO Simulator Validation       ██████████ 100%
 
-Notebook 00                        ░░░░░░░░░░   0%
-SmolVLA Integration                ░░░░░░░░░░   0%
-Baseline Reproduction              ░░░░░░░░░░   0%
-Robustness Training                ░░░░░░░░░░   0%
-Hyperparameter Tuning              ░░░░░░░░░░   0%
-Final Evaluation                   ░░░░░░░░░░   0%
-Critical Analysis                  ░░░░░░░░░░   0%
+Notebook 00                       ░░░░░░░░░░   0%
+SmolVLA Integration               ░░░░░░░░░░   0%
+M0 Baseline Reproduction          ░░░░░░░░░░   0%
+M1 Baseline Training              ░░░░░░░░░░   0%
+Robustness Training               ░░░░░░░░░░   0%
+Hyperparameter Tuning             ░░░░░░░░░░   0%
+Final Evaluation                  ░░░░░░░░░░   0%
+Critical Analysis                 ░░░░░░░░░░   0%
 ```
 
 ---
 
-# Current Research Milestone
+## Key limitations
 
-## Checkpoint 01
+At the current stage:
 
-### Reproducible VLA Environment and LIBERO Simulation Validation
+- **Simulation domain:** experiments are based primarily on simulated manipulation rather than physical robot deployment.
+- **Benchmark scope:** LIBERO captures controlled manipulation tasks and cannot represent the full complexity of real-world robotics.
+- **Robustness scope:** perturbation validity must be carefully controlled so that evaluation does not change the intended task.
+- **Compute:** VLA training and repeated rollout evaluation are substantially more computationally expensive than conventional supervised learning experiments.
+- **Model scope:** the project investigates adaptation of an efficient existing VLA architecture rather than training a VLA foundation model from scratch.
+- **Current status:** research-performance conclusions cannot yet be made because model training and comparative evaluation have not been completed.
 
-The research environment can currently:
-
-1. execute CUDA workloads on the NVIDIA RTX 5090,
-2. load PyTorch with CUDA acceleration,
-3. load the pinned LeRobot implementation,
-4. initialize MuJoCo,
-5. render valid RGB simulation observations,
-6. discover all LIBERO benchmark suites,
-7. instantiate LIBERO-Spatial tasks,
-8. load benchmark-defined initial states,
-9. return robot proprioceptive observations,
-10. return agent-view camera observations,
-11. return eye-in-hand camera observations,
-12. accept a valid seven-dimensional robot control action,
-13. advance the MuJoCo simulation.
-
-The next technical milestone is integration of the released LIBERO-fine-tuned **SmolVLA** checkpoint.
+These limitations will be revisited after final experiments.
 
 ---
 
-# Research Principles
+## Expected contribution
 
-The experimental design follows several controls intended to improve validity and reproducibility.
+The intended contribution is **not** a new large-scale VLA foundation model.
 
-### Comparable Evaluation
+Instead, this study investigates whether relatively lightweight robustness-oriented adaptation can improve the reliability of an efficient existing VLA policy.
 
-Baseline and robustness models will be evaluated using equivalent task and perturbation conditions.
+The intended research contribution is:
 
-### Seen vs Unseen Perturbations
+> **A controlled empirical analysis of robustness-oriented fine-tuning for efficient Vision-Language-Action robotic manipulation under linguistic and environmental distribution shifts.**
 
-Training perturbations will be explicitly separated from held-out perturbation categories.
-
-### Action Validity
-
-Physical object states will not be arbitrarily transformed in recorded demonstrations while retaining actions that are no longer valid for the modified state.
-
-### Independent Sources of Uncertainty
-
-Evaluation uncertainty and training stochasticity will be analysed separately.
-
-### Reproducible Dependencies
-
-Important external dependencies are pinned using explicit versions and Git revisions.
-
-### Minimal Notebook Hidden Logic
-
-Research notebooks will expose substantive preprocessing, training, evaluation, and analysis operations rather than hiding the complete experiment behind opaque utility functions.
-
----
-
-# Expected Contribution
-
-The intended contribution of this project is not a new large-scale VLA foundation model.
-
-Instead, the project investigates whether relatively lightweight robustness-oriented adaptation can improve the reliability of an efficient existing VLA policy.
-
-The expected contribution is therefore:
-
-> **A controlled empirical analysis of robustness-oriented fine-tuning for efficient VLA robotic manipulation under linguistic and environmental distribution shifts.**
-
-Particular emphasis is placed on distinguishing:
+The study specifically distinguishes:
 
 ```text
 standard benchmark performance
@@ -1288,72 +1048,84 @@ seen perturbation robustness
 and:
 
 ```text
-generalization to unseen perturbation categories
+held-out perturbation generalization
 ```
 
 ---
 
-# Technology Stack
+## Assignment deliverables
 
-### Machine Learning
+The final project will support the required Deep Learning assessment outputs:
 
-- PyTorch
-- Transformers
-- Hugging Face
-- LeRobot
-- SmolVLA
+### Assignment 1
 
-### Robotics
+- abstract,
+- domain and background,
+- research problem,
+- aim and objectives,
+- significance,
+- deep-learning architecture survey,
+- recent related work,
+- model-selection justification,
+- dataset / benchmark methodology,
+- evaluation metrics,
+- proposed methodology.
 
-- LIBERO
-- LIBERO-Spatial
-- LIBERO-Plus
-- MuJoCo
-- Robosuite
-- Robomimic
+### Assignment 2
 
-### Experimentation
+- preprocessing,
+- baseline implementation,
+- model adaptation,
+- training,
+- hyperparameter tuning,
+- validation,
+- final model evaluation,
+- architecture visualization,
+- performance visualization,
+- critical analysis,
+- comparison between baseline and final models.
 
-- Python
-- NumPy
-- Pandas
-- Matplotlib
-- Jupyter
-- TensorBoard
-- Weights & Biases
-
-### Infrastructure
-
-- Windows 11
-- WSL2
-- Ubuntu 24.04
-- Conda / Miniforge
-- NVIDIA CUDA
-- NVIDIA GeForce RTX 5090
+Python implementation and generated outputs will be presented through Jupyter notebooks.
 
 ---
 
-# Disclaimer
+## License
 
-This repository is an academic Deep Learning research project under active development.
+Academic project provided for educational and research purposes.
 
-Experimental protocols, model configurations, perturbation definitions, hyperparameters, evaluation conditions, and conclusions may change until the methodology and final evaluation protocol are formally frozen.
+Third-party software, pretrained models, benchmark assets and datasets remain subject to their respective licences and terms of use.
 
-Results should therefore not be interpreted as final research conclusions until the corresponding experiment checkpoint has been completed.
-
----
-
-## Author
-
-**Yeoh Lee Ming**
-
-Deep Learning Research Project  
-Vision-Language-Action Learning · Robotics · Embodied AI
+This repository does not redistribute LIBERO datasets, Hugging Face model weights or other externally licensed assets unless explicitly permitted by their respective licences.
 
 ---
 
-## Project Status
+## Citation
 
-> **Checkpoint 01 Complete — Reproducible environment and LIBERO simulator validated.**
+```bibtex
+@misc{yeoh2026vlarobustness,
+  author      = {Yeoh, Lee Ming},
+  title       = {Robustness-Enhanced Vision-Language-Action Learning for
+                 Generalizable Robotic Manipulation under Linguistic and
+                 Environmental Distribution Shifts},
+  year        = {2026},
+  institution = {Asia Pacific University of Technology and Innovation},
+  note        = {Deep Learning, CT100-3-M-DL},
+  url         = {https://github.com/LeeMing988/deep-learning-vla-robustness}
+}
+```
 
-**Next:** Notebook 00 and SmolVLA baseline integration.
+---
+
+## Acknowledgements
+
+- Hugging Face **LeRobot** project and contributors.
+- **SmolVLA** authors and contributors.
+- **LIBERO** benchmark authors and maintainers.
+- **MuJoCo** by Google DeepMind.
+- Asia Pacific University of Technology & Innovation (APU) course staff for academic guidance.
+
+---
+
+> **Current milestone:** Checkpoint 01 complete — reproducible environment, RTX 5090 compute, MuJoCo rendering and LIBERO-Spatial simulation validated.
+
+> **Next:** Notebook 00 → SmolVLA integration → complete G0 → baseline reproduction.
