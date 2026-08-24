@@ -1,0 +1,6 @@
+model,initialization,language_aug,environment_aug,training_language_levels,Notebook 02 status
+M0,lerobot/smolvla_libero,No,No,Released reference,Reference reproduced in Notebook 01
+M1,lerobot/smolvla_base,No,No,L0,Back-propagation smoke PASS
+M2-L,lerobot/smolvla_base,Yes,No,L0 + L1 + L2; L3 held out,Perturbation specification PASS
+M2-E,lerobot/smolvla_base,No,Yes,L0,Back-propagation smoke PASS
+M2-LE,lerobot/smolvla_base,Yes,Yes,L0 + L1 + L2; L3 held out,Combined design PASS

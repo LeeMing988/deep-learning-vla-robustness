@@ -1,0 +1,16 @@
+{
+  "model_id": "M2-L",
+  "description": "Language robustness fine-tuning",
+  "base_model_repo_id": "lerobot/smolvla_base",
+  "base_model_revision": "c83c3163b8ca9b7e67c509fffd9121e66cb96205",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "split_sha256": "0d13554df26d28cfefd58a4d0d873839d54109a4b494f54d1a744d607f76a3fb",
+  "seed": 42,
+  "training_language_levels": [
+    "L0",
+    "L1",
+    "L2"
+  ],
+  "held_out_language_level": "L3",
+  "language_table": "configs/experiments/libero_spatial_language_augmentations_v1.csv"
+}

@@ -1,0 +1,41 @@
+task_id,original_instruction,level,augmented_instruction,training_seen,semantic_review,review_note
+30,pick up the black bowl next to the cookie box and place it on the plate,L0,pick up the black bowl next to the cookie box and place it on the plate,True,PASS,Original LIBERO instruction
+30,pick up the black bowl next to the cookie box and place it on the plate,L1,pick up the black bowl beside the cookie box and put it on the plate,True,PASS,Curated meaning-preserving lexical variation
+30,pick up the black bowl next to the cookie box and place it on the plate,L2,place the black bowl that is next to the cookie box onto the plate,True,PASS,Curated meaning-preserving syntactic reformulation
+30,pick up the black bowl next to the cookie box and place it on the plate,L3,move the black bowl positioned beside the cookie box over to the plate,False,PASS,Curated held-out compositional paraphrase
+31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,L0,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,True,PASS,Original LIBERO instruction
+31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,L1,take the black bowl from the top drawer of the wooden cabinet and put it on the plate,True,PASS,Curated meaning-preserving lexical variation
+31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,L2,"from the wooden cabinet's top drawer, pick up the black bowl and place it on the plate",True,PASS,Curated meaning-preserving syntactic reformulation
+31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,L3,"retrieve the black bowl stored in the upper drawer of the wooden cabinet, then move it onto the plate",False,PASS,Curated held-out compositional paraphrase
+32,pick up the black bowl on the ramekin and place it on the plate,L0,pick up the black bowl on the ramekin and place it on the plate,True,PASS,Original LIBERO instruction
+32,pick up the black bowl on the ramekin and place it on the plate,L1,pick up the black bowl sitting on the ramekin and put it on the plate,True,PASS,Curated meaning-preserving lexical variation
+32,pick up the black bowl on the ramekin and place it on the plate,L2,place the black bowl that is on the ramekin onto the plate,True,PASS,Curated meaning-preserving syntactic reformulation
+32,pick up the black bowl on the ramekin and place it on the plate,L3,move the black bowl resting on top of the ramekin over to the plate,False,PASS,Curated held-out compositional paraphrase
+33,pick up the black bowl on the stove and place it on the plate,L0,pick up the black bowl on the stove and place it on the plate,True,PASS,Original LIBERO instruction
+33,pick up the black bowl on the stove and place it on the plate,L1,pick up the black bowl sitting on the stove and put it on the plate,True,PASS,Curated meaning-preserving lexical variation
+33,pick up the black bowl on the stove and place it on the plate,L2,place the black bowl that is on the stove onto the plate,True,PASS,Curated meaning-preserving syntactic reformulation
+33,pick up the black bowl on the stove and place it on the plate,L3,move the black bowl resting on the stove over to the plate,False,PASS,Curated held-out compositional paraphrase
+34,pick up the black bowl between the plate and the ramekin and place it on the plate,L0,pick up the black bowl between the plate and the ramekin and place it on the plate,True,PASS,Original LIBERO instruction
+34,pick up the black bowl between the plate and the ramekin and place it on the plate,L1,pick up the black bowl located between the plate and the ramekin and put it on the plate,True,PASS,Curated meaning-preserving lexical variation
+34,pick up the black bowl between the plate and the ramekin and place it on the plate,L2,place the black bowl that is between the plate and the ramekin onto the plate,True,PASS,Curated meaning-preserving syntactic reformulation
+34,pick up the black bowl between the plate and the ramekin and place it on the plate,L3,"find the black bowl positioned between the plate and ramekin, then move it onto the plate",False,PASS,Curated held-out compositional paraphrase
+35,pick up the black bowl on the cookie box and place it on the plate,L0,pick up the black bowl on the cookie box and place it on the plate,True,PASS,Original LIBERO instruction
+35,pick up the black bowl on the cookie box and place it on the plate,L1,pick up the black bowl sitting on the cookie box and put it on the plate,True,PASS,Curated meaning-preserving lexical variation
+35,pick up the black bowl on the cookie box and place it on the plate,L2,place the black bowl that is on the cookie box onto the plate,True,PASS,Curated meaning-preserving syntactic reformulation
+35,pick up the black bowl on the cookie box and place it on the plate,L3,move the black bowl resting on top of the cookie box over to the plate,False,PASS,Curated held-out compositional paraphrase
+36,pick up the black bowl next to the plate and place it on the plate,L0,pick up the black bowl next to the plate and place it on the plate,True,PASS,Original LIBERO instruction
+36,pick up the black bowl next to the plate and place it on the plate,L1,pick up the black bowl beside the plate and put it on the plate,True,PASS,Curated meaning-preserving lexical variation
+36,pick up the black bowl next to the plate and place it on the plate,L2,place the black bowl that is next to the plate onto the plate,True,PASS,Curated meaning-preserving syntactic reformulation
+36,pick up the black bowl next to the plate and place it on the plate,L3,move the black bowl positioned beside the plate onto the plate,False,PASS,Curated held-out compositional paraphrase
+37,pick up the black bowl next to the ramekin and place it on the plate,L0,pick up the black bowl next to the ramekin and place it on the plate,True,PASS,Original LIBERO instruction
+37,pick up the black bowl next to the ramekin and place it on the plate,L1,pick up the black bowl beside the ramekin and put it on the plate,True,PASS,Curated meaning-preserving lexical variation
+37,pick up the black bowl next to the ramekin and place it on the plate,L2,place the black bowl that is next to the ramekin onto the plate,True,PASS,Curated meaning-preserving syntactic reformulation
+37,pick up the black bowl next to the ramekin and place it on the plate,L3,move the black bowl positioned beside the ramekin over to the plate,False,PASS,Curated held-out compositional paraphrase
+38,pick up the black bowl from table center and place it on the plate,L0,pick up the black bowl from table center and place it on the plate,True,PASS,Original LIBERO instruction
+38,pick up the black bowl from table center and place it on the plate,L1,pick up the black bowl from the center of the table and put it on the plate,True,PASS,Curated meaning-preserving lexical variation
+38,pick up the black bowl from table center and place it on the plate,L2,take the black bowl located at the table center and place it onto the plate,True,PASS,Curated meaning-preserving syntactic reformulation
+38,pick up the black bowl from table center and place it on the plate,L3,move the black bowl positioned in the middle of the table onto the plate,False,PASS,Curated held-out compositional paraphrase
+39,pick up the black bowl on the wooden cabinet and place it on the plate,L0,pick up the black bowl on the wooden cabinet and place it on the plate,True,PASS,Original LIBERO instruction
+39,pick up the black bowl on the wooden cabinet and place it on the plate,L1,pick up the black bowl sitting on the wooden cabinet and put it on the plate,True,PASS,Curated meaning-preserving lexical variation
+39,pick up the black bowl on the wooden cabinet and place it on the plate,L2,place the black bowl that is on the wooden cabinet onto the plate,True,PASS,Curated meaning-preserving syntactic reformulation
+39,pick up the black bowl on the wooden cabinet and place it on the plate,L3,move the black bowl resting on top of the wooden cabinet over to the plate,False,PASS,Curated held-out compositional paraphrase

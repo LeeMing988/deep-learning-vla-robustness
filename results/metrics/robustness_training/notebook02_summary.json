@@ -1,0 +1,39 @@
+{
+  "notebook": "02_robustness_training",
+  "status": "PASS",
+  "project_git_sha": "c72dced819f45299ca35a50b1a7ba479d07f945e",
+  "dataset_repo_id": "lerobot/libero",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "reference_model_repo_id": "lerobot/smolvla_libero",
+  "reference_model_revision": "31d453f7edd78c839a8bbc39744a292686daf0de",
+  "base_model_repo_id": "lerobot/smolvla_base",
+  "base_model_revision": "c83c3163b8ca9b7e67c509fffd9121e66cb96205",
+  "split_file": "configs/splits/libero_spatial_split_v1_seed42.csv",
+  "split_sha256": "0d13554df26d28cfefd58a4d0d873839d54109a4b494f54d1a744d607f76a3fb",
+  "n_train_episodes": 346,
+  "n_validation_episodes": 86,
+  "m1_smoke_checkpoint": "experiments/training/m1_standard_smoke_seed42/checkpoints/000005/pretrained_model",
+  "m2e_smoke_checkpoint": "experiments/training/m2e_environment_smoke_seed42/checkpoints/000005/pretrained_model",
+  "language_table": "configs/experiments/libero_spatial_language_augmentations_v1.csv",
+  "language_training_levels": [
+    "L0",
+    "L1",
+    "L2"
+  ],
+  "language_held_out_level": "L3",
+  "checks": {
+    "Prior dataset audit": true,
+    "G0 closed-loop compatibility": true,
+    "Frozen split integrity": true,
+    "All 10 tasks in train and validation": true,
+    "LeRobot frozen subset consumption": true,
+    "Base model revision pinned": true,
+    "M1 back-propagation smoke": true,
+    "M1 checkpoint reload": true,
+    "M2-E augmentation sanity": true,
+    "M2-E back-propagation smoke": true,
+    "Language perturbation specification": true,
+    "M2-LE combined design": true,
+    "Experiment manifests": true
+  }
+}

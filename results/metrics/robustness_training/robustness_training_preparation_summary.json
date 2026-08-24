@@ -1,0 +1,20 @@
+{
+  "dataset_repo_id": "lerobot/libero",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "reference_model_repo_id": "lerobot/smolvla_libero",
+  "reference_model_revision": "31d453f7edd78c839a8bbc39744a292686daf0de",
+  "base_model_repo_id": "lerobot/smolvla_base",
+  "base_model_revision": "c83c3163b8ca9b7e67c509fffd9121e66cb96205",
+  "libero_suite": "libero_spatial",
+  "seed": 42,
+  "video_backend": "pyav",
+  "frozen_split": "configs/splits/libero_spatial_split_v1_seed42.csv",
+  "frozen_split_sha256": "0d13554df26d28cfefd58a4d0d873839d54109a4b494f54d1a744d607f76a3fb",
+  "n_train_episodes": 346,
+  "n_validation_episodes": 86,
+  "m1_smoke_enabled": false,
+  "m1_pilot_enabled": false,
+  "m2e_smoke_enabled": false,
+  "final_training_enabled": false,
+  "pretraining_foundation_pass": true
+}
