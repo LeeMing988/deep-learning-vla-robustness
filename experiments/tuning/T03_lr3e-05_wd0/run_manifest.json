@@ -1,0 +1,26 @@
+{
+  "run_id": "T03_lr3e-05_wd0",
+  "variant": "M1",
+  "seed": 42,
+  "learning_rate": 3e-05,
+  "weight_decay": 0.0,
+  "steps": 200,
+  "batch_size": 4,
+  "grad_clip_norm": 10.0,
+  "warmup_fraction": 0.1,
+  "min_lr_ratio": 0.025,
+  "dataset_repo_id": "lerobot/libero",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "base_model_repo_id": "lerobot/smolvla_base",
+  "base_model_revision": "c83c3163b8ca9b7e67c509fffd9121e66cb96205",
+  "split_sha256": "0d13554df26d28cfefd58a4d0d873839d54109a4b494f54d1a744d607f76a3fb",
+  "language_levels": [
+    "L0"
+  ],
+  "environment_augmentation": null,
+  "config_hash": "0a2c3b03e69101ee5fb1e42b3dd3abca93373735dd94f1ce334e6b5a15d4185a",
+  "total_parameters": 450046176,
+  "trainable_parameters": 99880992,
+  "training_seconds": 30.729940593999345,
+  "model_dir": "experiments/tuning/T03_lr3e-05_wd0/model"
+}

@@ -1,0 +1,73 @@
+{
+  "source_notebook": "03_tuning_and_final_training",
+  "dataset_repo_id": "lerobot/libero",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "split_sha256": "0d13554df26d28cfefd58a4d0d873839d54109a4b494f54d1a744d607f76a3fb",
+  "selected_learning_rate": 0.0001,
+  "selected_weight_decay": 0.01,
+  "final_steps": 1500,
+  "models": {
+    "M1_seed42": {
+      "variant": "M1",
+      "seed": 42,
+      "checkpoint": "experiments/training/final/M1_seed42/model",
+      "validation_loss": 0.6472343379259109
+    },
+    "M1_seed123": {
+      "variant": "M1",
+      "seed": 123,
+      "checkpoint": "experiments/training/final/M1_seed123/model",
+      "validation_loss": 0.6632683157920838
+    },
+    "M1_seed2026": {
+      "variant": "M1",
+      "seed": 2026,
+      "checkpoint": "experiments/training/final/M1_seed2026/model",
+      "validation_loss": 0.6625707030296326
+    },
+    "M2L_seed42": {
+      "variant": "M2-L",
+      "seed": 42,
+      "checkpoint": "experiments/training/final/M2L_seed42/model",
+      "validation_loss": 0.6571870285272599
+    },
+    "M2E_seed42": {
+      "variant": "M2-E",
+      "seed": 42,
+      "checkpoint": "experiments/training/final/M2E_seed42/model",
+      "validation_loss": 0.6424060714244842
+    },
+    "M2LE_seed42": {
+      "variant": "M2-LE",
+      "seed": 42,
+      "checkpoint": "experiments/training/final/M2LE_seed42/model",
+      "validation_loss": 0.6536708128452301
+    },
+    "M2LE_seed123": {
+      "variant": "M2-LE",
+      "seed": 123,
+      "checkpoint": "experiments/training/final/M2LE_seed123/model",
+      "validation_loss": 0.7005831658840179
+    },
+    "M2LE_seed2026": {
+      "variant": "M2-LE",
+      "seed": 2026,
+      "checkpoint": "experiments/training/final/M2LE_seed2026/model",
+      "validation_loss": 0.6449161821603775
+    }
+  },
+  "evaluation_plan": {
+    "E0": "standard ID LIBERO-Spatial",
+    "E1": "language L0-L3",
+    "E2": "seen environmental shifts",
+    "E3": "held-out perturbation categories",
+    "E4": "combined perturbations where feasible"
+  },
+  "primary_metric": "task success rate",
+  "secondary_metrics": [
+    "generalization gap",
+    "completion steps",
+    "inference latency",
+    "failure taxonomy"
+  ]
+}

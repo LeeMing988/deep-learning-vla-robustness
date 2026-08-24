@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "config_hash": "eb07292efcfe5ae8505eda43b58d19c4bf8859247935208c5bce480171770c30",
+  "run_id": "M1_seed123",
+  "variant": "M1",
+  "seed": 123,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "steps": 1500,
+  "batch_size": 4,
+  "validation_loss": 0.6632683157920838,
+  "validation_samples": 200,
+  "training_seconds": 212.85819976099992,
+  "final_logged_train_loss": 0.6025832891464233,
+  "peak_logged_gpu_memory_gb": 2.1048083305358887,
+  "model_kept": true
+}

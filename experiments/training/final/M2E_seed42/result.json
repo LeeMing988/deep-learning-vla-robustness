@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "config_hash": "2e7a4fc77fb74df1801946ede4e86199d092866849bd46e3fe8c30de704424be",
+  "run_id": "M2E_seed42",
+  "variant": "M2-E",
+  "seed": 42,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "steps": 1500,
+  "batch_size": 4,
+  "validation_loss": 0.6424060714244842,
+  "validation_samples": 200,
+  "training_seconds": 223.46213667600023,
+  "final_logged_train_loss": 0.4386684000492096,
+  "peak_logged_gpu_memory_gb": 2.1048083305358887,
+  "model_kept": true
+}

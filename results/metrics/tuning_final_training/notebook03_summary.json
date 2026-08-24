@@ -1,0 +1,41 @@
+{
+  "notebook": "03_tuning_and_final_training",
+  "status": "PASS",
+  "project_git_sha": "82ad3cdb2deb9f40414a28c65fb327785b343183",
+  "dataset_repo_id": "lerobot/libero",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "base_model_repo_id": "lerobot/smolvla_base",
+  "base_model_revision": "c83c3163b8ca9b7e67c509fffd9121e66cb96205",
+  "split_file": "configs/splits/libero_spatial_split_v1_seed42.csv",
+  "split_sha256": "0d13554df26d28cfefd58a4d0d873839d54109a4b494f54d1a744d607f76a3fb",
+  "validation_subset": "configs/experiments/validation_frame_subset_v1.csv",
+  "tuning_search_space": "configs/experiments/tuning_search_space_v1.csv",
+  "selected_optimizer": {
+    "selected_tuning_id": "T06",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "validation_loss": 0.9761533272266388,
+    "tuning_seed": 42,
+    "selection_rule": "Minimum mean loss on frozen validation subset"
+  },
+  "final_training_plan": "configs/experiments/final_training_plan_v1.csv",
+  "final_training_results": "results/metrics/tuning_final_training/final_training_results.csv",
+  "evaluation_handoff": "configs/experiments/notebook04_evaluation_handoff_v1.json",
+  "checks": {
+    "Notebook 02 prerequisite": true,
+    "Frozen split integrity": true,
+    "Frozen validation subset": true,
+    "Language L0/L1/L2 assignment": true,
+    "L3 excluded from training": true,
+    "Custom loop preflight": true,
+    "Six tuning runs complete": true,
+    "Optimizer selection frozen": true,
+    "Eight final runs complete": true,
+    "Three M1 seeds": true,
+    "Three M2-LE seeds": true,
+    "M2-L ablation": true,
+    "M2-E ablation": true,
+    "Final artifact audit": true,
+    "Notebook 04 handoff": true
+  }
+}

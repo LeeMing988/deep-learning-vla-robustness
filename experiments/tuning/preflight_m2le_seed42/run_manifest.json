@@ -1,0 +1,59 @@
+{
+  "run_id": "preflight_m2le_seed42",
+  "variant": "M2-LE",
+  "seed": 42,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0,
+  "steps": 3,
+  "batch_size": 1,
+  "grad_clip_norm": 10.0,
+  "warmup_fraction": 0.1,
+  "min_lr_ratio": 0.025,
+  "dataset_repo_id": "lerobot/libero",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "base_model_repo_id": "lerobot/smolvla_base",
+  "base_model_revision": "c83c3163b8ca9b7e67c509fffd9121e66cb96205",
+  "split_sha256": "0d13554df26d28cfefd58a4d0d873839d54109a4b494f54d1a744d607f76a3fb",
+  "language_levels": [
+    "L0",
+    "L1",
+    "L2"
+  ],
+  "environment_augmentation": {
+    "brightness": {
+      "weight": 1.0,
+      "type": "ColorJitter",
+      "kwargs": {
+        "brightness": [
+          0.85,
+          1.15
+        ]
+      }
+    },
+    "contrast": {
+      "weight": 1.0,
+      "type": "ColorJitter",
+      "kwargs": {
+        "contrast": [
+          0.85,
+          1.15
+        ]
+      }
+    },
+    "saturation": {
+      "weight": 1.0,
+      "type": "ColorJitter",
+      "kwargs": {
+        "saturation": [
+          0.85,
+          1.15
+        ]
+      }
+    }
+  },
+  "config_hash": "60a0ffed6a94958416b64e74226d3a4a250403ba875acb7c6ef51f966e221688",
+  "total_parameters": 450046176,
+  "trainable_parameters": 99880992,
+  "training_seconds": 1.4007153790007578,
+  "model_dir": "experiments/tuning/preflight_m2le_seed42/model"
+}

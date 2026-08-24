@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "config_hash": "0a2c3b03e69101ee5fb1e42b3dd3abca93373735dd94f1ce334e6b5a15d4185a",
+  "run_id": "T03_lr3e-05_wd0",
+  "variant": "M1",
+  "seed": 42,
+  "learning_rate": 3e-05,
+  "weight_decay": 0.0,
+  "steps": 200,
+  "batch_size": 4,
+  "validation_loss": 1.1461963629722596,
+  "validation_samples": 200,
+  "training_seconds": 30.729940593999345,
+  "final_logged_train_loss": 1.1314293146133423,
+  "peak_logged_gpu_memory_gb": 2.0955018997192383,
+  "model_kept": false
+}

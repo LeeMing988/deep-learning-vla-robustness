@@ -1,0 +1,26 @@
+{
+  "run_id": "M1_seed123",
+  "variant": "M1",
+  "seed": 123,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "steps": 1500,
+  "batch_size": 4,
+  "grad_clip_norm": 10.0,
+  "warmup_fraction": 0.1,
+  "min_lr_ratio": 0.025,
+  "dataset_repo_id": "lerobot/libero",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "base_model_repo_id": "lerobot/smolvla_base",
+  "base_model_revision": "c83c3163b8ca9b7e67c509fffd9121e66cb96205",
+  "split_sha256": "0d13554df26d28cfefd58a4d0d873839d54109a4b494f54d1a744d607f76a3fb",
+  "language_levels": [
+    "L0"
+  ],
+  "environment_augmentation": null,
+  "config_hash": "eb07292efcfe5ae8505eda43b58d19c4bf8859247935208c5bce480171770c30",
+  "total_parameters": 450046176,
+  "trainable_parameters": 99880992,
+  "training_seconds": 212.85819976099992,
+  "model_dir": "experiments/training/final/M1_seed123/model"
+}

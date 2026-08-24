@@ -1,0 +1,30 @@
+{
+  "plan_id": "v1",
+  "selected_optimizer": {
+    "selected_tuning_id": "T06",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "validation_loss": 0.9761533272266388,
+    "tuning_seed": 42,
+    "selection_rule": "Minimum mean loss on frozen validation subset"
+  },
+  "final_steps": 1500,
+  "batch_size": 4,
+  "grad_clip_norm": 10.0,
+  "warmup_fraction": 0.1,
+  "min_lr_ratio": 0.025,
+  "primary_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "primary_comparison": [
+    "M1",
+    "M2-LE"
+  ],
+  "single_seed_ablations": [
+    "M2-L",
+    "M2-E"
+  ],
+  "validation_metric_role": "Model selection / sanity only; closed-loop task success is primary."
+}

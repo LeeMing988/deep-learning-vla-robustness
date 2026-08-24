@@ -1,0 +1,28 @@
+{
+  "run_id": "M2L_seed42",
+  "variant": "M2-L",
+  "seed": 42,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "steps": 1500,
+  "batch_size": 4,
+  "grad_clip_norm": 10.0,
+  "warmup_fraction": 0.1,
+  "min_lr_ratio": 0.025,
+  "dataset_repo_id": "lerobot/libero",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "base_model_repo_id": "lerobot/smolvla_base",
+  "base_model_revision": "c83c3163b8ca9b7e67c509fffd9121e66cb96205",
+  "split_sha256": "0d13554df26d28cfefd58a4d0d873839d54109a4b494f54d1a744d607f76a3fb",
+  "language_levels": [
+    "L0",
+    "L1",
+    "L2"
+  ],
+  "environment_augmentation": null,
+  "config_hash": "0153f7f3eab07de6a01093828f9cfb277d99aa85e4de297e74c4a48b7ecd4aa5",
+  "total_parameters": 450046176,
+  "trainable_parameters": 99880992,
+  "training_seconds": 215.56337583700042,
+  "model_dir": "experiments/training/final/M2L_seed42/model"
+}

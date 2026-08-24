@@ -1,0 +1,9 @@
+run_id,variant,seed,config_json,processor_saved,train_metrics,result_json,run_manifest,language_assignment,artifact_pass
+M1_seed42,M1,42,True,True,True,True,True,True,True
+M1_seed123,M1,123,True,True,True,True,True,True,True
+M1_seed2026,M1,2026,True,True,True,True,True,True,True
+M2L_seed42,M2-L,42,True,True,True,True,True,True,True
+M2E_seed42,M2-E,42,True,True,True,True,True,True,True
+M2LE_seed42,M2-LE,42,True,True,True,True,True,True,True
+M2LE_seed123,M2-LE,123,True,True,True,True,True,True,True
+M2LE_seed2026,M2-LE,2026,True,True,True,True,True,True,True

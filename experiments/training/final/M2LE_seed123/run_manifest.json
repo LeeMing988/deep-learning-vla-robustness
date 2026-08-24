@@ -1,0 +1,59 @@
+{
+  "run_id": "M2LE_seed123",
+  "variant": "M2-LE",
+  "seed": 123,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "steps": 1500,
+  "batch_size": 4,
+  "grad_clip_norm": 10.0,
+  "warmup_fraction": 0.1,
+  "min_lr_ratio": 0.025,
+  "dataset_repo_id": "lerobot/libero",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "base_model_repo_id": "lerobot/smolvla_base",
+  "base_model_revision": "c83c3163b8ca9b7e67c509fffd9121e66cb96205",
+  "split_sha256": "0d13554df26d28cfefd58a4d0d873839d54109a4b494f54d1a744d607f76a3fb",
+  "language_levels": [
+    "L0",
+    "L1",
+    "L2"
+  ],
+  "environment_augmentation": {
+    "brightness": {
+      "weight": 1.0,
+      "type": "ColorJitter",
+      "kwargs": {
+        "brightness": [
+          0.85,
+          1.15
+        ]
+      }
+    },
+    "contrast": {
+      "weight": 1.0,
+      "type": "ColorJitter",
+      "kwargs": {
+        "contrast": [
+          0.85,
+          1.15
+        ]
+      }
+    },
+    "saturation": {
+      "weight": 1.0,
+      "type": "ColorJitter",
+      "kwargs": {
+        "saturation": [
+          0.85,
+          1.15
+        ]
+      }
+    }
+  },
+  "config_hash": "f7211912983b79ea21350d7552edb61d49822fe954bc2871d9fa7cf5e0060bd4",
+  "total_parameters": 450046176,
+  "trainable_parameters": 99880992,
+  "training_seconds": 227.08115934099987,
+  "model_dir": "experiments/training/final/M2LE_seed123/model"
+}
