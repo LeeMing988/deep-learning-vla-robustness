@@ -1,0 +1,3 @@
+run_id,logged_points,early_window_mean_loss,late_window_mean_loss,relative_loss_reduction,finite_training_trace,interpretation
+M1_seed42,61,1.4564715127150218,0.6374378924568495,0.5623409816862153,True,stable with lower late-window loss
+M2LE_seed42,61,1.327711616953214,0.6096220016479492,0.5408475802547481,True,stable with lower late-window loss

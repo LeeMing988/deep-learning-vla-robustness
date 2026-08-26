@@ -1,0 +1,78 @@
+{
+  "source_notebook": "06_validated_final_retraining",
+  "final_model_registry": "configs/experiments/definitive_final_model_registry_v1.csv",
+  "final_checkpoint_count": 8,
+  "final_training_steps": 25000,
+  "training_budget_frozen": true,
+  "budget_selection_used_ood_results": false,
+  "model_selection_after_ood_forbidden": true,
+  "dataset_repo_id": "lerobot/libero",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "base_model_repo_id": "lerobot/smolvla_base",
+  "base_model_revision": "c83c3163b8ca9b7e67c509fffd9121e66cb96205",
+  "primary_variants": [
+    "M1",
+    "M2-LE"
+  ],
+  "primary_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "ablation_variants": {
+    "M2-L": [
+      42
+    ],
+    "M2-E": [
+      42
+    ]
+  },
+  "language_training_levels": [
+    "L0",
+    "L1",
+    "L2"
+  ],
+  "held_out_language_level": "L3",
+  "environment_training_augmentation": {
+    "brightness": {
+      "weight": 1.0,
+      "type": "ColorJitter",
+      "kwargs": {
+        "brightness": [
+          0.85,
+          1.15
+        ]
+      }
+    },
+    "contrast": {
+      "weight": 1.0,
+      "type": "ColorJitter",
+      "kwargs": {
+        "contrast": [
+          0.85,
+          1.15
+        ]
+      }
+    },
+    "saturation": {
+      "weight": 1.0,
+      "type": "ColorJitter",
+      "kwargs": {
+        "saturation": [
+          0.85,
+          1.15
+        ]
+      }
+    }
+  },
+  "planned_conditions": [
+    "E0_ID",
+    "E1_L1",
+    "E1_L2",
+    "E1_L3",
+    "E2_SEEN_PHOTO",
+    "E3_HELDOUT_NOISE",
+    "E4_COMBINED"
+  ],
+  "evaluation_principle": "Notebook 07 is the definitive closed-loop evaluation. No final checkpoint may be replaced after observing OOD results."
+}

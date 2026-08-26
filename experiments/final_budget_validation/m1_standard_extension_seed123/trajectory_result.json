@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "run_id": "m1_standard_extension_seed123",
+  "seed": 123,
+  "request_hash": "797f109778e657f25eeda30647e812dc4b7ed9d623fbbdb69cbca2437364a7aa",
+  "training_seconds": 7144.404564957018,
+  "training_minutes": 119.0734094159503,
+  "trainable_parameters": 99880992,
+  "total_parameters": 450046176,
+  "trainable_fraction": 0.2219349865112508,
+  "peak_gpu_memory_gb": 2.0947742462158203
+}

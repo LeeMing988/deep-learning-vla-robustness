@@ -1,0 +1,31 @@
+{
+  "variant": "M2-L",
+  "seed": 42,
+  "steps": 25000,
+  "batch_size": 4,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "grad_clip_norm": 10.0,
+  "warmup_steps": 2500,
+  "decay_end_step": 25000,
+  "min_lr_ratio": 0.025,
+  "dataset_repo_id": "lerobot/libero",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "base_model_repo_id": "lerobot/smolvla_base",
+  "base_model_revision": "c83c3163b8ca9b7e67c509fffd9121e66cb96205",
+  "split_sha256": "0d13554df26d28cfefd58a4d0d873839d54109a4b494f54d1a744d607f76a3fb",
+  "language_levels": [
+    "L0",
+    "L1",
+    "L2"
+  ],
+  "environment_augmentation": null,
+  "budget_handoff_source": "configs/experiments/notebook06_final_budget_handoff_v2.json",
+  "config_hash": "de23c2ccc182a37ad2d6b7d53dd7f17d3a7ab4a97e452c40b5ce77260008a35c",
+  "total_parameters": 450046176,
+  "trainable_parameters": 99880992,
+  "trainable_fraction": 0.2219349865112508,
+  "training_seconds": 3630.686185808998,
+  "model_dir": "experiments/validated_final_retraining/m2l_seed42_25000/model",
+  "language_assignment": "experiments/validated_final_retraining/m2l_seed42_25000/language_assignment.csv"
+}

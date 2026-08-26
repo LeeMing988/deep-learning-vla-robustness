@@ -1,0 +1,31 @@
+{
+  "notebook": "05b_final_training_budget_validation",
+  "training_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "budget_checkpoints": [
+    25000,
+    35000,
+    50000
+  ],
+  "baseline_budget": 25000,
+  "evaluation_condition": "E0_ID_only",
+  "replicas_per_task": 5,
+  "episodes_per_budget": 150,
+  "total_closed_loop_episodes": 450,
+  "minimum_practical_gain_pp": 5.0,
+  "tie_margin_pp": 2.0,
+  "required_improved_training_seeds": 2,
+  "bootstrap_replicates": 5000,
+  "multiple_comparison_adjustment": "Holm: 35k-vs-25k and 50k-vs-25k",
+  "selection_uses_ood_results": false,
+  "scheduler": {
+    "warmup_steps": 2500,
+    "cosine_decay_end_step": 25000,
+    "min_lr_ratio": 0.025,
+    "after_25k": "constant_floor_lr"
+  },
+  "no_budget_search_beyond_50k": true
+}

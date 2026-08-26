@@ -1,0 +1,44 @@
+{
+  "E0_ID": {
+    "label": "ID / L0",
+    "language_level": "L0",
+    "image_shift": "NONE",
+    "shift_role": "ID"
+  },
+  "E1_L1": {
+    "label": "Language L1",
+    "language_level": "L1",
+    "image_shift": "NONE",
+    "shift_role": "seen_language"
+  },
+  "E1_L2": {
+    "label": "Language L2",
+    "language_level": "L2",
+    "image_shift": "NONE",
+    "shift_role": "seen_language"
+  },
+  "E1_L3": {
+    "label": "Language L3 held-out",
+    "language_level": "L3",
+    "image_shift": "NONE",
+    "shift_role": "heldout_language"
+  },
+  "E2_SEEN_PHOTO": {
+    "label": "Seen photometric shift",
+    "language_level": "L0",
+    "image_shift": "SEEN_PHOTO",
+    "shift_role": "seen_visual"
+  },
+  "E3_HELDOUT_NOISE": {
+    "label": "Held-out sensor noise",
+    "language_level": "L0",
+    "image_shift": "HELDOUT_NOISE",
+    "shift_role": "heldout_visual"
+  },
+  "E4_COMBINED": {
+    "label": "L3 + photometric",
+    "language_level": "L3",
+    "image_shift": "SEEN_PHOTO",
+    "shift_role": "combined"
+  }
+}

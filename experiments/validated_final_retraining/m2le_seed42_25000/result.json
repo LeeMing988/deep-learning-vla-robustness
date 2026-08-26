@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "run_id": "m2le_seed42_25000",
+  "variant": "M2-LE",
+  "seed": 42,
+  "steps": 25000,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "batch_size": 4,
+  "validation_loss": 0.5815793716907501,
+  "validation_samples": 200,
+  "training_seconds": 3792.506612932979,
+  "training_minutes": 63.20844354888298,
+  "final_logged_train_loss": 0.3903954327106476,
+  "peak_gpu_memory_gb": 2.092940330505371,
+  "trainable_parameters": 99880992,
+  "total_parameters": 450046176,
+  "checkpoint": "experiments/validated_final_retraining/m2le_seed42_25000/model",
+  "checkpoint_signature": "9c67b9d3755f3c7050661cdac1056f912cf7a5c63626bb29ee3f0c9d60cbbdeb",
+  "config_hash": "88260c109a80c9387ea0cb282cd6cc9ce84bd2ff859d59a40cb84b9591379c43",
+  "language_assignment": "experiments/validated_final_retraining/m2le_seed42_25000/language_assignment.csv"
+}

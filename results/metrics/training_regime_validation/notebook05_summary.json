@@ -1,0 +1,42 @@
+{
+  "notebook": "05_reference_control_and_training_budget_validation",
+  "technical_status": "PASS",
+  "decision_gate": "READY_FOR_VALIDATED_FINAL_RETRAINING",
+  "training_regime_ready": true,
+  "m0_e0_success_rate": 0.6666666666666666,
+  "adequacy_threshold": 0.5333333333333333,
+  "selected_regime": {
+    "candidate_id": "STD_25000",
+    "scope": "standard",
+    "training_steps": 25000,
+    "e0_successes": 19,
+    "e0_episodes": 30,
+    "e0_success_rate": 0.6333333333333333,
+    "m0_reference_success_rate": 0.6666666666666666,
+    "reference_retention_ratio": 0.95,
+    "offline_validation_loss": 0.5627596294879913,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "batch_size": 4,
+    "seed_used_for_diagnostic": 42,
+    "selection_rule": "Must pass the predeclared E0 adequacy gate; among candidates within one success of the best adequate 30-episode screen, prefer fewer training steps, then the standard trainability scope, then lower offline validation loss."
+  },
+  "technical_checks": {
+    "Notebook 01 known control prerequisite": true,
+    "Notebook 03 training prerequisite": true,
+    "Notebook 04 pilot prerequisite": true,
+    "Pilot floor effect documented": true,
+    "M0 task-0 seed-42 control": true,
+    "M0 30-episode E0 reference": true,
+    "Standard 25k trajectory": true,
+    "Broad 25k trajectory": true,
+    "All standard milestone checkpoints": true,
+    "All trainable candidates screened": true,
+    "Offline validation finite": true,
+    "E0 screening complete": true,
+    "Training-regime diagnostic saved": true
+  },
+  "candidate_registry": "configs/experiments/training_regime_candidate_registry_v1.csv",
+  "diagnostic_summary": "results/metrics/training_regime_validation/training_regime_diagnostic.json",
+  "notebook06_handoff": "configs/experiments/notebook06_validated_retraining_handoff_v1.json"
+}

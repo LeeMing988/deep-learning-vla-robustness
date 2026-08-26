@@ -1,0 +1,11 @@
+{
+  "suite_task_id": 0,
+  "reset_seed": 42,
+  "success": true,
+  "steps_executed": 83,
+  "max_steps": 280,
+  "terminated": true,
+  "truncated": false,
+  "wall_seconds": 7.276544289998128,
+  "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate"
+}

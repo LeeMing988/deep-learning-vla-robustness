@@ -1,0 +1,15 @@
+field,value
+our_selected_learning_rate,0.0001
+our_selected_weight_decay,0.01
+our_prior_final_steps,1500
+diagnostic_max_steps,25000
+base_freeze_vision_encoder,True
+base_train_expert_only,True
+base_train_state_proj,True
+released_reference_freeze_vision_encoder,False
+released_reference_train_expert_only,False
+released_reference_train_state_proj,True
+released_reference_optimizer_lr,0.0001
+released_reference_optimizer_weight_decay,1e-10
+released_reference_steps,25000
+released_reference_batch_size,32

@@ -1,0 +1,8 @@
+candidate_id,scope,training_steps,checkpoint,selection_candidate
+M0_REFERENCE,released_reference,,/home/leeming/.cache/huggingface/hub/models--lerobot--smolvla_libero/snapshots/31d453f7edd78c839a8bbc39744a292686daf0de,False
+STD_1500,standard,1500.0,/home/leeming/projects/deep-learning-vla-robustness/experiments/training_regime_validation/m1_standard_budget_seed42/checkpoints/001500/model,True
+STD_5000,standard,5000.0,/home/leeming/projects/deep-learning-vla-robustness/experiments/training_regime_validation/m1_standard_budget_seed42/checkpoints/005000/model,True
+STD_10000,standard,10000.0,/home/leeming/projects/deep-learning-vla-robustness/experiments/training_regime_validation/m1_standard_budget_seed42/checkpoints/010000/model,True
+STD_20000,standard,20000.0,/home/leeming/projects/deep-learning-vla-robustness/experiments/training_regime_validation/m1_standard_budget_seed42/checkpoints/020000/model,True
+STD_25000,standard,25000.0,/home/leeming/projects/deep-learning-vla-robustness/experiments/training_regime_validation/m1_standard_budget_seed42/checkpoints/025000/model,True
+BROAD_25000,broad,25000.0,/home/leeming/projects/deep-learning-vla-robustness/experiments/training_regime_validation/m1_broad_budget_seed42/checkpoints/025000/model,True

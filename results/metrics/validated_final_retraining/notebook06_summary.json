@@ -1,0 +1,29 @@
+{
+  "notebook": "06_validated_final_retraining",
+  "technical_status": "PASS",
+  "final_training_steps": 25000,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "batch_size": 4,
+  "new_training_runs": 5,
+  "reused_m1_runs": 3,
+  "final_checkpoint_count": 8,
+  "final_model_registry": "configs/experiments/definitive_final_model_registry_v1.csv",
+  "notebook07_handoff": "configs/experiments/notebook07_definitive_evaluation_handoff_v1.json",
+  "technical_checks": {
+    "Notebook 02 prerequisite": true,
+    "Notebook 03 prerequisite": true,
+    "Final budget handoff frozen": true,
+    "No further budget search": true,
+    "No OOD used for budget selection": true,
+    "Frozen split valid": true,
+    "Language specification valid": true,
+    "Five new robustness runs complete": true,
+    "Three validated M1 checkpoints reused": true,
+    "Eight final checkpoints registered": true,
+    "All final checkpoints at frozen budget": true,
+    "All validation losses finite": true,
+    "L3 excluded from final training": true,
+    "Notebook 07 handoff created": true
+  }
+}

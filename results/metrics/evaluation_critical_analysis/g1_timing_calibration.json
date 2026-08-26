@@ -1,0 +1,10 @@
+{
+  "calibration_episodes": 3,
+  "median_episode_seconds": 32.154051197001536,
+  "p95_episode_seconds": 35.40261036349548,
+  "mean_select_action_seconds": 0.007252718054795434,
+  "mean_simulator_step_seconds": 0.10747013124640765,
+  "projected_total_episodes": 1230,
+  "projected_runtime_hours_median": 10.985967492308857,
+  "projected_runtime_hours_p95": 12.095891874194288
+}

@@ -1,0 +1,60 @@
+{
+  "notebook": "04_evaluation_and_critical_analysis",
+  "status": "PASS",
+  "project_git_sha": "bf3d723e97e3e95b5b0d391efe9e13184f620a05",
+  "source_notebook03": "results/metrics/tuning_final_training/notebook03_summary.json",
+  "dataset_repo_id": "lerobot/libero",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "split_sha256": "0d13554df26d28cfefd58a4d0d873839d54109a4b494f54d1a744d607f76a3fb",
+  "planned_episodes": 1230,
+  "completed_episodes": 1230,
+  "episodes_per_task": 3,
+  "bootstrap_samples": 2000,
+  "primary_metric": "closed-loop task success rate",
+  "primary_comparison": "M1 vs M2-LE across seeds 42, 123, 2026",
+  "implemented_shifts": [
+    "L1 lexical language variation",
+    "L2 syntactic language variation",
+    "L3 held-out compositional paraphrase",
+    "seen photometric boundary shift",
+    "held-out Gaussian sensor noise",
+    "combined L3 + seen photometric shift"
+  ],
+  "scope_exclusions": [
+    "camera viewpoint perturbation",
+    "explicit object-layout perturbation",
+    "explicit robot-initial-state perturbation",
+    "full LIBERO-Plus benchmark adoption"
+  ],
+  "g1_timing": {
+    "calibration_episodes": 3,
+    "median_episode_seconds": 32.154051197001536,
+    "p95_episode_seconds": 35.40261036349548,
+    "mean_select_action_seconds": 0.007252718054795434,
+    "mean_simulator_step_seconds": 0.10747013124640765,
+    "projected_total_episodes": 1230,
+    "projected_runtime_hours_median": 10.985967492308857,
+    "projected_runtime_hours_p95": 12.095891874194288
+  },
+  "checks": {
+    "Notebook 03 prerequisite": true,
+    "Eight final checkpoints present": true,
+    "Training trace finite": true,
+    "Architecture visualization": true,
+    "Task/language mapping": true,
+    "Evaluation conditions frozen": true,
+    "Evaluation compute budget frozen": true,
+    "G1 timing calibration": true,
+    "All planned closed-loop episodes": true,
+    "Primary three-seed comparison": true,
+    "Per-seed bootstrap uncertainty": true,
+    "Across-seed variation": true,
+    "Generalization gaps": true,
+    "Paired M1 vs M2-LE comparison": true,
+    "Failure analysis outputs": true,
+    "Research-question evidence": true,
+    "Primary performance figure": true,
+    "Language robustness figure": true,
+    "Environmental robustness figure": true
+  }
+}

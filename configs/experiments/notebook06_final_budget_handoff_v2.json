@@ -1,0 +1,103 @@
+{
+  "source_notebook": "05b_final_training_budget_validation",
+  "protocol_sha256": "ba13f196098682499b582415a4477a1bace913530235209e7e0be8b0a5dfb40a",
+  "final_budget_frozen": true,
+  "no_further_budget_search": true,
+  "final_training_steps": 25000,
+  "freeze_reason": "Neither 35k nor 50k satisfied every predeclared replacement criterion; 25k is retained as the lowest already-adequate budget.",
+  "training_scope": "standard",
+  "training_scope_config": {
+    "freeze_vision_encoder": true,
+    "train_expert_only": true,
+    "train_state_proj": true
+  },
+  "optimizer": {
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "batch_size": 4
+  },
+  "scheduler": {
+    "warmup_steps": 2500,
+    "cosine_decay_end_step": 25000,
+    "min_lr_ratio": 0.025,
+    "post_25k_behavior": "constant_floor_lr"
+  },
+  "dataset_repo_id": "lerobot/libero",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "split_file": "configs/splits/libero_spatial_split_v1_seed42.csv",
+  "split_sha256": "0d13554df26d28cfefd58a4d0d873839d54109a4b494f54d1a744d607f76a3fb",
+  "base_model_repo_id": "lerobot/smolvla_base",
+  "base_model_revision": "c83c3163b8ca9b7e67c509fffd9121e66cb96205",
+  "budget_selection_condition": "E0_ID_only",
+  "budget_selection_used_ood_results": false,
+  "training_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "reusable_final_m1_checkpoints": {
+    "42": {
+      "checkpoint": "experiments/final_budget_validation/m1_standard_extension_seed42/checkpoints/025000/model",
+      "checkpoint_signature": "b597f166e089d4626064c5a4b64c804d9e85ffdeccc649f7ee47b722b544ff81"
+    },
+    "123": {
+      "checkpoint": "experiments/final_budget_validation/m1_standard_extension_seed123/checkpoints/025000/model",
+      "checkpoint_signature": "bf3a94de311b1b6b07f9ea9f72d787b72aa55f6d106ed5b504315d29f5988afc"
+    },
+    "2026": {
+      "checkpoint": "experiments/final_budget_validation/m1_standard_extension_seed2026/checkpoints/025000/model",
+      "checkpoint_signature": "6017aa9df4797af76fd124a57794b26ed0351ae1fc04f3266fe37f5b7e976b4c"
+    }
+  },
+  "final_models": {
+    "M1": {
+      "seeds": [
+        42,
+        123,
+        2026
+      ],
+      "reuse_validated_checkpoints": true,
+      "language_levels": [
+        "L0"
+      ],
+      "environment_augmentation": false
+    },
+    "M2-L": {
+      "seeds": [
+        42
+      ],
+      "reuse_validated_checkpoints": false,
+      "language_levels": [
+        "L0",
+        "L1",
+        "L2"
+      ],
+      "environment_augmentation": false
+    },
+    "M2-E": {
+      "seeds": [
+        42
+      ],
+      "reuse_validated_checkpoints": false,
+      "language_levels": [
+        "L0"
+      ],
+      "environment_augmentation": true
+    },
+    "M2-LE": {
+      "seeds": [
+        42,
+        123,
+        2026
+      ],
+      "reuse_validated_checkpoints": false,
+      "language_levels": [
+        "L0",
+        "L1",
+        "L2"
+      ],
+      "environment_augmentation": true
+    }
+  },
+  "definitive_evaluation_note": "OOD conditions remained unobserved during budget selection; Notebook 07 is definitive."
+}

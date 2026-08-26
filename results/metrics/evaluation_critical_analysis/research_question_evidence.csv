@@ -1,0 +1,6 @@
+research_question,evidence,m2le_minus_m1_pp,interpretation_scope
+RQ1,"Seen photometric success: M1=0.044, M2-LE=0.078",3.3333333333333317,Directional evidence under the tested seen photometric shift
+RQ2,"Held-out L3 success: M1=0.011, M2-LE=0.044; seed-42 L0-L3 curves reported separately",3.3333333333333335,Linguistic generalization under the curated L3 paraphrase set
+RQ3,"M1 tested visual shifts: photometric=0.044, noise=0.033",,Strongest degradation among the two implemented visual perturbations only
+RQ4,"Held-out sensor-noise success: M1=0.033, M2-LE=0.078",4.444444444444445,Transfer to a held-out visual perturbation category
+RQ5,"ID success: M1=0.022, M2-LE=0.067",4.444444444444444,ID performance trade-off; OOD benefits must be interpreted jointly

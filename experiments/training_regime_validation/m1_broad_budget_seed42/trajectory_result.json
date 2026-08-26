@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "config_hash": "e370bbb183d8c10b51a3feb09397b6e8f1b4fd2103116769418661ad1ca3ce19",
+  "run_id": "m1_broad_budget_seed42",
+  "scope": "broad",
+  "training_seconds": 4676.951623904999,
+  "total_steps": 25000,
+  "checkpoint_steps": [
+    25000
+  ],
+  "total_parameters": 450046176,
+  "trainable_parameters": 392904096,
+  "trainable_fraction": 0.8730306287504151,
+  "peak_gpu_memory_gb": 5.704544544219971
+}

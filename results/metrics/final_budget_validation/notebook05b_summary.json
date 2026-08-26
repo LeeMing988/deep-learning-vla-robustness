@@ -1,0 +1,80 @@
+{
+  "notebook": "05b_final_training_budget_validation",
+  "technical_status": "PASS",
+  "final_budget_frozen": true,
+  "final_training_steps": 25000,
+  "freeze_reason": "Neither 35k nor 50k satisfied every predeclared replacement criterion; 25k is retained as the lowest already-adequate budget.",
+  "protocol_sha256": "ba13f196098682499b582415a4477a1bace913530235209e7e0be8b0a5dfb40a",
+  "training_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "budget_checkpoints": [
+    25000,
+    35000,
+    50000
+  ],
+  "episodes_per_budget": 150,
+  "total_closed_loop_episodes": 450,
+  "selection_used_ood_results": false,
+  "no_budget_search_beyond_50k": true,
+  "reproducibility_diagnostic": {
+    "status": "VARIABILITY OBSERVED",
+    "gate_pass": false,
+    "notebook05_success_rate": 0.6333333333333333,
+    "notebook05b_success_rate": 0.5,
+    "difference_percentage_points": -13.33333333333333,
+    "adequacy_threshold": 0.5333333333333333,
+    "interpretation": "Independent 25k reproduction variability was observed. This is retained as an experimental finding and does not constitute a technical notebook failure. Final budget selection is based on the stronger predeclared three-seed comparison."
+  },
+  "decision_rows": [
+    {
+      "comparison_steps": 35000,
+      "mean_seed_success_rate": 0.48666666666666664,
+      "delta_vs_25k_pp": 1.3333333333333335,
+      "bootstrap_95_lower_pp": -19.333333333333332,
+      "bootstrap_95_upper_pp": 25.333333333333336,
+      "holm_adjusted_p_value": 0.8956832138895903,
+      "improved_seeds": 1,
+      "adequate": false,
+      "practical_gain": false,
+      "ci_positive": false,
+      "paired_significant": false,
+      "seed_consistent": false,
+      "qualifies_to_replace_25k": false
+    },
+    {
+      "comparison_steps": 50000,
+      "mean_seed_success_rate": 0.5333333333333333,
+      "delta_vs_25k_pp": 6.0,
+      "bootstrap_95_lower_pp": -13.333333333333334,
+      "bootstrap_95_upper_pp": 27.333333333333332,
+      "holm_adjusted_p_value": 0.6421682713699912,
+      "improved_seeds": 1,
+      "adequate": true,
+      "practical_gain": true,
+      "ci_positive": false,
+      "paired_significant": false,
+      "seed_consistent": false,
+      "qualifies_to_replace_25k": false
+    }
+  ],
+  "notebook06_handoff": "configs/experiments/notebook06_final_budget_handoff_v2.json",
+  "technical_checks": {
+    "Notebook 05 prerequisite": true,
+    "Protocol frozen": true,
+    "Three 50k trajectories complete": true,
+    "Nine checkpoints registered": true,
+    "Offline validation finite": true,
+    "450 E0 episodes complete": true,
+    "25k reproducibility diagnostic completed": true,
+    "Hierarchical bootstrap complete": true,
+    "Holm-adjusted paired tests complete": true,
+    "Seed-consistency audit complete": true,
+    "Final budget frozen": true,
+    "Notebook 06 v2 handoff created": true,
+    "No OOD used for selection": true,
+    "No budget search beyond 50k": true
+  }
+}

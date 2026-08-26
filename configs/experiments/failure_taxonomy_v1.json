@@ -1,0 +1,12 @@
+{
+  "F01": "Localization/perception failure",
+  "F02": "Wrong target/object selection",
+  "F03": "Failed grasp",
+  "F04": "Object slip after grasp",
+  "F05": "Placement failure",
+  "F06": "Language/instruction misunderstanding",
+  "F07": "Trajectory/control failure",
+  "F08": "Timeout/incomplete execution",
+  "F09": "Collision/environment interaction",
+  "F10": "Other"
+}
