@@ -1,0 +1,8 @@
+limitation,threat,implication,future_work
+Benchmark scope,The implemented study does not evaluate the full LIBERO-Plus suite.,Claims are restricted to the implemented LIBERO-Spatial tasks and language/photometric/noise conditions.,"Evaluate camera viewpoint, object-layout and robot-initial-state shifts."
+Visual robustness mechanism,"Training-side environmental augmentation is limited to brightness, contrast and saturation.",Mixed visual results should not be generalized to all environmental-augmentation strategies.,"Investigate geometry-aware, sensor-aware and broader corruption training."
+Single-seed component ablations,M2-L and M2-E are mechanism ablations at seed 42 only.,They explain mechanisms but do not provide multi-seed confirmation.,Replicate component ablations across more training seeds in a future study.
+Training stochasticity,Success varies materially across independent optimization seeds.,Single-run conclusions would overstate certainty.,Use larger seed counts and hierarchical uncertainty in future work.
+Failure taxonomy,Automated failure labels are proxies rather than full semantic trajectory diagnoses.,Failure-type conclusions require curated trajectory/video inspection.,Perform manual semantic failure annotation on representative successful/failed episodes.
+Simulation-only evidence,"The study establishes simulator robustness, not physical-robot reliability.",No direct sim-to-real claim is justified.,Validate the robustness pattern on a physical manipulation platform.
+E5 post-hoc status,E5 was motivated after definitive E0–E4 outcomes were observed.,E5 is supplementary exploratory evidence rather than confirmatory evidence.,Predeclare double-held-out conditions in an independent future replication.

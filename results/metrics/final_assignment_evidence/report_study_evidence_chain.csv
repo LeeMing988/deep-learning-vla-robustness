@@ -1,0 +1,8 @@
+stage,role,evidence,decision,report_status
+Notebook 03,Optimizer tuning + initial pilot training,6 M1 optimizer configurations on a frozen validation subset,"T06 selected: LR=1e-4, weight decay=0.01",Model-development evidence
+Notebook 04,Pilot diagnostic robustness evaluation,1230 closed-loop episodes,Floor effect identified; pilot results are not definitive,Pilot / diagnostic only
+Notebook 05,Reference-control + training-regime adequacy,M0 evaluator control plus M1 training-budget/scope diagnosis,Standard trainability scope retained; 25k established as adequate in the diagnostic,Model-development evidence
+Notebook 05b,Bounded multi-seed budget validation,"25k/35k/50k, 3 training seeds, 450 E0 episodes",25k frozen because neither longer budget met every replacement criterion,Budget selection; E0 only
+Notebook 06,Frozen final model construction,"8 checkpoints: M1×3, M2-L×1, M2-E×1, M2-LE×3",Model-development cycle closed before definitive OOD evaluation,Final model-building evidence
+Notebook 07,Definitive robustness evaluation,"2,050 closed-loop episodes across E0–E4",Primary/confirmatory findings established,PRIMARY / CONFIRMATORY
+Notebook 07b,Double-held-out stress test,300 closed-loop episodes: L3 + held-out Gaussian noise,Supplementary evidence only; no model-development decisions changed,SUPPLEMENTARY / EXPLORATORY

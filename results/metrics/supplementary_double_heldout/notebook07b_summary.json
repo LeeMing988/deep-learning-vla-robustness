@@ -1,0 +1,42 @@
+{
+  "notebook": "07b_supplementary_double_heldout_stress_test",
+  "technical_status": "PASS",
+  "methodological_status": "SUPPLEMENTARY_EXPLORATORY",
+  "condition_id": "E5_DOUBLE_HELDOUT",
+  "condition": {
+    "label": "L3 + held-out Gaussian noise",
+    "language_level": "L3",
+    "image_shift": "HELDOUT_NOISE",
+    "shift_role": "double_heldout_exploratory"
+  },
+  "evaluation_protocol_sha256": "39ecc39f6064a2345c153f46106765848c964d1d3db15e52d90cab795196f2d7",
+  "project_git_sha": "25bc0f04bcc16112d1d67dd97a3bd10117514b9c",
+  "frozen_training_steps": 25000,
+  "checkpoint_count": 6,
+  "planned_episodes": 300,
+  "completed_episodes": 300,
+  "paired_episodes": 150,
+  "post_ood_training": false,
+  "post_ood_model_replacement": false,
+  "included_in_original_notebook07_holm_family": false,
+  "effect_results": "results/metrics/supplementary_double_heldout/e5_hierarchical_paired_effect.csv",
+  "context_results": "results/metrics/supplementary_double_heldout/e5_context_with_notebook07.csv",
+  "technical_checks": {
+    "Notebook 07 prerequisite PASS": true,
+    "Notebook 07 definitive 2050/2050": true,
+    "Six primary frozen checkpoints": true,
+    "Training budget remains 25k": true,
+    "No training or model replacement": true,
+    "Protocol frozen": true,
+    "300 planned episodes": true,
+    "300 completed episodes": true,
+    "Zero missing episodes": true,
+    "All system statuses PASS": true,
+    "Six per-seed summaries": true,
+    "150 paired comparisons": true,
+    "Hierarchical effect complete": true,
+    "Notebook 07 context table complete": true,
+    "Generalization-gap summary complete": true,
+    "Supplementary figures complete": true
+  }
+}

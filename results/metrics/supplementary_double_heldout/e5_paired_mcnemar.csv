@@ -1,0 +1,2 @@
+condition_id,methodological_status,paired_episodes,m1_success_rate,m2le_success_rate,delta_m2le_minus_m1,m1_only_successes,m2le_only_successes,discordant_pairs,raw_exact_mcnemar_p,holm_adjusted_with_notebook07
+E5_DOUBLE_HELDOUT,SUPPLEMENTARY_EXPLORATORY,150,0.04666666666666667,0.21333333333333335,0.16666666666666666,4,29,33,1.0928604751825333e-05,False
