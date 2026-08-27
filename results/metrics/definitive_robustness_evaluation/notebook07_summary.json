@@ -1,0 +1,56 @@
+{
+  "notebook": "07_definitive_robustness_evaluation",
+  "technical_status": "PASS",
+  "evaluation_protocol_sha256": "cc1caff3430a0428dcc959b805fc79bec3d17014342eb6f283377bb57b889ae9",
+  "project_git_sha": "95713d40415a8912f81c434c6b5380f659221c30",
+  "final_training_steps": 25000,
+  "final_checkpoint_count": 8,
+  "episodes_per_task": 5,
+  "planned_episodes": 2050,
+  "completed_episodes": 2050,
+  "primary_variants": [
+    "M1",
+    "M2-LE"
+  ],
+  "primary_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "primary_conditions": [
+    "E0_ID",
+    "E1_L3",
+    "E2_SEEN_PHOTO",
+    "E3_HELDOUT_NOISE",
+    "E4_COMBINED"
+  ],
+  "selection_used_ood_results": false,
+  "post_ood_model_replacement": false,
+  "headline_results": "results/metrics/definitive_robustness_evaluation/definitive_headline_results.csv",
+  "research_question_evidence": "results/metrics/definitive_robustness_evaluation/research_question_evidence.csv",
+  "technical_checks": {
+    "Notebook 06 prerequisite": true,
+    "Eight frozen checkpoints": true,
+    "No post-OOD checkpoint selection": true,
+    "Definitive protocol frozen": true,
+    "2050 planned episodes": true,
+    "2050 completed episodes": true,
+    "Zero missing episodes": true,
+    "All system statuses PASS": true,
+    "Condition summaries complete": true,
+    "Per-seed bootstrap complete": true,
+    "Primary multi-seed matrix complete": true,
+    "Primary paired effects complete": true,
+    "Holm-adjusted paired tests complete": true,
+    "Generalization gaps complete": true,
+    "Language ablation complete": true,
+    "Environmental ablation complete": true,
+    "Failure analysis outputs": true,
+    "Research-question evidence": true,
+    "Headline results": true,
+    "Primary figure": true,
+    "Paired effect figure": true,
+    "Language figure": true,
+    "Environment figure": true
+  }
+}

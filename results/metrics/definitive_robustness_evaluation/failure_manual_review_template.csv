@@ -1,0 +1,64 @@
+run_id,variant,model_seed,condition_id,suite_task_id,replica,episode_seed,failure_proxy,steps_executed,instruction,manual_failure_code,manual_failure_notes,manual_review_status
+M1_seed42,M1,42,E0_ID,0,0,100000,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E0_ID,0,3,100003,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E0_ID,0,4,100004,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E1_L1,0,2,100002,TIMEOUT,280,pick up the black bowl located between the plate and the ramekin and put it on the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E1_L1,0,4,100004,TIMEOUT,280,pick up the black bowl located between the plate and the ramekin and put it on the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E1_L1,1,0,100100,TIMEOUT,280,pick up the black bowl beside the ramekin and put it on the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E1_L2,0,0,100000,TIMEOUT,280,place the black bowl that is between the plate and the ramekin onto the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E1_L2,0,2,100002,TIMEOUT,280,place the black bowl that is between the plate and the ramekin onto the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E1_L2,0,3,100003,TIMEOUT,280,place the black bowl that is between the plate and the ramekin onto the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E1_L3,0,0,100000,TIMEOUT,280,"find the black bowl positioned between the plate and ramekin, then move it onto the plate",,,NOT_REVIEWED
+M1_seed42,M1,42,E1_L3,0,2,100002,TIMEOUT,280,"find the black bowl positioned between the plate and ramekin, then move it onto the plate",,,NOT_REVIEWED
+M1_seed42,M1,42,E1_L3,1,0,100100,TIMEOUT,280,move the black bowl positioned beside the ramekin over to the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E2_SEEN_PHOTO,0,0,100000,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E2_SEEN_PHOTO,0,3,100003,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E2_SEEN_PHOTO,1,0,100100,TIMEOUT,280,pick up the black bowl next to the ramekin and place it on the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E3_HELDOUT_NOISE,0,0,100000,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E3_HELDOUT_NOISE,0,2,100002,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E3_HELDOUT_NOISE,0,3,100003,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E4_COMBINED,1,0,100100,TIMEOUT,280,move the black bowl positioned beside the ramekin over to the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E4_COMBINED,1,1,100101,TIMEOUT,280,move the black bowl positioned beside the ramekin over to the plate,,,NOT_REVIEWED
+M1_seed42,M1,42,E4_COMBINED,1,2,100102,TIMEOUT,280,move the black bowl positioned beside the ramekin over to the plate,,,NOT_REVIEWED
+M2E_seed42,M2-E,42,E0_ID,0,1,100001,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M2E_seed42,M2-E,42,E0_ID,1,1,100101,TIMEOUT,280,pick up the black bowl next to the ramekin and place it on the plate,,,NOT_REVIEWED
+M2E_seed42,M2-E,42,E0_ID,1,3,100103,TIMEOUT,280,pick up the black bowl next to the ramekin and place it on the plate,,,NOT_REVIEWED
+M2E_seed42,M2-E,42,E2_SEEN_PHOTO,0,2,100002,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M2E_seed42,M2-E,42,E2_SEEN_PHOTO,0,3,100003,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M2E_seed42,M2-E,42,E2_SEEN_PHOTO,1,2,100102,TIMEOUT,280,pick up the black bowl next to the ramekin and place it on the plate,,,NOT_REVIEWED
+M2E_seed42,M2-E,42,E3_HELDOUT_NOISE,0,3,100003,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M2E_seed42,M2-E,42,E3_HELDOUT_NOISE,0,4,100004,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M2E_seed42,M2-E,42,E3_HELDOUT_NOISE,1,1,100101,TIMEOUT,280,pick up the black bowl next to the ramekin and place it on the plate,,,NOT_REVIEWED
+M2L_seed42,M2-L,42,E0_ID,0,0,100000,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M2L_seed42,M2-L,42,E0_ID,0,2,100002,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M2L_seed42,M2-L,42,E0_ID,0,3,100003,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M2L_seed42,M2-L,42,E1_L1,0,2,100002,TIMEOUT,280,pick up the black bowl located between the plate and the ramekin and put it on the plate,,,NOT_REVIEWED
+M2L_seed42,M2-L,42,E1_L1,1,0,100100,TIMEOUT,280,pick up the black bowl beside the ramekin and put it on the plate,,,NOT_REVIEWED
+M2L_seed42,M2-L,42,E1_L1,1,2,100102,TIMEOUT,280,pick up the black bowl beside the ramekin and put it on the plate,,,NOT_REVIEWED
+M2L_seed42,M2-L,42,E1_L2,0,0,100000,TIMEOUT,280,place the black bowl that is between the plate and the ramekin onto the plate,,,NOT_REVIEWED
+M2L_seed42,M2-L,42,E1_L2,0,1,100001,TIMEOUT,280,place the black bowl that is between the plate and the ramekin onto the plate,,,NOT_REVIEWED
+M2L_seed42,M2-L,42,E1_L2,0,3,100003,TIMEOUT,280,place the black bowl that is between the plate and the ramekin onto the plate,,,NOT_REVIEWED
+M2L_seed42,M2-L,42,E1_L3,0,0,100000,TIMEOUT,280,"find the black bowl positioned between the plate and ramekin, then move it onto the plate",,,NOT_REVIEWED
+M2L_seed42,M2-L,42,E1_L3,0,1,100001,TIMEOUT,280,"find the black bowl positioned between the plate and ramekin, then move it onto the plate",,,NOT_REVIEWED
+M2L_seed42,M2-L,42,E1_L3,0,2,100002,TIMEOUT,280,"find the black bowl positioned between the plate and ramekin, then move it onto the plate",,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E0_ID,0,2,100002,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E0_ID,0,3,100003,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E0_ID,1,1,100101,TIMEOUT,280,pick up the black bowl next to the ramekin and place it on the plate,,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E1_L1,0,0,100000,TIMEOUT,280,pick up the black bowl located between the plate and the ramekin and put it on the plate,,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E1_L1,0,2,100002,TIMEOUT,280,pick up the black bowl located between the plate and the ramekin and put it on the plate,,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E1_L1,0,3,100003,TIMEOUT,280,pick up the black bowl located between the plate and the ramekin and put it on the plate,,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E1_L2,0,0,100000,TIMEOUT,280,place the black bowl that is between the plate and the ramekin onto the plate,,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E1_L2,0,2,100002,TIMEOUT,280,place the black bowl that is between the plate and the ramekin onto the plate,,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E1_L2,0,4,100004,TIMEOUT,280,place the black bowl that is between the plate and the ramekin onto the plate,,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E1_L3,0,0,100000,TIMEOUT,280,"find the black bowl positioned between the plate and ramekin, then move it onto the plate",,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E1_L3,0,3,100003,TIMEOUT,280,"find the black bowl positioned between the plate and ramekin, then move it onto the plate",,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E1_L3,0,4,100004,TIMEOUT,280,"find the black bowl positioned between the plate and ramekin, then move it onto the plate",,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E2_SEEN_PHOTO,0,1,100001,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E2_SEEN_PHOTO,0,2,100002,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E2_SEEN_PHOTO,1,0,100100,TIMEOUT,280,pick up the black bowl next to the ramekin and place it on the plate,,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E3_HELDOUT_NOISE,0,4,100004,TIMEOUT,280,pick up the black bowl between the plate and the ramekin and place it on the plate,,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E3_HELDOUT_NOISE,4,0,100400,TIMEOUT,280,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E3_HELDOUT_NOISE,4,2,100402,TIMEOUT,280,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E4_COMBINED,0,1,100001,TIMEOUT,280,"find the black bowl positioned between the plate and ramekin, then move it onto the plate",,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E4_COMBINED,0,2,100002,TIMEOUT,280,"find the black bowl positioned between the plate and ramekin, then move it onto the plate",,,NOT_REVIEWED
+M2LE_seed42,M2-LE,42,E4_COMBINED,1,2,100102,TIMEOUT,280,move the black bowl positioned beside the ramekin over to the plate,,,NOT_REVIEWED
