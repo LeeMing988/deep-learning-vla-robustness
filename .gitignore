@@ -50,3 +50,6 @@ results/raw/
 Thumbs.db
 *.tmp
 *.log
+
+# Windows download metadata
+*Zone.Identifier*
