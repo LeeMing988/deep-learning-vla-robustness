@@ -1,0 +1,5 @@
+condition_id,planned_pairs,complete_pairs,baseline_observed_outcomes,m3_observed_outcomes,baseline_unknown_outcomes,m3_unknown_outcomes,baseline_scheduled_success_lower_pct,baseline_scheduled_success_upper_pct,m3_scheduled_success_lower_pct,m3_scheduled_success_upper_pct,delta_lower_pp,delta_upper_pp,interpretation
+E0_ID,150,150,150,150,0,0,43.333333333333336,43.333333333333336,42.0,42.0,-1.3333333333333333,-1.3333333333333333,Worst/best unobserved binary outcomes; NOT a confidence interval or imputation.
+E1_L3,150,146,150,146,0,4,22.666666666666668,22.666666666666668,19.333333333333332,22.0,-3.3333333333333335,-0.6666666666666666,Worst/best unobserved binary outcomes; NOT a confidence interval or imputation.
+E2_SEEN_PHOTO,150,150,150,150,0,0,42.0,42.0,43.333333333333336,43.333333333333336,1.3333333333333333,1.3333333333333333,Worst/best unobserved binary outcomes; NOT a confidence interval or imputation.
+E3_HELDOUT_NOISE,150,150,150,150,0,0,50.666666666666664,50.666666666666664,48.666666666666664,48.666666666666664,-2.0,-2.0,Worst/best unobserved binary outcomes; NOT a confidence interval or imputation.

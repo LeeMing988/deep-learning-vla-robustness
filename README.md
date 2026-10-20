@@ -7,12 +7,15 @@
 ![MuJoCo](https://img.shields.io/badge/MuJoCo-3.8.1-red)
 ![Benchmark](https://img.shields.io/badge/benchmark-LIBERO--Spatial-purple)
 ![Study](https://img.shields.io/badge/study-VLA%20robustness-blueviolet)
-![Status](https://img.shields.io/badge/status-Experiments%20Complete-brightgreen)
+![Core study](https://img.shields.io/badge/core%20study-N00%E2%80%93N08%20Complete-brightgreen)
+![M3 extension](https://img.shields.io/badge/M3%20extension-N09%E2%80%93N10%20Evaluated-brightgreen)
 ![License](https://img.shields.io/badge/license-Academic-orange)
 
 A Deep Learning research project on **robustness-enhanced Vision-Language-Action (VLA) learning** for robotic manipulation under **linguistic and environmental distribution shifts**.
 
-The experimental cycle is complete. The current project phase is **final report preparation, literature comparison, figure selection and submission QA**.
+The **original study through Notebook 08 is complete**, including its definitive N07 analysis and supplementary N07b/E5 stress test. Its eight core checkpoints, protocols and results remain preserved. The separate **post-hoc M3-RVA architectural extension (Notebooks 09–10) is also completed**: three fixed-budget training runs and a three-seed exploratory closed-loop comparison against M2-LE. No consistent additional robustness benefit was demonstrated for the tested adapter. The **M3-RVA+C consistency-loss extension was not conducted** and remains future work. The active milestone is the consolidated academic report and submission QA.
+
+> **Reading this README:** N00–N08 are the **completed original core study**; N07b/E5 is a **supplementary exploratory stress test**; and N09/N10 document a **completed, explicitly post-hoc exploratory architectural extension**. Core and extension results are not pooled into one hypothesis test or silently combined into one headline success rate. The consistency-learning idea (M3-RVA+C) is **not an executed experiment**.
 
 ---
 
@@ -31,12 +34,20 @@ The experimental cycle is complete. The current project phase is **final report 
 | **Robustness Evaluation** | Controlled linguistic, photometric and Gaussian sensor-noise shifts |
 | **Framework** | Hugging Face LeRobot |
 | **Simulation** | MuJoCo |
-| **Final Training Budget** | 25,000 optimizer steps |
+| **Core-study Training Budget** | 25,000 optimizer steps |
 | **Primary Training Seeds** | 42, 123, 2026 |
-| **Frozen Final Checkpoints** | 8 |
+| **Frozen Core-study Checkpoints** | 8 |
 | **Definitive Robustness Episodes** | 2,050 |
 | **Supplementary E5 Episodes** | 300 |
-| **Final Robustness Evaluation Episodes** | 2,350 |
+| **Core-study Robustness Evaluation Episodes** | 2,350 |
+| **Evaluated Architectural Extension** | N09: M3-RVA adapter training; N10: M3-RVA versus M2-LE closed-loop comparison |
+| **M3-RVA Training** | Three independently initialized 25,000-step checkpoints: seeds 42, 123, 2026 |
+| **M3 Evaluation Role** | Post-hoc exploratory; E0 ID, E1 L3, E2 seen photometric, E3 held-out Gaussian noise |
+| **M3 Scheduled Evaluation Slots** | 1,200 across three training seeds and two evaluated policies |
+| **M3 Scored Episodes / Valid Pairs** | 1,196 scored episodes / 596 complete valid pairs |
+| **M3 Technical Exclusions** | 4 image-only initial-pairing mismatches; unscored, not task failures |
+| **M3 Performance Finding** | No consistent additional robustness advantage demonstrated over M2-LE |
+| **Deferred Extension** | M3-RVA+C matched-two-view consistency objective; **not implemented/evaluated** |
 | **Year** | 2026 |
 
 ---
@@ -70,7 +81,7 @@ Strong benchmark performance, however, does not guarantee that the same policy w
 
 This project studies whether **controlled robustness-oriented fine-tuning** can improve SmolVLA generalization while preserving useful in-distribution manipulation competence.
 
-The final implemented study uses **LIBERO-Spatial** as the controlled manipulation benchmark and evaluates a specific set of **linguistic, photometric and Gaussian-noise distribution shifts**.
+The completed research uses **LIBERO-Spatial** as the controlled manipulation benchmark, evaluates defined **linguistic, photometric and Gaussian-noise distribution shifts**, and then tests a lightweight visual-adapter modification to the same SmolVLA family. The architectural test extends rather than replaces the core fine-tuning study.
 
 > This repository does **not** claim complete LIBERO-Plus benchmark coverage.
 
@@ -112,6 +123,7 @@ To investigate whether robustness-oriented fine-tuning improves the generalizati
 6. Evaluate whether robustness learned from selected perturbations transfers to held-out perturbation categories.
 7. Quantify the trade-off between in-distribution performance and out-of-distribution robustness.
 8. Analyse failure patterns, training variability, statistical uncertainty, generalization gaps and study limitations.
+9. In an explicitly exploratory follow-up, design, train and compare a lightweight residual visual adapter against M2-LE under the frozen four-condition extension evaluation.
 
 ---
 
@@ -126,6 +138,8 @@ To investigate whether robustness-oriented fine-tuning improves the generalizati
 Notebook 07 provides the **definitive RQ1–RQ5 evidence**.
 
 Notebook 07b provides **supplementary exploratory evidence** for transfer under a stricter double-held-out condition. It does not replace or redefine Notebook 07's confirmatory analysis.
+
+**Exploratory extension question (RQ6; not part of the original predeclared RQ1–RQ5 family):** Does adding a lightweight residual visual-token adapter to the augmentation-trained SmolVLA policy improve manipulation robustness beyond M2-LE under the selected standard, language, photometric and held-out-noise evaluations? N09/N10 address this retrospectively motivated architectural question; they do not redefine the original hypotheses.
 
 ---
 
@@ -143,7 +157,7 @@ Negative or null results are treated as scientifically meaningful rather than as
 
 ---
 
-# Model variants
+# Core-study model variants
 
 The project separates checkpoint reproduction, standard fine-tuning and robustness-oriented fine-tuning.
 
@@ -175,9 +189,9 @@ M2-L and M2-E are retained as **single-seed mechanism ablations**.
 
 ---
 
-# Final training configuration
+# Frozen core-study training configuration
 
-The final model-development protocol was frozen before definitive OOD evaluation.
+The original model-development protocol was frozen before the definitive Notebook 07 evaluation. The following configuration records that completed phase; it does not imply that the proposed M3 protocol has already been finalized.
 
 | Parameter | Final value |
 |---|---:|
@@ -194,7 +208,7 @@ The 25k training budget is **not claimed to be globally optimal**. It was retain
 
 ---
 
-# Experimental evidence chain
+# Completed core-study evidence chain
 
 ```text
 Notebook 03
@@ -227,7 +241,189 @@ Notebook 08
 Final results / assignment evidence / report figures
 ```
 
-No training, hyperparameter tuning or checkpoint replacement was performed after the definitive OOD outcomes were observed.
+For the completed N00–N08 **core-study phase**, no further tuning or replacement of those eight final core checkpoints occurred after the definitive OOD outcomes were observed. **M3 is a separate, explicitly post-hoc research extension trained after those outcomes were known.** Its three additional checkpoints do not replace the eight core checkpoints, and N10's fresh M2-LE control rollouts are not pooled into N07/N07b.
+
+---
+
+# Completed custom-model extension — Notebooks 09 and 10
+
+**Status: COMPLETED for the bounded M3-RVA architecture question.** Three fixed-budget M3-RVA checkpoints were trained and the selected three-seed exploratory comparison finished with four explicitly unscored technical attempts. The planned **M3-RVA+C consistency-training arm was not implemented**. Experimental configurations and trained-model choices are frozen; the project has moved to report writing.
+
+This extension was formulated **after inspecting the N07/N07b results**. It is **post-hoc exploratory** and may not be described as a predeclared/confirmatory replication of the original robustness hypotheses.
+
+## Motivation from the completed core study
+
+The original study showed strong held-out linguistic robustness effects and mixed environmental effects. We therefore asked whether a small trainable visual-representation correction would improve robustness beyond the combined language-and-photometric augmentation of M2-LE. The new model was tested against that directly relevant augmentation-trained comparator, **not** against a conveniently weaker baseline alone.
+
+An adapter is not presumed beneficial merely because it introduces trainable parameters. The evaluation includes negative and null outcomes. The implementation does not claim a novel VLA foundation architecture or a previously unknown adapter principle.
+
+## N09 — M3-RVA: implemented robust visual adapter
+
+**Executed notebook:** [`notebooks/09_custom_robust_visual_adapter.ipynb`](notebooks/09_custom_robust_visual_adapter.ipynb)
+
+**Question:** Does a lightweight residual adapter placed in SmolVLA's visual-token pathway produce additional robustness when the pretrained initialization and robustness training are otherwise matched to M2-LE?
+
+**Actual adapter placement (verified against LeRobot v0.6.1):**
+
+```text
+LIBERO camera images
+         ↓
+Existing SmolVLA / SmolVLM vision encoder
+         ↓
+Existing visual connector / token projection and resampling
+         ↓
+M3-RVA: token-wise residual visual adapter  ← project-authored module
+         ↓
+Existing image-token normalization/scaling
+         ↓
+Inherited multimodal context and flow-matching action expert
+         ↓
+50-step action chunk / 7-D LIBERO action interface
+```
+
+The adapter applies normalization, a 960→64 down-projection, a GELU nonlinearity, a 64→960 up-projection, and a learned residual scale. The up-projection is initially zero to preserve the unmodified image-token path at insertion. These are design choices of this **SmolVLA adaptation**, not claims that residual networks or adapters were invented in this study.
+
+| Architectural measurement | Verified engineering configuration |
+|---|---|
+| Input/output feature width | 960 visual-token features |
+| Adapter bottleneck | 64 features |
+| Residual architecture | Token-wise normalized bottleneck + nonlinear projection + learned residual scale |
+| Added adapter parameters | **125,825** |
+| Added share of original ≈450M-parameter policy | **Approximately 0.028%** |
+| Inherited model family | SmolVLA; no complete backbone replacement |
+| Frozen source revision | LeRobot `7e241bd630a3719a56157a497ce5d08f244784f1` |
+
+### N09 engineering, qualification and training gates
+
+1. **Stage A (synthetic engineering preflight):** connector-output shape/dtype, initial identity, gradient path through frozen components, two diagnostic adapter-only updates, and adapter reconstruction were checked. These checks are **not** robot-performance results.
+2. **Stage B (real-data qualification):** original LIBERO demonstration pipeline, batch size 4, 10 warm-up plus 100 timed qualification updates, finite losses/gradients, and fresh-process full policy/processor restoration passed. Qualification updates did **not** become extra steps for the final model.
+3. **Stage C (fixed training):** independent runs for seeds **42, 123, 2026**, each at **25,000 optimizer steps**, starting from the pinned SmolVLA base rather than continuing an M2-LE checkpoint. Same inherited trainability scope and robustness augmentation strategy as the selected comparator, plus the new visual adapter. Each fixed-final export underwent offline validation and full reconstruction checks.
+
+The seed-42 worker recorded **63.39 minutes** elapsed and **62.29 minutes** excluding checkpoint I/O, an offline validation loss of **0.586101**, and approximately **2.107 GiB peak allocated GPU memory** during that measured run. These are **seed-42 measurements**, not invented averages for all three seeds; training loss is **not** robot success rate.
+
+**Evidence locations:**
+
+```text
+configs/experiments/m3_rva_training_protocol_v1.json
+src/m3_rva_training.py
+results/metrics/m3_design_audit/m3_preflight_latest.json
+results/metrics/m3_rva_extension/v1/qualification.json
+results/metrics/m3_rva_extension/v1/training_summary.json
+results/metrics/m3_rva_extension/v1/m3_model_registry.csv
+experiments/m3_rva_extension/v1/m3rva_seed{42,123,2026}_25000/
+    result.json
+    run_manifest.json
+    train_metrics.csv
+    model/m3_manifest.json
+    model/model.safetensors                 # local large checkpoint; not ordinary Git
+    recovery.pt                             # local optimizer recovery; not ordinary Git
+results/figures/m3_rva_extension/
+```
+
+## N10 — Completed three-seed exploratory evaluation
+
+**Executed notebook:** [`notebooks/10_m3_rva_evaluation_and_comparison.ipynb`](notebooks/10_m3_rva_evaluation_and_comparison.ipynb)
+
+**Comparison:** newly trained **M3-RVA versus the existing frozen M2-LE** checkpoint for the *same training seed*, with fresh M2-LE rollouts under the extension evaluator. The conditions reuse the selected N07 perturbation definitions, but their new pairing/reset protocol and post-hoc role require reporting the N10 results **separately** from N07/N07b.
+
+| Extension condition | Role | Planned pairs across 3 seeds |
+|---|---|---:|
+| `E0_ID` | Original instruction and images | 150 |
+| `E1_L3` | Held-out compositional language | 150 |
+| `E2_SEEN_PHOTO` | Specified photometric variation | 150 |
+| `E3_HELDOUT_NOISE` | Gaussian image noise, σ = 0.05 | 150 |
+
+Each condition scheduled **3 training seeds × 10 LIBERO-Spatial tasks × 5 replicas × 2 policies = 300 model-episode slots**; across four conditions the plan comprised **1,200 slots**.
+
+### Technical execution and audit status
+
+| N10 completion field | Final recorded value |
+|---|---:|
+| Execution status | `FINISHED` |
+| Final status | `FINISHED_WITH_UNSCORED` |
+| Scheduled model-episode slots | **1,200** |
+| Scored episode records | **1,196** |
+| Valid complete comparison pairs | **596 of 600** |
+| Episodes in paired analysis | **1,192** |
+| Scored, unpaired baseline episodes | **4** |
+| Image-only technical unscored attempts | **4** |
+| Pending slots | **0** |
+| Three selected training seeds | **42, 123, 2026** |
+| Fully scored 600-pair matrix | **No** — four technical exclusions |
+
+Four **M3-RVA** attempts in **E1_L3, task 8** were unscored because the initial wrist-camera image violated the fixed pairing rule despite matching selected benchmark state and exposed robot-state variables:
+
+| Seed | Task | Replica | Status |
+|---:|---:|---:|---|
+| 42 | 8 | 2 | `UNSCORED_INITIAL_IMAGE_MISMATCH` |
+| 123 | 8 | 2 | `UNSCORED_INITIAL_IMAGE_MISMATCH` |
+| 123 | 8 | 4 | `UNSCORED_INITIAL_IMAGE_MISMATCH` |
+| 2026 | 8 | 2 | `UNSCORED_INITIAL_IMAGE_MISMATCH` |
+
+These attempts had **no valid robotic outcome**; they were neither counted as manipulation failures nor retried to obtain a passing reset. The baseline-only outcomes remain in the evidence inventory but are excluded from the **matched-denominator** paired analysis. The 1,200 scheduled slots are therefore **not** equivalent to 1,200 scored episodes.
+
+The initial strict byte-comparison exposed sparse wrist-camera variation. A reviewed V2 reset/indexed-state pairing protocol was introduced, with exact exposed-state matching and a narrowly specified image rule. A subsequent model-free repeatability probe showed that camera variations can occur under the same recorded benchmark and simulator states. A separate completion amendment therefore accounted for **image-only pairing rejections as technical exclusions without widening the image tolerance or silently converting them into task failures**. This repairs progress accounting, **not** renderer determinism or behavior equivalence.
+
+The earlier V1 and original V2 evidence remains separately preserved. The final completion analysis uses compatible V2 scored episodes, valid pairs and explicit exclusions. Existing original model weights, frozen core-study protocols and LeRobot source remained unchanged according to the completed N10 verification.
+
+### Final M3-RVA versus M2-LE success results
+
+The estimates below use only **valid complete model pairs**; positive Δ favours M3. “pp” denotes percentage points. This is an **exploratory three-seed** analysis, not part of N07's original confirmatory test family.
+
+| Condition | Valid pairs | M2-LE paired success | M3-RVA paired success | Δ M3 − M2-LE | Inferential status |
+|---|---:|---:|---:|---:|---|
+| **E0 ID** | **150/150** | 43.33% | 42.00% | **−1.33 pp** | Balanced; interval includes zero |
+| **E1 L3 held-out language** | **146/150** | 23.29% | 19.86% | **−3.42 pp** | Four missing pairs; bootstrap/p withheld |
+| **E2 seen photometric** | **150/150** | 42.00% | 43.33% | **+1.33 pp** | Balanced; no demonstrated advantage |
+| **E3 held-out Gaussian noise** | **150/150** | 50.67% | 48.67% | **−2.00 pp** | Balanced; interval includes zero |
+
+A small photometric improvement was observed in aggregate, but it was **not consistent across training seeds** and did not establish statistical superiority. Other tested conditions showed small negative effects or near-equality. The experiment therefore **does not demonstrate a consistent additional robustness advantage** of this specific residual visual adapter beyond M2-LE under the tested protocol. Matching observed rates does not establish model equivalence.
+
+**Missing-outcome sensitivity for E1:** across the **150 scheduled pairs**, all 150 baseline outcomes are observed, while four M3 outcomes are unknown. The possible scheduled-sample M3 − M2-LE difference is **−3.33 to −0.67 pp** under best-/worst-case binary completion. Those are **bounds, not a confidence interval**, and missingness need not be random. Bootstrap and p-value estimates for this incomplete condition are withheld in the final extension summary.
+
+The N10 comparison is a **post-hoc architectural study** prompted by the core findings; its controls and exploratory multiple comparisons are not retroactively added to the N07 predeclared inference family. Three seeds still provide limited information about training variability, and one task suite, selected perturbations and simulated manipulation do not justify universal robustness or real-robot claims.
+
+**Final analysis artifacts:**
+
+```text
+configs/experiments/m3_rva_evaluation_protocol_v1.json   # archived initial protocol
+configs/experiments/m3_rva_evaluation_protocol_v2.json   # reset/pairing protocol
+configs/experiments/m3_rva_evaluation_completion_v1.json # fixed exclusion-accounting amendment
+src/m3_rva_evaluation.py                                # unchanged V2 evaluator
+src/m3_rva_completion.py                                # completion runner
+results/metrics/m3_rva_evaluation/v2_completion_v1/
+    notebook10_summary.json
+    m3_vs_m2le_effects.csv
+    paired_episode_results.csv
+    per_seed_paired_success.csv
+    pair_coverage.csv
+    initial_pairing_audit.csv
+    unscored_attempts.csv
+    scheduled_matrix_bounds.csv
+    coverage_by_task.csv
+    descriptive_paired_efficiency.csv
+    scored_episode_inventory.csv
+results/figures/m3_rva_evaluation/v2_completion_v1/
+    m3_success_with_coverage.png
+    m3_missing_outcome_bounds.png
+results/qualitative/m3_rva_evaluation/               # curated illustrative frames
+```
+
+## M3 interpretation and closeout boundary
+
+The architectural contribution is **a tested adaptation**, not a performance win: a small residual visual token module was specified, implemented, trained under a matched fixed budget, and evaluated against M2-LE. Its outcome was **mixed and inconclusive regarding additional benefit**. Negative/null findings are retained rather than hidden or followed by outcome-driven model redesign.
+
+**This bounded M3-RVA experiment is closed.** No additional architecture, checkpoint search, perturbation severity search or post-result tuning is introduced for submission. The original eight core checkpoints remain unchanged. There are **three additional M3-RVA checkpoints**, giving **11 evaluated/trained core-plus-extension final checkpoints by inventory**, of which the original study's definitive inference still concerns its original eight; this is **not** an 11-checkpoint pooled confirmatory study.
+
+## Deferred M3-RVA+C consistency-learning arm — NOT conducted
+
+Earlier design discussions proposed using two semantically action-equivalent supervised views and adding a velocity-prediction consistency penalty to flow matching:
+
+```text
+L_total = 0.5 × (L_FM_view_A + L_FM_view_B) + lambda × L_action_consistency
+```
+
+The necessary future control is the same architecture and paired-view supervision with **`lambda = 0`**, using matched action targets, flow time/noise and valid-action masks. The planned comparison would isolate the added loss from extra view exposure and compute. **No M3-RVA+C training, no matched lambda=0 training arm, and no separate E6 held-out corruption evaluation were conducted.** These are appropriately attributed **future work**, not N10 results. Notebook 10's actual role is *M3-RVA evaluation and comparison*, not consistency training.
 
 ---
 
@@ -438,7 +634,7 @@ Evaluation uncertainty and training-seed variability are treated as distinct sou
 
 ---
 
-# Final headline results
+# Completed core-study headline results
 
 ## Definitive Notebook 07 results
 
@@ -622,7 +818,7 @@ The correct interpretation is:
 
 ---
 
-# Final verified experimental status
+# Recorded completion status — original N00–N08 study
 
 | Component | Status |
 |---|---|
@@ -685,23 +881,27 @@ deep-learning-vla-robustness/
 │
 ├── docs/
 │   ├── SETUP.md
-│   └── environment snapshots / project notes
+│   ├── environment snapshots / project notes
+│   └── M3_source_audit_and_design_decision.md
 │
 ├── experiments/
-│   └── training runs, frozen checkpoints and run metadata
+│   ├── original training runs, frozen checkpoints and metadata
+│   └── m3_rva_extension/v1/               # three independent M3 trained seeds
 │
 ├── notebooks/
-│   ├── 00_environment_and_dataset.ipynb
-│   ├── 01_baseline_reproduction.ipynb
+│   ├── 00_environment_and_dataset_eda.ipynb
+│   ├── 01_smolvla_baseline_reproduction.ipynb
 │   ├── 02_robustness_training.ipynb
 │   ├── 03_tuning_and_final_training.ipynb
 │   ├── 04_evaluation_and_critical_analysis.ipynb
-│   ├── 05_training_regime_validation.ipynb
+│   ├── 05_reference_control_and_training_budget_validation.ipynb
 │   ├── 05b_final_training_budget_validation.ipynb
 │   ├── 06_validated_final_retraining.ipynb
 │   ├── 07_definitive_robustness_evaluation.ipynb
 │   ├── 07b_supplementary_double_heldout_stress_test.ipynb
-│   └── 08_final_results_and_assignment_evidence.ipynb
+│   ├── 08_final_results_and_assignment_evidence.ipynb
+│   ├── 09_custom_robust_visual_adapter.ipynb
+│   └── 10_m3_rva_evaluation_and_comparison.ipynb
 │
 ├── results/
 │   ├── metrics/
@@ -712,7 +912,10 @@ deep-learning-vla-robustness/
 │   └── environment and reproducibility utilities
 │
 ├── src/
-│   └── reusable experiment implementation
+│   ├── reusable core-study implementation
+│   ├── m3_rva_training.py
+│   ├── m3_rva_evaluation.py
+│   └── m3_rva_completion.py
 │
 ├── .gitignore
 ├── environment.yml
@@ -725,7 +928,9 @@ deep-learning-vla-robustness/
 
 # Notebook workflow
 
-## `00_environment_and_dataset.ipynb`
+The workflow below preserves the original N00–N08 evidence chain and adds the separately completed N09/N10 custom-model study. N09/N10 are **executed**, but N10 is **exploratory** and should not be used to reinterpret the predeclared N07 results.
+
+## `00_environment_and_dataset_eda.ipynb`
 
 Environment, dataset and benchmark validation:
 
@@ -738,7 +943,7 @@ Environment, dataset and benchmark validation:
 - camera observations,
 - task mapping.
 
-## `01_baseline_reproduction.ipynb`
+## `01_smolvla_baseline_reproduction.ipynb`
 
 Released SmolVLA checkpoint reproduction:
 
@@ -777,7 +982,7 @@ Pilot diagnostic robustness evaluation:
 - severe floor-effect diagnosis,
 - pilot-only interpretation.
 
-## `05_training_regime_validation.ipynb`
+## `05_reference_control_and_training_budget_validation.ipynb`
 
 Training adequacy and evaluator-control study:
 
@@ -859,16 +1064,43 @@ Final evidence consolidation:
 - Assignment 2 rubric evidence map,
 - report-results narrative skeleton.
 
+Notebook 08 consolidates the **original** study and supplementary E5. The later M3 findings are documented in N09/N10 and their own extension metrics; Notebook 08's frozen core-study analysis is not retroactively rewritten.
+
+## `09_custom_robust_visual_adapter.ipynb`
+
+Completed **M3-RVA adapter engineering and training**:
+
+- source-grounded insertion after the SmolVLA visual connector, before existing image-token scaling,
+- residual 960→64→960 bottleneck with 125,825 additional parameters,
+- synthetic identity, gradient-flow and reconstruction preflight,
+- real-data batch-4 qualification and measured runtime,
+- three independent 25k-step training runs (42, 123, 2026),
+- offline validation and complete model/processor reload verification,
+- isolated M3 checkpoints and metadata, without replacing original-study models.
+
+## `10_m3_rva_evaluation_and_comparison.ipynb`
+
+Completed **post-hoc M3-RVA versus M2-LE exploratory evaluation**:
+
+- fresh M2-LE matched-seed comparator rollouts,
+- E0 ID, E1 held-out L3, E2 photometric, E3 Gaussian-noise conditions,
+- 1,200 scheduled slots across three seeds,
+- 1,196 scored records, 596 valid pairs, four image-only unscored attempts,
+- matched-pair success analysis, seed-level results and coverage,
+- fixed-state/pairing audits and a separate completion-accounting amendment,
+- conservative scheduled-outcome bounds for missing L3 outcomes,
+- explicitly inconclusive/custom-adapter comparative findings; no consistency-loss training.
+
 ---
 
 # How to run
 
-## Full research workflow
+## Completed core-study workflow
 
 ```text
-00_environment_and_dataset
+00_environment_and_dataset_eda
         ↓
-01_baseline_reproduction
+01_smolvla_baseline_reproduction
         ↓
 02_robustness_training
         ↓
@@ -876,7 +1108,7 @@ Final evidence consolidation:
         ↓
 04_evaluation_and_critical_analysis
         ↓
-05_training_regime_validation
+05_reference_control_and_training_budget_validation
         ↓
 05b_final_training_budget_validation
         ↓
@@ -897,7 +1129,29 @@ If the saved experimental artifacts are already present and the objective is to 
 08_final_results_and_assignment_evidence.ipynb
 ```
 
-Notebook 08 reads the saved evidence and regenerates the final assignment tables and figures without retraining the models.
+Notebook 08 reads the saved core-study evidence and regenerates its assignment tables and figures without retraining the models. It does not yet contain M3 extension results.
+
+## Completed post-hoc M3 extension workflow
+
+```text
+N00–N08 completed core-study evidence (retained unchanged)
+        ↓
+M3 source/design audit and fixed training protocol
+        ↓
+09_custom_robust_visual_adapter.ipynb
+    ├── Stage A: engineering preflight
+    ├── Stage B: real-data/batch-4 qualification
+    └── Stage C: three independent 25k-step M3-RVA models
+        ↓
+10_m3_rva_evaluation_and_comparison.ipynb
+    ├── frozen four-condition paired evaluation
+    ├── documented image-only technical exclusions
+    └── coverage-aware three-seed exploratory analysis
+        ↓
+Consolidated Assignment 1 + Assignment 2 report
+```
+
+**Result inspection does not require rerunning 25k-step training or 1,200 simulator slots.** Review the final N09/N10 summaries, CSV tables, notebook outputs and figures. Full simulation replay additionally requires locally retained model weights, simulator/benchmark assets and original raw initial-observation evidence. The **M3-RVA+C consistency experiment is not part of this executed workflow**.
 
 ---
 
@@ -905,8 +1159,9 @@ Notebook 08 reads the saved evidence and regenerates the final assignment tables
 
 | Goal | Requirement | Expected cost |
 |---|---|---|
-| **Inspect final results** | Repository + saved metrics / figures | Low |
-| **Regenerate report tables / figures** | Notebook 08 + saved artifacts | Low |
+| **Inspect final results** | Repository + saved core and M3 metrics / figures | Low |
+| **Regenerate core-study report tables / figures** | Notebook 08 + original saved artifacts | Low |
+| **Inspect M3 architectural comparison** | N10 outputs + `v2_completion_v1` final CSV/JSON/figures | Low |
 | **Reproduce evaluation** | Frozen checkpoints + LIBERO assets + validated environment | High |
 | **Reproduce final training** | Full environment + data + GPU | High |
 | **Rebuild complete study** | Environment + all model training + all closed-loop evaluation | Highest |
@@ -925,7 +1180,14 @@ Notebook 08 reads the saved evidence and regenerates the final assignment tables
 | Training / model runs | `experiments/` |
 | Metrics | `results/metrics/` |
 | Figures | `results/figures/` |
-| Final assignment evidence | `results/metrics/final_assignment_evidence/` |
+| **Final assignment evidence (core)** | `results/metrics/final_assignment_evidence/` |
+| **M3 architecture/training source** | `src/m3_rva_training.py`; `notebooks/09_custom_robust_visual_adapter.ipynb` |
+| **M3 evaluation/completion source** | `src/m3_rva_evaluation.py`; `src/m3_rva_completion.py`; `notebooks/10_m3_rva_evaluation_and_comparison.ipynb` |
+| **M3 training summary and registry** | `results/metrics/m3_rva_extension/v1/` |
+| **M3 final extension statistics** | `results/metrics/m3_rva_evaluation/v2_completion_v1/` |
+| **M3 comparison figures** | `results/figures/m3_rva_evaluation/v2_completion_v1/` |
+| **M3 training / evaluation protocols** | `configs/experiments/m3_rva_*.json` |
+| **Large M3 checkpoints and raw camera observations** | Retained locally; not included in ordinary Git; required for full rollout replay |
 
 Formal experiment records include:
 
@@ -944,9 +1206,17 @@ metrics
 checkpoint_path
 ```
 
+### Committed research evidence versus large local replay artifacts
+
+The ordinary Git repository includes notebooks, original project source, fixed protocol configurations, curated qualitative images, final figures, compact training summaries, episode-level analysis CSVs, final JSON summaries, and pairing/coverage records needed to inspect the reported results.
+
+The repository **does not claim to bundle a complete simulator-replay environment**. Large `.safetensors` model weights, `.pt` optimizer recovery, raw `.npz`/`.npy` camera/simulator captures and temporary qualification models are retained outside ordinary Git; they are not deleted merely because they are excluded from the commit. A complete independent rerun requires compatible checkpoint weights, pinned package environment, external LIBERO data/assets and relevant raw artifacts. Tracked manifests/hashes describe those artifacts, but paths alone do not make excluded bytes available to a marker.
+
+**Provenance policy:** retain the original N07/N07b definitive/supplementary evidence separately from N10's fresh M2-LE versus M3 evaluations. Never pool N10 episodes into the core-study primary hypothesis family. All analysis denominators and excluded technical slots must be stated.
+
 ---
 
-# Final experimental scale
+# Completed core-study experimental scale
 
 | Component | Final value |
 |---|---:|
@@ -960,6 +1230,24 @@ checkpoint_path
 | Notebook 07b supplementary E5 episodes | **300** |
 | Notebook 07 + 07b final robustness episodes | **2,350** |
 | Post-OOD model replacements | **0** |
+
+## Separate completed M3 extension scale
+
+| Component | M3-RVA extension value |
+|---|---:|
+| New M3-RVA final checkpoints | **3** (seeds 42, 123, 2026) |
+| Optimizer steps per M3 training seed | **25,000** |
+| New adapter trainable parameters | **125,825** |
+| N10 evaluated comparator variants | **M2-LE and M3-RVA** |
+| N10 conditions | **E0, E1_L3, E2, E3** |
+| N10 scheduled model-episode slots | **1,200** |
+| N10 scored model-episode outcomes | **1,196** |
+| N10 valid complete paired observations | **596 of 600** |
+| N10 excluded technical attempts | **4**, all in E1 L3 |
+| N10 pending evaluation slots | **0** |
+| Consistency-training arm and E6 | **Not conducted** |
+
+The **2,350** core robustness episodes and **1,200** M3 scheduled slots refer to **different scientific phases**; the latter include 4 unscored technical attempts and repeated fresh M2-LE control evaluation. These numbers are not silently added to create a single confirmatory sample size.
 
 ---
 
@@ -978,6 +1266,9 @@ checkpoint_path
 | **07** | Definitive robustness evaluation | ✅ Complete |
 | **07b** | Supplementary E5 stress test | ✅ Complete |
 | **08** | Final results / assignment evidence | ✅ Complete |
+| **09** | M3-RVA custom visual adapter: source audit, engineering preflight, real-data qualification, 3-seed 25k training, reload validation | ✅ Complete |
+| **10** | M3-RVA versus M2-LE exploratory closed-loop evaluation, 3 seeds and coverage-aware exclusion accounting | ✅ Finished with four unscored technical attempts |
+| **M3-RVA+C** | Matched-two-view consistency-learning study and `lambda=0` control | Deferred — **not conducted** |
 | **Report** | Assignment 1 + Assignment 2 consolidated report | 🔄 In progress |
 
 ---
@@ -999,14 +1290,19 @@ Definitive Evaluation           ██████████ 100%
 Supplementary E5                ██████████ 100%
 Final Evidence Notebook         ██████████ 100%
 
-Academic Report                 ███░░░░░░░  In Progress
+M3-RVA / Notebook 09            ██████████ 100% — 3 trained/verified seeds
+M3 comparison / Notebook 10     ██████████ 100% — execution accounted for, 4 unscored
+M3-RVA+C consistency arm        NOT CONDUCTED — future work
+Extension evaluation protocol  FROZEN/RECORDED — post-hoc exploratory, amended execution
+
+Academic Report                In Progress — completion percentage not audited
 ```
 
 ---
 
 # Key limitations
 
-The final project should be interpreted within the following boundaries.
+The completed N00–N08 results should be interpreted within the following boundaries. The separately completed M3 extension has additional limitations and must not be treated as an untouched confirmatory test.
 
 - **Simulation domain** — evidence is based on MuJoCo / LIBERO simulation rather than physical robot deployment.
 - **Benchmark scope** — LIBERO-Spatial is used rather than the complete LIBERO-Plus benchmark.
@@ -1018,6 +1314,13 @@ The final project should be interpreted within the following boundaries.
 - **No full geometry shift study** — camera viewpoint, object layout and robot initial-state robustness are not final claims of this project.
 - **E5 status** — E5 is a post-hoc supplementary exploratory test rather than a preregistered confirmatory condition.
 - **Training-budget claim** — 25k is empirically frozen under the bounded protocol and is not claimed as a universal optimum.
+- **M3 post-hoc motivation** — N09/N10 were designed after N07/N07b outcomes were observed; all M3 effect claims are exploratory.
+- **M3 architecture scope** — only one rank-64 token-wise residual adapter configuration was evaluated; this does not establish results for other adapter placements, ranks, architectures or regularizers.
+- **M3 technical missingness** — N10 accounted for 1,200 scheduled slots, but four image-only pairing failures were unscored; 596 pairs, not 600, entered comparison estimates.
+- **M3 camera/reset repeatability** — small wrist-camera differences occurred under repeated model-free simulator resets; the completion amendment did not fix renderer determinism.
+- **M3 statistical scope** — only three independently trained extension seeds and ten LIBERO-Spatial tasks; bootstrap/p estimates are conditional on their design and withheld for incomplete E1.
+- **M3 comparative result** — no consistent additional adapter advantage was demonstrated, but that does not prove adapter methods are ineffective or that models are equivalent.
+- **Not performed** — no M3-RVA+C paired-view consistency training, no lambda-zero matched two-view control, no E6 visual holdout and no physical robot deployment.
 
 ---
 
@@ -1025,11 +1328,17 @@ The final project should be interpreted within the following boundaries.
 
 The contribution is **not** a new large-scale VLA foundation model.
 
-The study adapts an efficient existing VLA model and evaluates controlled robustness-oriented training under a reproducible closed-loop protocol.
+The study adapts an efficient existing VLA model, evaluates controlled robustness-oriented training under a reproducible closed-loop protocol, and subsequently tests a lightweight custom architectural modification. Its claims distinguish **measured outcomes** from hypothesized mechanisms and do not claim that SmolVLA or residual adapters were invented in this project.
 
-The final contribution is:
+The completed core-study contribution is:
 
 > **A controlled multi-seed empirical investigation of robustness-oriented SmolVLA fine-tuning under linguistic and environmental distribution shifts, demonstrating strong improvement in held-out linguistic generalization, mixed visual robustness effects, and supplementary evidence of improved resilience under a double-held-out language-plus-sensor-noise stress condition.**
+
+The completed **post-hoc M3 architectural contribution** is separate:
+
+> **A source-grounded, 125,825-parameter residual visual adapter was implemented, trained across three fixed seeds, and compared with the augmentation-trained M2-LE model in closed-loop LIBERO-Spatial conditions. The study recorded 596 valid model pairs, four technical exclusions and small mixed effects, without demonstrating an additional consistent robustness benefit.**
+
+This contributes an *evaluated design and an informative negative/inconclusive comparison*, not a claim that a new foundation VLA or universally superior policy was created. The proposed consistency regularization is a potential future study, not a completed result.
 
 The study deliberately distinguishes:
 
@@ -1098,19 +1407,25 @@ supplementary / exploratory evidence
 - supplementary E5 stress test,
 - critical analysis,
 - limitations and threats to validity,
-- baseline vs final-model comparison.
+- baseline vs final-model comparison,
+- **custom M3-RVA architecture, trainable parameter accounting, source-grounded insertion and checkpoint-reload checks**,
+- **N10 three-seed exploratory M3-RVA versus M2-LE performance comparison**,
+- **technical exclusion/paired-denominator audit and missing-outcome sensitivity bounds**,
+- distinction between completed M3-RVA architecture testing and **unimplemented** M3-RVA+C consistency future work.
 
-Python implementation and representative generated outputs are maintained in Jupyter notebooks.
+Python implementation and representative generated outputs are maintained in Jupyter notebooks. N09/N10's extension metrics complement the frozen original Notebook 08 evidence and are **not** retrospectively inserted into it.
 
 ---
 
 # Current milestone
 
-> **Experimental cycle complete — Notebook 08 PASS.**
+> **Completed original milestone:** N00–N08, with Notebook 08 recorded as PASS and the core findings preserved.
 
-> **Final robustness scale:** 2,050 definitive + 300 supplementary episodes, eight frozen final checkpoints, and no post-OOD retraining or model replacement.
+> **Preserved core-study scale:** 2,050 definitive + 300 supplementary episodes and eight frozen checkpoints. No M3 run is included in these totals.
 
-> **Next:** consolidated Assignment 1 + Assignment 2 report writing, published-results comparison, final figure selection, critical analysis and submission QA.
+> **Completed M3-RVA extension:** N09 trained seeds 42/123/2026, and N10 accounted for 1,200 planned slots (1,196 scored episodes, 596 paired comparisons, four unscored initial-camera mismatches). The evaluated adapter showed **no consistent additional robustness advantage**. M3-RVA+C and E6 were **not conducted**.
+
+> **Next:** keep all training/evaluation protocols and results frozen, publish the curated final research evidence and figures, finish the consolidated Assignment 1 + Assignment 2 report, verify literature references, and perform submission QA. No further model or experiment tuning is required for the completed study.
 
 ---
 

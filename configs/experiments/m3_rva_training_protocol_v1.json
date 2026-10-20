@@ -1,0 +1,117 @@
+{
+  "release": "m3_rva_training_v1",
+  "scientific_role": "POST_HOC_ARCHITECTURAL_EXTENSION",
+  "model": "M3-RVA",
+  "comparator": "M2-LE",
+  "planned_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "steps": 25000,
+  "batch_size": 4,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "warmup_steps": 2500,
+  "decay_end_step": 25000,
+  "minimum_lr_ratio": 0.025,
+  "gradient_clip": 10.0,
+  "adapter_rank": 64,
+  "initial_residual_scale": 0.1,
+  "adapter_initialization": "zero up-projection; isolated RNG seed=training_seed+9009",
+  "trainability": "N06 standard trainable parameters PLUS adapter; not adapter-only",
+  "initialization_repo": "lerobot/smolvla_base",
+  "initialization_revision": "c83c3163b8ca9b7e67c509fffd9121e66cb96205",
+  "dataset_repo": "lerobot/libero",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "source_pin": "7e241bd630a3719a56157a497ce5d08f244784f1",
+  "n06_code_sha256": "4bc5ce22031e4b97ffbe06d1a5a7166c1d390daa6fddb5925b34b4f827867604",
+  "runner_sha256": "b6dae4fe7bb2ebd573dc6b4d7e6b73a9161b7c88c890002a28f7810f4ada3a38",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "lerobot": "0.6.1",
+    "transformers": "5.5.4"
+  },
+  "artifact_hashes": {
+    "handoff": "cfe0dd9c017eb81c43f6362db798ebee774a5325996bb82c8ae8775af5276e07",
+    "n02": "914518a6759f0a6be98076081628cd39c450d87303475362235f464fa111f935",
+    "n03": "c439f7991df9f11df106d939f29b25e14f45548d4e9d9c21d4097aa0dfbf49b5",
+    "registry": "b36ef67c2dc23c24959f66e178d0a637070d305eafdc01e2e7ba97b5f2ab3bb1",
+    "augmentation": "f5c1ed157f83598d8d14892cebd0d26e78f9f750ce6bf88625f6eedc30d3e209",
+    "split": "0d13554df26d28cfefd58a4d0d873839d54109a4b494f54d1a744d607f76a3fb",
+    "language": "022269395196df57adcb599467ec53899abe6016bcce2182590d4643dfd5574c",
+    "validation": "933df08c1cec3c9f9de4bcff7e0f7959ad5d11e1eccfac7c9e717c8aef9face4"
+  },
+  "language_levels": [
+    "L0",
+    "L1",
+    "L2"
+  ],
+  "environment": {
+    "language_training_levels": [
+      "L0",
+      "L1",
+      "L2"
+    ],
+    "language_held_out_level": "L3",
+    "environment_augmentation": {
+      "brightness": {
+        "weight": 1.0,
+        "type": "ColorJitter",
+        "kwargs": {
+          "brightness": [
+            0.85,
+            1.15
+          ]
+        }
+      },
+      "contrast": {
+        "weight": 1.0,
+        "type": "ColorJitter",
+        "kwargs": {
+          "contrast": [
+            0.85,
+            1.15
+          ]
+        }
+      },
+      "saturation": {
+        "weight": 1.0,
+        "type": "ColorJitter",
+        "kwargs": {
+          "saturation": [
+            0.85,
+            1.15
+          ]
+        }
+      }
+    },
+    "max_environment_transforms_per_image": 2,
+    "random_environment_transform_order": true,
+    "geometric_augmentation": false
+  },
+  "num_workers": 0,
+  "sampler": "checkpointable N06 RandomSampler/BatchSampler epoch order",
+  "comparator_checkpoints": {
+    "42": "experiments/validated_final_retraining/m2le_seed42_25000/model",
+    "123": "experiments/validated_final_retraining/m2le_seed123_25000/model",
+    "2026": "experiments/validated_final_retraining/m2le_seed2026_25000/model"
+  },
+  "checkpoint_selection": "fixed final step 25000; no best-OOD or best-validation replacement",
+  "validation_subset_frames": 200,
+  "offline_validation_is_diagnostic": true,
+  "inference_and_ood_evaluation": "NOT_EXECUTED_BY_THIS_TRAINING_RELEASE",
+  "planned_evaluation_conditions": [
+    "E0_ID",
+    "E1_L3",
+    "E2_SEEN_PHOTO",
+    "E3_HELDOUT_NOISE"
+  ],
+  "planned_evaluation_design": "same N07 tasks, initial states, replica IDs and evaluator; 10 tasks x 5 replicas per seed/condition",
+  "prior_outcomes_seen": true,
+  "extension_evaluation_label": "EXPLORATORY",
+  "new_E6_condition": "not introduced in this bounded M3-RVA run",
+  "consistency_objective": "not included in this release"
+}

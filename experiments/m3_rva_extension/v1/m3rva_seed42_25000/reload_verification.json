@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "fresh_process": true,
+  "input_processor_exact": true,
+  "loss_error": 0.0,
+  "action_max_abs_error": 0.0,
+  "postprocessor_checked": true
+}

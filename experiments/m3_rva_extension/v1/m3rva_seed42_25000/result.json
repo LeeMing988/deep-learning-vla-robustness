@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scientific_status": "CLOSED_LOOP_NOT_EVALUATED",
+  "variant": "M3-RVA",
+  "seed": 42,
+  "steps": 25000,
+  "protocol_hash": "4fb5ebbe04f8f79a0aeece010a750137566e6cc610781e03da3faa86fa236f54",
+  "checkpoint": "experiments/m3_rva_extension/v1/m3rva_seed42_25000/model",
+  "loader": "src.m3_rva_training.load_m3_bundle",
+  "training_seconds_excluding_checkpoint_io": 3737.3889944021776,
+  "training_minutes": 62.28981657336963,
+  "peak_allocated_gib": 2.106539249420166,
+  "peak_reserved_gib": 2.17578125,
+  "restoration": {
+    "status": "PASS",
+    "fresh_process": true,
+    "input_processor_exact": true,
+    "loss_error": 0.0,
+    "action_max_abs_error": 0.0,
+    "postprocessor_checked": true
+  },
+  "validation_loss": 0.5861010378599167,
+  "validation_samples": 200,
+  "validation_role": "OFFLINE_DIAGNOSTIC_ONLY_NOT_ROBOT_SUCCESS",
+  "total_parameters": 450172001,
+  "trainable_parameters": 100006817
+}

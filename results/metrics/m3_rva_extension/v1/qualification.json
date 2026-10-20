@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "protocol_hash": "4fb5ebbe04f8f79a0aeece010a750137566e6cc610781e03da3faa86fa236f54",
+  "batch_size": 4,
+  "steps": 110,
+  "diagnostic_updates_discarded": true,
+  "real_batch": {
+    "episode_ids": [
+      1414,
+      1386,
+      1291,
+      1561
+    ],
+    "action_shape": [
+      4,
+      50,
+      7
+    ],
+    "valid_action_timesteps": 108,
+    "cameras": {
+      "observation.images.image": {
+        "shape": [
+          4,
+          3,
+          256,
+          256
+        ],
+        "dtype": "torch.float32",
+        "min": 0.0,
+        "max": 1.0
+      },
+      "observation.images.image2": {
+        "shape": [
+          4,
+          3,
+          256,
+          256
+        ],
+        "dtype": "torch.float32",
+        "min": 0.0,
+        "max": 1.0
+      }
+    }
+  },
+  "parameter_counts": {
+    "total_parameters": 450172001,
+    "trainable_parameters": 100006817,
+    "adapter_parameters": 125825
+  },
+  "mean_seconds_per_step": 0.15508493014001942,
+  "estimate_25k_minutes_excluding_overheads": 64.61872089167476,
+  "peak_allocated_gib": 2.1067681312561035,
+  "peak_reserved_gib": 2.17578125,
+  "full_model_and_processors_reload": {
+    "status": "PASS",
+    "fresh_process": true,
+    "input_processor_exact": true,
+    "loss_error": 0.0,
+    "action_max_abs_error": 0.0,
+    "postprocessor_checked": true
+  },
+  "output_directory": "results/metrics/m3_rva_extension/v1/qualification_runs/20261018T143747_111508Z",
+  "scientific_status": "NOT_EVALUATED",
+  "created_at": "2026-10-18T14:38:28.378037+00:00"
+}
