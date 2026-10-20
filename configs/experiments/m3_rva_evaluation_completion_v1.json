@@ -1,0 +1,38 @@
+{
+  "amendment": "m3_v2_completion_v1",
+  "base_v2_evaluation_sha256": "1c54cfad75e65d06a51ca9ae5ec6c8b0e7f41327e9ba514ee52281e75fe0fe3e",
+  "base_evaluator_sha256": "60e5757f7c08c5207268ea3631e9e5f22949877a4f68de82c9148d72c721e9ef",
+  "completion_runner_sha256": "e6b191bc805280791b45602a1ab5b3522549e3e8723722cb3eee6ab95aef69ff",
+  "unchanged_pairing_rule": {
+    "version": "observed_state_exact_sparse_uint8_v2",
+    "state_rule": "All seven exposed robot-state arrays must be byte-identical.",
+    "fixed_state_rule": "Same task, fixed-state index and selected benchmark vector SHA256.",
+    "initial_state_index_formula": "condition_index_in_N09_order * 5 + replica",
+    "reset_rule": "Fresh vector/environment wrapper for each episode; set fixed-state index before reset.",
+    "image_rule": "Both uint8 camera arrays keep exact schema; compare signed differences without altering inputs.",
+    "max_channel_difference": 1,
+    "max_changed_channel_fraction": 0.0001,
+    "fraction_comparison": "changed_channels * 10000 <= channels_per_camera",
+    "calibration": "Technical amendment after reset diagnostic, not chosen using success scores.",
+    "scope": "Initial observations only; not a claim of full hidden-state or behavioral equivalence."
+  },
+  "planned_training_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "scientific_role": "EXPLORATORY_POST_HOC_WITH_EXPLICIT_TECHNICAL_MISSINGNESS",
+  "reason": "Three model-free resets reproduced camera variability at task8/state7 despite matching recorded states.",
+  "terminal_unscored_rule": "Only camera-rule rejection with exact exposed state and selected-state identity; never a success=False result.",
+  "known_failed_reset_policy": "Recompute stored evidence and terminally account for the failed attempt without retry.",
+  "other_failures": "State/schema/hash/action/runtime errors remain fatal; no broad exception-to-missing conversion.",
+  "new_outcomes": "Unchanged V2 reset, policy RNG, corruption, action and scoring helpers; no extra retries.",
+  "cache_policy": "Validate and reuse V2 rows/captures; never delete or rewrite an existing V2 file.",
+  "analysis": "Complete valid model pairs only, matched denominators; coverage and scheduled-outcome sensitivity bounds.",
+  "uncertainty": "Original hierarchical bootstrap/McNemar only for fully observed balanced conditions; incomplete conditions descriptive plus missing-outcome bounds.",
+  "multiple_tests": "Retain four-condition Holm family; an untested condition contributes a correction-only placeholder of 1, not a reported p-value.",
+  "no_training": true,
+  "no_new_corruptions": true,
+  "no_image_editing": true,
+  "renderer_determinism_fixed": false
+}

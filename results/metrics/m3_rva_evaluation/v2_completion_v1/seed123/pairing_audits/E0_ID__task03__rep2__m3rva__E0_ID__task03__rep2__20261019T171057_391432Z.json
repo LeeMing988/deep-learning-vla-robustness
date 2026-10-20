@@ -1,0 +1,39 @@
+{
+  "rule": "observed_state_exact_sparse_uint8_v2",
+  "observed_robot_state_exact": true,
+  "different_robot_state_fields": [],
+  "camera_comparisons": [
+    {
+      "field": "root/pixels/image",
+      "changed_channels": 0,
+      "channels": 196608,
+      "changed_pixels": 0,
+      "max_abs_difference": 0,
+      "mean_abs_difference": 0.0,
+      "changed_fraction": 0.0,
+      "pass": true
+    },
+    {
+      "field": "root/pixels/image2",
+      "changed_channels": 0,
+      "channels": 196608,
+      "changed_pixels": 0,
+      "max_abs_difference": 0,
+      "mean_abs_difference": 0.0,
+      "changed_fraction": 0.0,
+      "pass": true
+    }
+  ],
+  "all_images_byte_identical": true,
+  "pass": true,
+  "task_id": 3,
+  "condition_id": "E0_ID",
+  "replica": 2,
+  "initial_state_index": 2,
+  "initial_state_vector_sha256": "c88094ec1e5106ed6575089a87befb0535c06cb0ea0cfe6f7ead0b9205fe13cf",
+  "evaluation_protocol_sha256": "1c54cfad75e65d06a51ca9ae5ec6c8b0e7f41327e9ba514ee52281e75fe0fe3e",
+  "baseline_capture": "initial_observations/m2le__E0_ID__task03__rep2__20261019T160841_064795Z.npz",
+  "modified_capture": "initial_observations/m3rva__E0_ID__task03__rep2__20261019T171057_391432Z.npz",
+  "baseline_raw_sha256": "1b005b0c52daf5f8c75bba10cdb62866fd02de374491f5e9983fb8d1d969392c",
+  "modified_raw_sha256": "1b005b0c52daf5f8c75bba10cdb62866fd02de374491f5e9983fb8d1d969392c"
+}

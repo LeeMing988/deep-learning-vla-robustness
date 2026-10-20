@@ -1,0 +1,111 @@
+{
+  "release": "m3_rva_evaluation_v1",
+  "scientific_role": "EXPLORATORY_POST_HOC_ARCHITECTURAL_COMPARISON",
+  "training_protocol_hash": "4fb5ebbe04f8f79a0aeece010a750137566e6cc610781e03da3faa86fa236f54",
+  "planned_training_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "variants": [
+    "M2-LE",
+    "M3-RVA"
+  ],
+  "conditions": {
+    "E0_ID": {
+      "label": "ID / L0",
+      "language_level": "L0",
+      "image_shift": "NONE",
+      "shift_role": "ID"
+    },
+    "E1_L3": {
+      "label": "Language L3 held-out",
+      "language_level": "L3",
+      "image_shift": "NONE",
+      "shift_role": "heldout_language"
+    },
+    "E2_SEEN_PHOTO": {
+      "label": "Seen photometric shift",
+      "language_level": "L0",
+      "image_shift": "SEEN_PHOTO",
+      "shift_role": "seen_visual"
+    },
+    "E3_HELDOUT_NOISE": {
+      "label": "Held-out sensor noise",
+      "language_level": "L0",
+      "image_shift": "HELDOUT_NOISE",
+      "shift_role": "heldout_visual"
+    }
+  },
+  "suite": "libero_spatial",
+  "task_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "replica_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "environment": {
+    "obs_type": "pixels_agent_pos",
+    "camera_name": "agentview_image,robot0_eye_in_hand_image",
+    "init_states": true,
+    "observation_height": 256,
+    "observation_width": 256,
+    "control_mode": "relative",
+    "n_envs": 1,
+    "use_async_envs": false
+  },
+  "horizon": "unchanged environment _max_episode_steps; no horizon tuning",
+  "episode_seed_formula": "100000 + suite_task_id*100 + replica",
+  "policy_rng_seed_formula": "700000 + episode_seed; reset after env.reset for both models",
+  "pairing_audit": "raw initial observation SHA256 must match between models for each task/replica/condition",
+  "noise_sigma": 0.05,
+  "photometric": {
+    "brightness": 0.85,
+    "contrast": 1.15,
+    "saturation": 0.85
+  },
+  "checkpoint_selection": "fixed completed step 25000; no intermediate or best-result selection",
+  "control_evaluation": "fresh M2-LE rollouts in the same harness; original N07/N07b results not pooled or overwritten",
+  "no_additional_training": true,
+  "no_consistency_training": true,
+  "no_new_E6": true,
+  "bootstrap": {
+    "samples": 5000,
+    "seed": 20261018,
+    "method": "paired resampling of seed, task and replicas; single-seed intervals condition on checkpoint pair"
+  },
+  "tests": "nominal exact episode-level McNemar + Holm across these four exploratory comparisons; clustering caveat applies",
+  "success_is_not_an_engineering_gate": true,
+  "source_inputs": {
+    "configs/experiments/m3_rva_training_protocol_v1.json": "c2c953464539e5dbbdff2b8b0ba2959d61187c4fa2710b38acf02b8ca1b91925",
+    "src/m3_rva_training.py": "b6dae4fe7bb2ebd573dc6b4d7e6b73a9161b7c88c890002a28f7810f4ada3a38",
+    "results/metrics/dataset_eda/libero_spatial_dataset_task_mapping.csv": "26775e91310840c64e03a3719486e2a5c1b355d4894d3a6916024d319a0a3a70",
+    "configs/experiments/libero_spatial_language_augmentations_v1.csv": "022269395196df57adcb599467ec53899abe6016bcce2182590d4643dfd5574c",
+    "configs/experiments/definitive_evaluation_protocol_v1.json": "2825e00c8972f8fcc411dd0e5d6f89e50f327602f4305bf3368b3c03a8ecf5a4",
+    "configs/experiments/definitive_final_model_registry_v1.csv": "b36ef67c2dc23c24959f66e178d0a637070d305eafdc01e2e7ba97b5f2ab3bb1"
+  },
+  "n07_function_hashes": {
+    "apply_seen_photometric_shift": "b0d701f73fd652628fd82c25e0859708d44a8f076ca13365b3cfda3358d7ae5d",
+    "apply_heldout_sensor_noise": "ed1cb8c71f12d309b51ac3de04cbc7f0e5fe16c106504d57da9bc1c32d602c87",
+    "perturb_observation_images": "a5ea9dde975dc668a9cf2529d3da04af665a057de6053d1908dcc0102bfb2e6c",
+    "extract_success": "7355bf98a45714635cce430fcf918a2cfbef009200d92435e6b65b146bd524a1",
+    "get_condition_instruction": "c5966aa4baa57bd412758375190adf9f13762e90a0eb5e4754b1bfe7bcc2ab2c",
+    "build_env_config": "24f0c7983789a4f9cf9db8a9a2a0a94b10c6db3803031c576678538e6bf87b42",
+    "save_tensor_image": "3e8dc9af407d1cd68084f2c80321305edfd84c19a786378fa7fee15a9eba8e3e",
+    "evaluate_one_episode": "6e40981f121e65af37724d48db4704b208a9a78c6be657b67aa290dde10251e8"
+  },
+  "evaluator_sha256": "dd2ae74aea03aa8cf6dc3d49da4820dff69c303620916200c58da8d1a5b5d3f0"
+}
