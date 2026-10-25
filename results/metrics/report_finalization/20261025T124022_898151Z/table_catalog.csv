@@ -1,0 +1,15 @@
+file,interpretation
+tables/01_episode_accounting.csv,"Accounting, not evidence that every slot was successfully scored."
+tables/02_m3_per_seed_paired_effects.csv,Descriptive recomputation on identical valid subsets for each comparator.
+tables/03_architecture_accounting.csv,Calculated from the recorded module and parameter totals; not a fresh model load.
+tables/04_tuning_screen.csv,Six 200-update candidates; do not describe this as a long-horizon or multi-seed hyperparameter search.
+tables/05_budget_replacement_decisions.csv,"Recorded replacement rules and results; retrospective presentation, not new model selection."
+tables/06_budget_repeatability_amendment.csv,Preserves the failed earlier threshold and documented diagnostic status.
+tables/07_final_checkpoint_validation.csv,Offline diagnostic losses with source stage and seed. This notebook does not restore or rerun a checkpoint.
+tables/08_m3_logged_training_history.csv,Unmodified numerical history with an added seed identifier.
+tables/09_core_verified_headline.csv,N07 only; no N10 rates substituted.
+tables/10_language_ablation_seed42.csv,"Single-seed descriptive ablation, not three-seed causal proof."
+tables/11_descriptive_seed_variability.csv,Equal-weight seed means and sample SD; L3 may differ slightly from pooled rates due to unequal denominators.
+tables/12_exploratory_task_effects_all_tasks.csv,All ten tasks shown per condition. New descriptive report analysis only; no task-specific significance tests or causal failure labels.
+tables/13_missing_outcome_sensitivity.csv,Enumerates possible completions in a separate report table; original missing values remain missing.
+tables/14_technical_exclusions.csv,The four technical exclusions remain unscored and are not retried.

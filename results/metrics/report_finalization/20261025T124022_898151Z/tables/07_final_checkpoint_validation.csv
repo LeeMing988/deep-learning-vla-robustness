@@ -1,0 +1,12 @@
+stage,variant,seed,steps,validation_loss,restoration_status,checkpoint
+N06 core,M1,42,25000,0.5704121208190918,See original N06 evidence; not re-executed here,experiments/final_budget_validation/m1_standard_extension_seed42/checkpoints/025000/model
+N06 core,M1,123,25000,0.5646775287389755,See original N06 evidence; not re-executed here,experiments/final_budget_validation/m1_standard_extension_seed123/checkpoints/025000/model
+N06 core,M1,2026,25000,0.5576287925243377,See original N06 evidence; not re-executed here,experiments/final_budget_validation/m1_standard_extension_seed2026/checkpoints/025000/model
+N06 core,M2-E,42,25000,0.5568881928920746,See original N06 evidence; not re-executed here,experiments/validated_final_retraining/m2e_seed42_25000/model
+N06 core,M2-L,42,25000,0.5891581416130066,See original N06 evidence; not re-executed here,experiments/validated_final_retraining/m2l_seed42_25000/model
+N06 core,M2-LE,42,25000,0.5815793716907501,See original N06 evidence; not re-executed here,experiments/validated_final_retraining/m2le_seed42_25000/model
+N06 core,M2-LE,123,25000,0.5578524601459504,See original N06 evidence; not re-executed here,experiments/validated_final_retraining/m2le_seed123_25000/model
+N06 core,M2-LE,2026,25000,0.5788859236240387,See original N06 evidence; not re-executed here,experiments/validated_final_retraining/m2le_seed2026_25000/model
+N09 extension,M3-RVA,42,25000,0.5861010378599167,PASS,experiments/m3_rva_extension/v1/m3rva_seed42_25000/model
+N09 extension,M3-RVA,123,25000,0.5843732535839081,PASS,experiments/m3_rva_extension/v1/m3rva_seed123_25000/model
+N09 extension,M3-RVA,2026,25000,0.5686621522903442,PASS,experiments/m3_rva_extension/v1/m3rva_seed2026_25000/model

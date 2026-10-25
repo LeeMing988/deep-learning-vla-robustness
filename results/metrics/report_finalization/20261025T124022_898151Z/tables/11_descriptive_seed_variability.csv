@@ -1,0 +1,9 @@
+condition_id,variant,training_seeds,equal_seed_mean_pct,sample_sd_pp,min_pct,max_pct,interpretation
+E0_ID,M2-LE,3,43.333333333333336,3.0550504633038935,40.0,46.0,Descriptive: only three training seeds; not action consistency
+E0_ID,M3-RVA,3,42.0,4.0,38.0,46.0,Descriptive: only three training seeds; not action consistency
+E1_L3,M2-LE,3,23.299319727891156,4.339234973528256,18.367346938775512,26.53061224489796,Descriptive: only three training seeds; not action consistency
+E1_L3,M3-RVA,3,19.85544217687075,4.192401092374054,16.3265306122449,24.489795918367346,Descriptive: only three training seeds; not action consistency
+E2_SEEN_PHOTO,M2-LE,3,42.0,9.16515138991168,34.0,52.0,Descriptive: only three training seeds; not action consistency
+E2_SEEN_PHOTO,M3-RVA,3,43.333333333333336,11.372481406154659,34.0,56.00000000000001,Descriptive: only three training seeds; not action consistency
+E3_HELDOUT_NOISE,M2-LE,3,50.666666666666664,8.082903768654758,42.0,57.99999999999999,Descriptive: only three training seeds; not action consistency
+E3_HELDOUT_NOISE,M3-RVA,3,48.666666666666664,7.023769168568497,42.0,56.00000000000001,Descriptive: only three training seeds; not action consistency
