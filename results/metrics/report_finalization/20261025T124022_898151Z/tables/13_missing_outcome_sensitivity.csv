@@ -1,0 +1,6 @@
+condition_id,hypothetical_successes_among_unscored,unscored_M3_attempts,M2_LE_observed_successes,M3_observed_successes,scheduled_pairs,M2_LE_scheduled_pct,M3_hypothetical_scheduled_pct,hypothetical_delta_pp,interpretation
+E1_L3,0,4,34,29,150,22.666666666666668,19.333333333333332,-3.3333333333333335,Sensitivity scenario only: NOT imputation or confidence interval
+E1_L3,1,4,34,29,150,22.666666666666668,20.0,-2.6666666666666665,Sensitivity scenario only: NOT imputation or confidence interval
+E1_L3,2,4,34,29,150,22.666666666666668,20.666666666666668,-2.0,Sensitivity scenario only: NOT imputation or confidence interval
+E1_L3,3,4,34,29,150,22.666666666666668,21.333333333333332,-1.3333333333333333,Sensitivity scenario only: NOT imputation or confidence interval
+E1_L3,4,4,34,29,150,22.666666666666668,22.0,-0.6666666666666666,Sensitivity scenario only: NOT imputation or confidence interval

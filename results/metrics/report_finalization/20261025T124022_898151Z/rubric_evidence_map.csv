@@ -1,0 +1,6 @@
+criterion,evidence,report_action
+Model implementation,F01; tables/03_architecture_accounting.csv,"Explain insertion, identity initialisation and trainability. Do not claim a new foundation model."
+Tuning and validation,F02; tables/04–07,Explain screening → budget comparison → fixed final checkpoints. Retain the adequacy amendment and schedule limitation.
+Tuning and validation,F03; tables/07–08,Interpret recorded batch losses and saved offline validation separately from robot success.
+Visualisation and critical analysis,F04; tables/09–10,"Use the single-seed ablation to discuss the language intervention, without causal overclaiming."
+Visualisation and critical analysis,"F05/F06; tables/02,11–14","Explain effect uncertainty, replication, all-task descriptive results and missing evidence."

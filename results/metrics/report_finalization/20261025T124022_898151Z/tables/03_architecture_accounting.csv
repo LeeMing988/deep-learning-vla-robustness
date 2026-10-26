@@ -1,0 +1,7 @@
+component,value
+Connector token width,960
+Bottleneck width,64
+Added parameters,125825
+Original total parameters,450046176
+M3 total parameters,450172001
+M3 trainable parameters,100006817

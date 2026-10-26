@@ -1,0 +1,37 @@
+{
+  "notebook": "11_report_finalization_and_evidence_audit",
+  "role": "POST_HOC_REPORT_ANALYSIS_ONLY",
+  "status": "COMPLETE",
+  "input_files_unchanged": true,
+  "source_count": 25,
+  "checks_passed": 119,
+  "figures_created": 6,
+  "tables_created": 14,
+  "training_performed": false,
+  "new_robot_episodes": 0,
+  "new_significance_tests": 0,
+  "policy_weights_loaded": false,
+  "experiment_outputs_modified": false,
+  "n10_accounting": {
+    "scored_episodes": 1196,
+    "technical_unscored_attempts": 4,
+    "valid_complete_pairs": 596,
+    "planned_selected_episodes": 1200
+  },
+  "uncertainty_intervals": "Reused from saved N10 results; no new inferential claims",
+  "limitations": [
+    "The N09 training summary's NOT_EVALUATED field is historical training-stage metadata; N10 supplies robot outcomes.",
+    "The N10 summary retains a legacy one-seed limitation string, but its selected seeds and CSVs contain three seeds.",
+    "The N10 all_planned_seeds_evaluated flag remains false because the complete scored matrix has four missing outcomes; execution is finished.",
+    "The N05b original adequacy threshold did not pass unchanged. Its amendment remains a limitation, not an all-gates-pass claim.",
+    "N11 republishes saved CIs and does not revalidate their statistical assumptions; small-seed/clustering limitations remain.",
+    "Archive evidence does not contain every raw initial observation or model weight; this is an arithmetic/source audit, not full replay verification."
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "matplotlib": "3.11.1"
+  },
+  "output_relative_path": "results/metrics/report_finalization/20261025T124022_898151Z"
+}

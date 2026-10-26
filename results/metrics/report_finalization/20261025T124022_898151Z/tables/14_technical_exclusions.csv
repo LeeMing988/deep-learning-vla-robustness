@@ -1,0 +1,5 @@
+model_seed,variant,condition_id,suite_task_id,replica,status,learned_actions_executed,counts_as_robot_failure
+42,M3-RVA,E1_L3,8,2,UNSCORED_INITIAL_IMAGE_MISMATCH,0,False
+123,M3-RVA,E1_L3,8,2,UNSCORED_INITIAL_IMAGE_MISMATCH,0,False
+123,M3-RVA,E1_L3,8,4,UNSCORED_INITIAL_IMAGE_MISMATCH,0,False
+2026,M3-RVA,E1_L3,8,2,UNSCORED_INITIAL_IMAGE_MISMATCH,0,False
