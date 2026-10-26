@@ -19,6 +19,15 @@ The **original study through Notebook 08 is complete**, including its definitive
 
 ---
 
+### Submission status and verified evidence — 26 October 2026
+
+This dated update supplements the complete research history below; the earlier N00–N10 study descriptions remain intact. **N11 is now the last executed report-finalisation notebook**, and it is not a new training or robot-evaluation experiment. The consolidated academic report has a revised Word draft; repository documentation, submission packaging, final tag creation and corresponding Appendix A cross-references are still being finalised.
+
+- **Verified `main` evidence baseline before this README update:** [`42e74eefa1aa5ff40c29a668d1c901a2fdcbecf7`](https://github.com/LeeMing988/deep-learning-vla-robustness/commit/42e74eefa1aa5ff40c29a668d1c901a2fdcbecf7). This commit preserves the three M3-RVA seeds' language assignments and model/processor metadata.
+- **N11 original merge:** [`8b36afb7223f049def24088866f326cc005da516`](https://github.com/LeeMing988/deep-learning-vla-robustness/commit/8b36afb7223f049def24088866f326cc005da516); [executed Notebook 11](notebooks/11_report_finalization_and_evidence_audit.ipynb) and [report-finalisation evidence](results/metrics/report_finalization/20261025T124022_898151Z/) are available on `main`.
+- **N11 audit outcome:** `COMPLETE`, 119 saved-evidence checks passed, six figures, fourteen tables, 25 source records; **0 new training runs, 0 robot episodes and 0 new significance tests**. This validates saved counts, source integrity and accounting, **not** a fresh simulation replay or every statistical assumption.
+- **Release state:** the final annotated **submission tag is pending**, not yet an established Git reference. The exact tagged commit SHA and release URL must be recorded only after verification and tagging; do not use an earlier evidence commit as a substitute for that final SHA.
+
 ## Project metadata
 
 | Field | Details |
@@ -49,6 +58,11 @@ The **original study through Notebook 08 is complete**, including its definitive
 | **M3 Performance Finding** | No consistent additional robustness advantage demonstrated over M2-LE |
 | **Deferred Extension** | M3-RVA+C matched-two-view consistency objective; **not implemented/evaluated** |
 | **Year** | 2026 |
+| **Dataset download** | [LeRobot LIBERO on Hugging Face](https://huggingface.co/datasets/lerobot/libero); pinned dataset revision `a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4` |
+| **N11 report audit** | Executed read-only evidence notebook; 119 checks passed; six figures and fourteen tables |
+| **N11 evidence path** | `results/metrics/report_finalization/20261025T124022_898151Z/` |
+| **M3 seed reproducibility metadata** | Three training seeds with 346 saved episode-language assignments per seed, plus model and processor JSON metadata |
+| **Repository visibility** | Public GitHub repository; large local weights and captures are not part of the public Git tree |
 
 ---
 
@@ -205,6 +219,7 @@ The original model-development protocol was frozen before the definitive Noteboo
 | Post-OOD model replacement | **None** |
 
 The 25k training budget is **not claimed to be globally optimal**. It was retained because it was already adequate under the bounded predeclared protocol and neither 35k nor 50k satisfied every replacement criterion required to supersede it.
+**Recorded adequacy-gate qualification:** The original repeatability/adequacy threshold did **not** pass unchanged: the repeated seed-42 25k result was below the prior threshold. The hard stop was amended to `VARIABILITY OBSERVED`. Retaining 25k was therefore a bounded resource and replacement-rule decision, **not** a claim that all original acceptance gates passed or that longer-run schedules were independently optimised. See N05b and the [N11 budget amendment table](results/metrics/report_finalization/20261025T124022_898151Z/tables/06_budget_repeatability_amendment.csv).
 
 ---
 
@@ -319,6 +334,20 @@ experiments/m3_rva_extension/v1/m3rva_seed{42,123,2026}_25000/
     recovery.pt                             # local optimizer recovery; not ordinary Git
 results/figures/m3_rva_extension/
 ```
+
+### Preserved M3 training-seed provenance (added to `main`)
+
+The final M3-RVA runs retain compact, independently inspectable inputs for seeds **42, 123 and 2026**, separate from the model-weight files. The following four paths are present for each `m3rva_seed{seed}_25000` directory:
+
+```text
+experiments/m3_rva_extension/v1/m3rva_seed{seed}_25000/
+    language_assignment.csv           # 346 recorded training-episode assignments per seed
+    model/config.json                 # recorded policy configuration
+    model/policy_preprocessor.json    # saved processor configuration
+    model/policy_postprocessor.json   # saved postprocessor configuration
+```
+
+All 12 files were verified as parseable CSV/JSON and committed in [`42e74ee`](https://github.com/LeeMing988/deep-learning-vla-robustness/commit/42e74eefa1aa5ff40c29a668d1c901a2fdcbecf7). This improves the training configuration's auditability; it **does not** supply omitted `.safetensors` weights, prove the model's semantic validity, or make complete simulator replay possible from GitHub alone.
 
 ## N10 — Completed three-seed exploratory evaluation
 
@@ -636,6 +665,8 @@ Evaluation uncertainty and training-seed variability are treated as distinct sou
 
 # Completed core-study headline results
 
+**Published-baseline context for readers:** The local M1 benchmark result of **51.3%** is a controlled, matched comparator for M2-LE under this study's protocol, **not** a reproduction of SmolVLA's published **90.0% LIBERO-Spatial** result. The published setting reports substantially different training/evaluation choices (including 100k updates, batch 64, and replanning after individual actions), whereas this study uses 25k updates, batch 4 and 50-action chunks. These differences preclude attributing the gap to one isolated factor or treating the two percentages as directly comparable.
+
 ## Definitive Notebook 07 results
 
 | Condition | M1 | M2-LE | Δ M2-LE − M1 | 95% paired bootstrap CI | Evidence |
@@ -926,6 +957,30 @@ deep-learning-vla-robustness/
 
 ---
 
+### Repository tree supplement for N11 (additive; earlier tree retained)
+
+The historical directory diagram above ends at N10. The current `main` branch **also includes** the following tracked additions, without replacing any earlier notebook or final result:
+
+```text
+notebooks/
+    11_report_finalization_and_evidence_audit.ipynb
+results/metrics/report_finalization/
+    20261025T124022_898151Z/
+        REPORT_INTEGRATION_GUIDE.md
+        notebook11_summary.json
+        evidence_audit_checks.csv
+        source_manifest.csv
+        figure_catalog.csv
+        table_catalog.csv
+        rubric_evidence_map.csv
+        figures/                    # F01–F06, PNG and SVG
+        tables/                     # 01–14, CSV
+experiments/m3_rva_extension/v1/
+    m3rva_seed{42,123,2026}_25000/
+        language_assignment.csv
+        model/{config,policy_preprocessor,policy_postprocessor}.json
+```
+
 # Notebook workflow
 
 The workflow below preserves the original N00–N08 evidence chain and adds the separately completed N09/N10 custom-model study. N09/N10 are **executed**, but N10 is **exploratory** and should not be used to reinterpret the predeclared N07 results.
@@ -1093,6 +1148,18 @@ Completed **post-hoc M3-RVA versus M2-LE exploratory evaluation**:
 
 ---
 
+## `11_report_finalization_and_evidence_audit.ipynb`
+
+**Executed, completed, post-hoc and read-only evidence audit:** [`notebooks/11_report_finalization_and_evidence_audit.ipynb`](notebooks/11_report_finalization_and_evidence_audit.ipynb). This is a **reporting/evidence** notebook, not another training or closed-loop evaluation notebook. It reads the frozen N00–N10 records and creates a new timestamped output directory rather than changing previous experimental data.
+
+- **Run:** `20261025T124022_898151Z`, recorded as `POST_HOC_REPORT_ANALYSIS_ONLY` and `COMPLETE`.
+- **Audit:** 119 passed checks against 25 source records; original inputs unchanged.
+- **Outputs:** six figures (both PNG and SVG), fourteen CSV tables, a source manifest, audit-check CSV, rubric map, output catalogs and report-integration guide.
+- **N10 reconciliation:** 1,200 planned model-episode slots, 1,196 scored outcomes, 596 complete valid pairs and four technical exclusions; the missing pairs are not silently imputed or called failures.
+- **Scientific boundary:** no new training, robot trials, checkpoint selection, inferential tests or M3-RVA+C consistency training; saved confidence intervals are reused rather than independently revalidated.
+
+**Primary sources:** [N11 summary](results/metrics/report_finalization/20261025T124022_898151Z/notebook11_summary.json), [audit checks](results/metrics/report_finalization/20261025T124022_898151Z/evidence_audit_checks.csv), [source manifest](results/metrics/report_finalization/20261025T124022_898151Z/source_manifest.csv), [integration guide](results/metrics/report_finalization/20261025T124022_898151Z/REPORT_INTEGRATION_GUIDE.md).
+
 # How to run
 
 ## Completed core-study workflow
@@ -1155,6 +1222,24 @@ Consolidated Assignment 1 + Assignment 2 report
 
 ---
 
+## N11 final report inspection (no GPU or simulator replay)
+
+To inspect the final report figures and arithmetic, follow the read-only evidence path after the completed N00–N10 workflow:
+
+```text
+N07/N07b original evaluation + N08 core consolidation
+               +
+N09 training and N10 exploratory finalisation
+               ↓
+11_report_finalization_and_evidence_audit.ipynb
+               ↓
+results/metrics/report_finalization/20261025T124022_898151Z/
+               ↓
+Consolidated Assignment 1 + Assignment 2 report (submitted separately)
+```
+
+The saved notebook outputs and the corresponding CSV/JSON/figure files can be inspected directly without rerunning the 25k-step training or the simulator. Re-executing N11 is optional and still requires its referenced source artifacts; inspecting its stored outputs is **not** equivalent to replaying trained policies or validating all statistical premises.
+
 # Reproduction tiers
 
 | Goal | Requirement | Expected cost |
@@ -1162,6 +1247,7 @@ Consolidated Assignment 1 + Assignment 2 report
 | **Inspect final results** | Repository + saved core and M3 metrics / figures | Low |
 | **Regenerate core-study report tables / figures** | Notebook 08 + original saved artifacts | Low |
 | **Inspect M3 architectural comparison** | N10 outputs + `v2_completion_v1` final CSV/JSON/figures | Low |
+| **Inspect N11 final report audit** | Executed N11 notebook and frozen `20261025T124022_898151Z` source, tables and figures | Low |
 | **Reproduce evaluation** | Frozen checkpoints + LIBERO assets + validated environment | High |
 | **Reproduce final training** | Full environment + data + GPU | High |
 | **Rebuild complete study** | Environment + all model training + all closed-loop evaluation | Highest |
@@ -1186,6 +1272,10 @@ Consolidated Assignment 1 + Assignment 2 report
 | **M3 training summary and registry** | `results/metrics/m3_rva_extension/v1/` |
 | **M3 final extension statistics** | `results/metrics/m3_rva_evaluation/v2_completion_v1/` |
 | **M3 comparison figures** | `results/figures/m3_rva_evaluation/v2_completion_v1/` |
+| **N11 executed report audit** | `notebooks/11_report_finalization_and_evidence_audit.ipynb` |
+| **N11 immutable run artifacts** | `results/metrics/report_finalization/20261025T124022_898151Z/` |
+| **M3 per-seed language assignments** | `experiments/m3_rva_extension/v1/m3rva_seed{42,123,2026}_25000/language_assignment.csv` |
+| **M3 per-seed processor/model metadata** | `experiments/m3_rva_extension/v1/m3rva_seed{42,123,2026}_25000/model/` (`config.json`, `policy_preprocessor.json`, `policy_postprocessor.json`) |
 | **M3 training / evaluation protocols** | `configs/experiments/m3_rva_*.json` |
 | **Large M3 checkpoints and raw camera observations** | Retained locally; not included in ordinary Git; required for full rollout replay |
 
@@ -1268,8 +1358,11 @@ The **2,350** core robustness episodes and **1,200** M3 scheduled slots refer to
 | **08** | Final results / assignment evidence | ✅ Complete |
 | **09** | M3-RVA custom visual adapter: source audit, engineering preflight, real-data qualification, 3-seed 25k training, reload validation | ✅ Complete |
 | **10** | M3-RVA versus M2-LE exploratory closed-loop evaluation, 3 seeds and coverage-aware exclusion accounting | ✅ Finished with four unscored technical attempts |
+| **11** | Post-hoc, read-only report finalisation audit, 119 passed checks, six figures and fourteen tables | ✅ Completed and merged into `main` |
 | **M3-RVA+C** | Matched-two-view consistency-learning study and `lambda=0` control | Deferred — **not conducted** |
 | **Report** | Assignment 1 + Assignment 2 consolidated report | 🔄 In progress |
+| **Report status update (26 Oct 2026)** | Revised 31-page consolidated report prepared; complete submission QA and append the future release tag and exact commit SHA to Appendix A | ✅ Revised draft prepared; tag and submission verification pending |
+| **Evidence provenance freeze** | Executed N11 and three-seed metadata on `main` | ✅ Verified through commits `8b36afb` and `42e74ee` |
 
 ---
 
@@ -1300,6 +1393,8 @@ Academic Report                In Progress — completion percentage not audited
 
 ---
 
+**Progress update (26 October 2026):** The earlier `Academic Report — In Progress` entry above is retained as a historical project snapshot. The revised consolidated report now exists; final delivery still requires README/submission QA, confirmation of the assessment packaging requirements, creation of the submission tag and updating report Appendix A with that tag's **actual** commit SHA. N11's report-only audit is **complete**, while the M3-RVA+C arm remains **not conducted**.
+
 # Key limitations
 
 The completed N00–N08 results should be interpreted within the following boundaries. The separately completed M3 extension has additional limitations and must not be treated as an untouched confirmatory test.
@@ -1321,6 +1416,13 @@ The completed N00–N08 results should be interpreted within the following bound
 - **M3 statistical scope** — only three independently trained extension seeds and ten LIBERO-Spatial tasks; bootstrap/p estimates are conditional on their design and withheld for incomplete E1.
 - **M3 comparative result** — no consistent additional adapter advantage was demonstrated, but that does not prove adapter methods are ineffective or that models are equivalent.
 - **Not performed** — no M3-RVA+C paired-view consistency training, no lambda-zero matched two-view control, no E6 visual holdout and no physical robot deployment.
+- **Preprocessing-statistics provenance** — the original state/action normalisation used inherited dataset metadata statistics, not exclusively statistics fitted to the training-episode split; this limits strict training-only preprocessing claims, and the size of the effect is unmeasured.
+- **Development-stage evaluation exposure** — pilot OOD outcomes were visible during methodological development, so the complete development history should not be characterised as untouched final-test selection.
+- **Short hyperparameter screen** — six learning-rate/weight-decay candidates were compared after 200 optimisation updates; the batch size and scheduler were fixed design settings, not additional tuned dimensions. This initial screen does not rank full 25k runs.
+- **Validation-history limitation** — M3 training logs record batch-loss trajectories and final offline validation losses but not a repeated M3 validation curve; separate M1 budget checkpoints do not fill that historical gap.
+- **Language diversity** — L3 uses ten distinct held-out task instructions, each evaluated in repeated rollouts. More episodes do not imply more unique paraphrases; no independent inter-rater consistency study is claimed.
+- **Pairing controls differ by phase** — N07 matched task/seed/replica identifiers with deterministic reset/noise seeds, while N10 introduced additional indexed initial-state, exposed-state and observation checks. The stronger N10 audit should not be retroactively attributed to N07.
+- **N11 audit scope** — passing arithmetic and source-integrity checks does not independently verify physical robot validity, eliminate test-selection limitations, or establish model superiority. The original experiment record and any technical exclusions remain unchanged.
 
 ---
 
@@ -1428,6 +1530,41 @@ Python implementation and representative generated outputs are maintained in Jup
 > **Next:** keep all training/evaluation protocols and results frozen, publish the curated final research evidence and figures, finish the consolidated Assignment 1 + Assignment 2 report, verify literature references, and perform submission QA. No further model or experiment tuning is required for the completed study.
 
 ---
+
+# Marker navigation, reproducibility and submission freeze
+
+This appendix to the README is **additive** to the complete original research narrative. It makes the final evidence easy to locate without changing earlier experiments, their denominators or the scientific claims.
+
+## Evidence-by-rubric reading guide
+
+| Assignment criterion | Read in the consolidated report | Repository evidence to inspect | Important interpretation |
+|---|---|---|---|
+| **CLO1 (40%): background, architecture, literature and justification** | Sections 1–3 and architecture description in Section 4 | [N00](notebooks/00_environment_and_dataset_eda.ipynb), [N02](notebooks/02_robustness_training.ipynb), [N09](notebooks/09_custom_robust_visual_adapter.ipynb), `configs/` | Foundation-model and benchmark work are attributed; the local contribution is adaptation/evaluation, not invention of SmolVLA. |
+| **CLO2 (42%): implementation, tuning and validation** | Sections 4–5 and the supporting appendices | [N03](notebooks/03_tuning_and_final_training.ipynb), [N05b](notebooks/05b_final_training_budget_validation.ipynb), [N06](notebooks/06_validated_final_retraining.ipynb), [N09](notebooks/09_custom_robust_visual_adapter.ipynb), `results/metrics/m3_rva_extension/v1/` | The 200-update initial search, 25k budget choice, amended adequacy gate and limited validation trajectory must all be interpreted as documented. |
+| **CLO3 (18%): results, visualisation and critical analysis** | Sections 6–7 and the evidence appendices | [N07](notebooks/07_definitive_robustness_evaluation.ipynb), [N07b](notebooks/07b_supplementary_double_heldout_stress_test.ipynb), [N08](notebooks/08_final_results_and_assignment_evidence.ipynb), [N10](notebooks/10_m3_rva_evaluation_and_comparison.ipynb), [N11](notebooks/11_report_finalization_and_evidence_audit.ipynb) | N07 is the core study; E5 and M3 are exploratory; N11 performs report-only reanalysis. |
+
+## Stable evidence links and release policy
+
+- **Public repository:** <https://github.com/LeeMing988/deep-learning-vla-robustness>.
+- **N11 merge commit:** [`8b36afb7223f049def24088866f326cc005da516`](https://github.com/LeeMing988/deep-learning-vla-robustness/commit/8b36afb7223f049def24088866f326cc005da516).
+- **M3 seed-metadata commit:** [`42e74eefa1aa5ff40c29a668d1c901a2fdcbecf7`](https://github.com/LeeMing988/deep-learning-vla-robustness/commit/42e74eefa1aa5ff40c29a668d1c901a2fdcbecf7).
+- **Authoritative report-audit run:** [`20261025T124022_898151Z`](results/metrics/report_finalization/20261025T124022_898151Z/) and its [summary](results/metrics/report_finalization/20261025T124022_898151Z/notebook11_summary.json).
+- **Dataset:** <https://huggingface.co/datasets/lerobot/libero>. The actual dataset files are external and **not** included in the submission repository.
+- **Report:** the consolidated Word/PDF report is supplied separately from the GitHub research-evidence repository; the reader should use its Appendix A to locate the frozen source revision and audit path.
+- **Final tag:** **not created at the time of this README addendum**. Create one annotated tag only **after** this README update, final link/evidence checks, and any approved supporting changes have been committed to `main`. Then insert the **actual** tag name, target commit SHA and GitHub tag URL into the report's Appendix A. Do not tag a moving branch name or guess the SHA in advance.
+
+## Practical submission checklist
+
+- [x] Preserve original N00–N08 experimental evidence and N09/N10 exploratory extension separately.
+- [x] Merge the originally executed N11 notebook and associated 119-check evidence into `main`.
+- [x] Preserve three-seed M3-RVA language assignments and the three model/processor JSON files per seed.
+- [ ] Review and commit this additive README documentation update.
+- [ ] Confirm report-format, word-count and appendix-handling rules with the module's current submission instructions; the available briefing does not explicitly guarantee that appendix text is exempt from word-count assessment.
+- [ ] Audit external reference links and ensure the submitted notebook files contain their saved outputs.
+- [ ] Create and push the verified annotated final-submission Git tag; verify its target commit.
+- [ ] Insert the exact Git tag name, commit SHA and evidence URLs into report Appendix A and perform final document QA.
+
+The 4,093 untracked local files observed during repository cleanup contained historical diagnostic/evaluation data, temporary runtime files and selected small training metadata. **Only the twelve selected M3 seed metadata files were committed in the documented cleanup.** Do not interpret excluded local files as deleted, and do not imply that the ordinary Git checkout contains the omitted large model weights or raw replay observations.
 
 # License
 
